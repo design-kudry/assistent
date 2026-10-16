@@ -1,83 +1,83 @@
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Thin.woff') format('woff2'),
+    src: url('asset-Inter-Thin.woff2') format('woff2'),
          url('asset-Inter-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-ExtraLight.woff') format('woff2'),
+    src: url('asset-Inter-ExtraLight.woff2') format('woff2'),
          url('asset-Inter-ExtraLight.woff') format('woff');
     font-weight: 200;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Light.woff') format('woff2'),
+    src: url('asset-Inter-Light.woff2') format('woff2'),
          url('asset-Inter-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Regular.woff') format('woff2'),
+    src: url('asset-Inter-Regular.woff2') format('woff2'),
          url('asset-Inter-Regular.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Regular.woff') format('woff2'),
+    src: url('asset-Inter-Regular.woff2') format('woff2'),
          url('asset-Inter-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Medium.woff') format('woff2'),
+    src: url('asset-Inter-Medium.woff2') format('woff2'),
          url('asset-Inter-Medium.woff') format('woff');
     font-weight: 500;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-SemiBold.woff') format('woff2'),
+    src: url('asset-Inter-SemiBold.woff2') format('woff2'),
          url('asset-Inter-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Bold.woff') format('woff2'),
+    src: url('asset-Inter-Bold.woff2') format('woff2'),
          url('asset-Inter-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Bold.woff') format('woff2'),
+    src: url('asset-Inter-Bold.woff2') format('woff2'),
          url('asset-Inter-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-ExtraBold.woff') format('woff2'),
+    src: url('asset-Inter-ExtraBold.woff2') format('woff2'),
          url('asset-Inter-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
 }
 @font-face {
     font-family: 'Inter';
-    src: url('asset-Inter-Black.woff') format('woff2'),
+    src: url('asset-Inter-Black.woff2') format('woff2'),
          url('asset-Inter-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
 }
 
 
-.Theme_font_example {
+.Theme_font_gpnAi {
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --font-mono: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   font-family: var(--font-primary);
