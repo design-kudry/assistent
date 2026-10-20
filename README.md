@@ -92,9 +92,9 @@ Synced with the Figma color reference on 2026-10-20. New style names and token i
 
 | Figma style | CSS variable | Usage |
 | --- | --- | --- |
-| `GPN AI/Fill/Haze` | `--gpn-ai-haze` | Opaque top, transparent bottom |
-| `GPN AI/Fill/Haze/Bottom` | `--gpn-ai-haze-bottom` | Opaque bottom, transparent top |
-| `GPN AI/Fill/Overlay` | `--gpn-ai-background-overlay` | Modal backdrop |
+| `Color/Background/Haze/Top` | `--gpn-ai-haze` | Opaque top, transparent bottom |
+| `Color/Background/Haze/Bottom` | `--gpn-ai-haze-bottom` | Opaque bottom, transparent top |
+| `Color/Background/Overlay` | `--gpn-ai-background-overlay` | Modal backdrop |
 
 ```css
 .ChatHeader { background: var(--gpn-ai-haze); }
@@ -108,3 +108,14 @@ Synced with the Figma color reference on 2026-10-20. New style names and token i
 Haze uses four stops (0%, 45%, 75%, 100%) with opacity 100%, 100%, 95%, 0%. Light uses #FFFFFF; Dark uses #19232E, including the transparent endpoint to avoid a pale fringe. Overlay uses #102A3A at 48% in Light and #050A10 at 64% in Dark. Do not add layer opacity: alpha is already in the token. Both follow the Consta color modifier.
 
 `raised` remains a compatibility token and now resolves to `surface` in both themes. Existing CSS names are retained. Update this repository and the [Figma color reference](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=20965-146584) together whenever product colors or gradients change. This is a manual synchronization workflow, not a background watcher.
+
+## Figma style categories
+
+Existing styles were renamed in place on 2026-10-20. IDs, values, variable bindings and component links are preserved; no styles were recreated or deleted.
+
+- `Color/Background`: Avatar, Overlay and Haze/Top, Haze/Bottom.
+- `Typography/{Heading,Body,Control,Caption}/{font size}/{weight}-{line height}`: sizes and line heights are in px. Existing alternate styles retain distinct IDs.
+- `Effects/Shadow`: Card, Popover; older shadows are under Legacy.
+- `Effects/Glow`: Home, Chat, Project, Composer; older effects are under Legacy.
+
+`tokens/figma-styles.json` records the original and current names with stable Figma style IDs. CSS token names are unchanged by this organization pass.

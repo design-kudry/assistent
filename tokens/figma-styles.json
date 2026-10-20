@@ -1,0 +1,210 @@
+{
+  "source": "https://www.figma.com/design/686IP0J8jTGiix3IXVcA45",
+  "updatedAt": "2026-10-20",
+  "styles": [
+    {
+      "id": "S:ab2b585739b3d6820e4f3644f838455b298515e6,",
+      "type": "PAINT",
+      "name": "Color/Background/Avatar",
+      "previousName": "GPN AI/Fill/Avatar"
+    },
+    {
+      "id": "S:61c7c2bc10d2629f16e0f3706abdd0a96d586d35,",
+      "type": "PAINT",
+      "name": "Color/Background/Haze/Top",
+      "previousName": "GPN AI/Fill/Haze"
+    },
+    {
+      "id": "S:cc30b21e3ed7fea7b674659c748ce490361e0072,",
+      "type": "PAINT",
+      "name": "Color/Background/Haze/Bottom",
+      "previousName": "GPN AI/Fill/Haze/Bottom"
+    },
+    {
+      "id": "S:1eecabfcd1e03e8ce8c6348f06eeb68ee747b085,",
+      "type": "PAINT",
+      "name": "Color/Background/Overlay",
+      "previousName": "GPN AI/Fill/Overlay"
+    },
+    {
+      "id": "S:9a72808ae23378a552830a3705c88c8478ca7cdc,",
+      "type": "TEXT",
+      "name": "Typography/Heading/32/Regular-48",
+      "previousName": "GPN AI/Text/Heading/L"
+    },
+    {
+      "id": "S:125ad08aef6e9975d5a371abf2c1bb9848e2bd0e,",
+      "type": "TEXT",
+      "name": "Typography/Heading/24/Medium-36",
+      "previousName": "GPN AI/Text/Heading/M"
+    },
+    {
+      "id": "S:2cbb88966dfa8322443bcd603e47746e6a6d42d0,",
+      "type": "TEXT",
+      "name": "Typography/Heading/16/Medium-24",
+      "previousName": "GPN AI/Text/Heading/S"
+    },
+    {
+      "id": "S:a027073915eff631ad573cf07b859b5832459dcd,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Regular-21",
+      "previousName": "GPN AI/Text/Body/M/Regular"
+    },
+    {
+      "id": "S:352e68189f8aa9edbd9247b32f6c7dc67a4a51f1,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Medium-21",
+      "previousName": "GPN AI/Text/Body/M/Medium"
+    },
+    {
+      "id": "S:1eb44dc354d725a3d42539c36e17c31475bb3914,",
+      "type": "TEXT",
+      "name": "Typography/Control/14/Regular-16.8",
+      "previousName": "GPN AI/Text/Control/M"
+    },
+    {
+      "id": "S:99aeaa59961d7e3109f698d1fae1de86d3e774bc,",
+      "type": "TEXT",
+      "name": "Typography/Caption/12/Regular-16.8",
+      "previousName": "GPN AI/Text/Caption/S"
+    },
+    {
+      "id": "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Regular-16.8",
+      "previousName": "GPN AI/Text/Body/M/Regular/Line16.8"
+    },
+    {
+      "id": "S:ad121f8ff9204a415d45ca764441744e33c58648,",
+      "type": "TEXT",
+      "name": "Typography/Caption/8/SemiBold-23",
+      "previousName": "GPN AI/Text/Caption/XS/SemiBold/Line23"
+    },
+    {
+      "id": "S:ea4403c9054c5fb20aa36774305ca2b94718558e,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Regular-14",
+      "previousName": "GPN AI/Text/Body/M/Regular/Line14"
+    },
+    {
+      "id": "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,",
+      "type": "TEXT",
+      "name": "Typography/Control/14/Regular-32",
+      "previousName": "GPN AI/Text/Control/M/Regular/Line32"
+    },
+    {
+      "id": "S:5d620ffa6f8aae6a2cb22cd6f0e65f96a0f4aae0,",
+      "type": "TEXT",
+      "name": "Typography/Caption/12/Regular-20",
+      "previousName": "GPN AI/Text/Caption/S/Regular/Line20"
+    },
+    {
+      "id": "S:15e22f66c14f0258dab8927cb21ea1ffdea0ce64,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Medium-16.8",
+      "previousName": "GPN AI/Text/Body/M/Medium/Line16.8"
+    },
+    {
+      "id": "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,",
+      "type": "TEXT",
+      "name": "Typography/Caption/12/Regular-18",
+      "previousName": "GPN AI/Text/Caption/S/Regular/Line18"
+    },
+    {
+      "id": "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,",
+      "type": "TEXT",
+      "name": "Typography/Caption/12/Regular-14.4",
+      "previousName": "GPN AI/Text/Caption/S/Regular/Line14.4"
+    },
+    {
+      "id": "S:571cd1852a93290ea55d58b8235439e8a8812643,",
+      "type": "TEXT",
+      "name": "Typography/Caption/12/Regular-16.8-Alternate",
+      "previousName": "GPN AI/Text/Caption/S/Regular/Line16.8"
+    },
+    {
+      "id": "S:cb7ec1e47e2150664a306530edc252c2f67056f6,",
+      "type": "TEXT",
+      "name": "Typography/Caption/12/Regular-16.8-Alternate3",
+      "previousName": "GPN AI/Text/Caption/S/Regular/Line16.8/2"
+    },
+    {
+      "id": "S:84fc65c897992317ce695253c09991824c65a56f,",
+      "type": "TEXT",
+      "name": "Typography/Caption/10/Regular-15",
+      "previousName": "GPN AI/Text/Caption/XS/Regular/Line15"
+    },
+    {
+      "id": "S:4141d97d5f1f8b820f5c5b15ece2d78de45e3a04,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Regular-19.6",
+      "previousName": "GPN AI/Text/Body/M/Regular/Line19.6"
+    },
+    {
+      "id": "S:c4f0f877421b7a410cd75fb913319d6362872f12,",
+      "type": "TEXT",
+      "name": "Typography/Heading/20/Bold-30",
+      "previousName": "GPN AI/Text/Heading/20/Bold/Line30"
+    },
+    {
+      "id": "S:e7cd507205d5ddfffdcb94550af9e9cf344ba3d7,",
+      "type": "TEXT",
+      "name": "Typography/Body/14/Italic-21",
+      "previousName": "GPN AI/Text/Body/M/Italic/Line21"
+    },
+    {
+      "id": "S:53d6b0bff8af4fa530ccc1297853fbfc6fe05a6b,",
+      "type": "EFFECT",
+      "name": "Effects/Shadow/Legacy/Soft",
+      "previousName": "Тень"
+    },
+    {
+      "id": "S:56d6bc143dbb9a547ecfaee11020801ae360277b,",
+      "type": "EFFECT",
+      "name": "Effects/Glow/Legacy/Offset",
+      "previousName": "ГАГ"
+    },
+    {
+      "id": "S:082358bb8e379545ca6d7b170b0f36e42e83976f,",
+      "type": "EFFECT",
+      "name": "Effects/Glow/Legacy/Composer",
+      "previousName": "Тень поле ввода"
+    },
+    {
+      "id": "S:f623831edddcbd20278a65d471c03e54c7a80d2d,",
+      "type": "EFFECT",
+      "name": "Effects/Shadow/Popover",
+      "previousName": "GPN AI/Effect/Popover"
+    },
+    {
+      "id": "S:4de757bfb70788a85ca24aec50e772d0ffd71564,",
+      "type": "EFFECT",
+      "name": "Effects/Shadow/Card",
+      "previousName": "GPN AI/Effect/Card"
+    },
+    {
+      "id": "S:1bab68253d246d94ad501a36b51c3056082ac786,",
+      "type": "EFFECT",
+      "name": "Effects/Glow/Composer",
+      "previousName": "GPN AI/Effect/Glow/Composer"
+    },
+    {
+      "id": "S:b0798c45246a4ad2079f9f3f17369a95dd20f4e5,",
+      "type": "EFFECT",
+      "name": "Effects/Glow/Home",
+      "previousName": "GPN AI/Effect/Glow/Home"
+    },
+    {
+      "id": "S:34b39e3abff8621f4439bc0991f10a627d1d3225,",
+      "type": "EFFECT",
+      "name": "Effects/Glow/Chat",
+      "previousName": "GPN AI/Effect/Glow/Chat"
+    },
+    {
+      "id": "S:eb8444ba68e78fad98e398d2202ca5d3da2366ac,",
+      "type": "EFFECT",
+      "name": "Effects/Glow/Project",
+      "previousName": "GPN AI/Effect/Glow/Project"
+    }
+  ]
+}
