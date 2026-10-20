@@ -89,7 +89,8 @@
     "--gpn-ai-shadow-card": "0 2px 6px 0 rgba(112, 132, 255, 0.025), 0 8px 20px 0 rgba(112, 132, 255, 0.045)",
     "--gpn-ai-background-haze-dense": "rgba(255, 255, 255, 0.95)",
     "--gpn-ai-background-haze-transparent": "rgba(255, 255, 255, 0)",
-    "--gpn-ai-background-overlay": "rgba(16, 42, 58, 0.48)"
+    "--gpn-ai-background-overlay": "rgba(16, 42, 58, 0.48)",
+    "--gpn-ai-control-background-selected": "rgb(223, 241, 255)"
   },
   "dark": {
     "--gpn-ai-border-composer": "rgba(149, 140, 255, 0.19)",
@@ -161,6 +162,7 @@
     "--gpn-ai-shadow-card": "0 2px 6px 0 rgba(135, 118, 255, 0.03625), 0 8px 20px 0 rgba(135, 118, 255, 0.06525)",
     "--gpn-ai-background-haze-dense": "rgba(25, 35, 46, 0.95)",
     "--gpn-ai-background-haze-transparent": "rgba(25, 35, 46, 0)",
-    "--gpn-ai-background-overlay": "rgba(5, 10, 16, 0.64)"
+    "--gpn-ai-background-overlay": "rgba(5, 10, 16, 0.64)",
+    "--gpn-ai-control-background-selected": "rgb(23, 61, 89)"
   }
 }

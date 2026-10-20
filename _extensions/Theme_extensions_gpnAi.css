@@ -91,6 +91,7 @@
   --gpn-ai-background-haze-dense: rgba(255, 255, 255, 0.95);
   --gpn-ai-background-haze-transparent: rgba(255, 255, 255, 0);
   --gpn-ai-background-overlay: rgba(16, 42, 58, 0.48);
+  --gpn-ai-control-background-selected: rgb(223, 241, 255);
 }
 
 .Theme_color_gpnAiDark {
@@ -164,4 +165,5 @@
   --gpn-ai-background-haze-dense: rgba(25, 35, 46, 0.95);
   --gpn-ai-background-haze-transparent: rgba(25, 35, 46, 0);
   --gpn-ai-background-overlay: rgba(5, 10, 16, 0.64);
+  --gpn-ai-control-background-selected: rgb(23, 61, 89);
 }

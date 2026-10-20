@@ -119,3 +119,7 @@ Existing styles were renamed in place on 2026-10-20. IDs, values, variable bindi
 - `Effects/Glow`: Home, Chat, Project, Composer; older effects are under Legacy.
 
 `tokens/figma-styles.json` records the original and current names with stable Figma style IDs. CSS token names are unchanged by this organization pass.
+
+## Selected control background
+
+`ChoiceGroup/Module/Item` variants with `View=Secondary 2` use `color/control/background-selected`, exposed as `--gpn-ai-control-background-selected`. Figma style: `Color/Background/Control/Selected`. Light preserves the designer's blue (#DFF1FF); Dark uses #173D59. Examples are documented in both color reference themes. The catalog screen uses `Color/Background/Haze/Top`.

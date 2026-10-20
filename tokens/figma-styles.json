@@ -205,6 +205,11 @@
       "type": "EFFECT",
       "name": "Effects/Glow/Project",
       "previousName": "GPN AI/Effect/Glow/Project"
+    },
+    {
+      "id": "S:7d9cc9d1f24284359c2081fb4412ec3a5f890cc3,",
+      "type": "PAINT",
+      "name": "Color/Background/Control/Selected"
     }
   ]
 }
