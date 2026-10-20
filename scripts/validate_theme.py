@@ -76,3 +76,19 @@ check(space["--space-m"] == "16px" and space["--space-xl"] == "24px", "Spacing s
 config = json.loads((ROOT / "ConstructorConfigGpnAi.json").read_text())
 check(config["theme"]["radius"] == 4 and config["theme"]["space"] == 2, "Constructor geometry changed")
 print("PASS: JSON/CSS consistency, imports, font assets, both color scopes, Figma roles, glows, geometry.")
+
+# Verify every exported semantic token and its CSS/JSON counterpart in both modes.
+ext_source = (ROOT / "_extensions/Theme_extensions_gpnAi.css").read_text()
+for mode, suffix in [("light", "Light"), ("dark", "Dark")]:
+    block = re.search(r"\.Theme_color_gpnAi" + suffix + r"\s*\{([^}]+)\}", ext_source).group(1)
+    css_mode = dict((k, v.strip()) for k, v in DECL.findall(block))
+    check(css_mode == ext[mode], f"Extension CSS/JSON mismatch: {mode}")
+    for token in snapshot["tokens"]:
+        key = "--gpn-ai-" + token["name"].removeprefix("color/").replace("/", "-")
+        expected = token[mode]
+        expected_rgba = tuple(round(expected[k] * 255) for k in ["r", "g", "b"]) + (expected.get("a", 1),)
+        check(all(abs(a-b) < 0.0001 for a,b in zip(rgb(ext[mode][key]), expected_rgba)), f"Extension Figma mismatch: {mode} {key}")
+for name in ["--gpn-ai-haze", "--gpn-ai-haze-bottom"]:
+    check(ext["shared"][name].count("var(") == 4, f"Expected four Haze stops: {name}")
+check("180deg" in ext["shared"]["--gpn-ai-haze"] and "0deg" in ext["shared"]["--gpn-ai-haze-bottom"], "Haze directions must be opposite")
+print("PASS: all semantic colors, Haze directions, and mode-specific extension CSS/JSON.")

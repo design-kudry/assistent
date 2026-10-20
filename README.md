@@ -1,6 +1,6 @@
 # Тема gpn.ai для Consta
 
-Два пресета: `presetGpnAiLight` и `presetGpnAiDark`. Цвета синхронизированы со снимком переменных Figma от 16.10.2026. Основной акцент — `#008EFA`; обычный Control — `#426A80` / `#B3C6D5`.
+Два пресета: `presetGpnAiLight` и `presetGpnAiDark`. Цвета синхронизированы со снимком переменных Figma от 20.10.2026. Основной акцент — `#008EFA`; обычный Control — `#426A80` / `#B3C6D5`.
 
 ## Подключение
 
@@ -85,3 +85,26 @@ python3 scripts/validate_theme.py
 - [UI-kit и переменные Figma](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=2536-19469)
 - [Theme — Consta](https://uikit.consta.design/libs/uikit/components-theme-stable/dev)
 - [Конструктор тем](https://consta-design-system.github.io/#/theme-constructor)
+
+## Haze and Overlay
+
+Synced with the Figma color reference on 2026-10-20. New style names and token identifiers use English.
+
+| Figma style | CSS variable | Usage |
+| --- | --- | --- |
+| `GPN AI/Fill/Haze` | `--gpn-ai-haze` | Opaque top, transparent bottom |
+| `GPN AI/Fill/Haze/Bottom` | `--gpn-ai-haze-bottom` | Opaque bottom, transparent top |
+| `GPN AI/Fill/Overlay` | `--gpn-ai-background-overlay` | Modal backdrop |
+
+```css
+.ChatHeader { background: var(--gpn-ai-haze); }
+.ChatFooter { background: var(--gpn-ai-haze-bottom); }
+.ModalBackdrop {
+  background: var(--gpn-ai-background-overlay);
+  opacity: 1;
+}
+```
+
+Haze uses four stops (0%, 45%, 75%, 100%) with opacity 100%, 100%, 95%, 0%. Light uses #FFFFFF; Dark uses #19232E, including the transparent endpoint to avoid a pale fringe. Overlay uses #102A3A at 48% in Light and #050A10 at 64% in Dark. Do not add layer opacity: alpha is already in the token. Both follow the Consta color modifier.
+
+`raised` remains a compatibility token and now resolves to `surface` in both themes. Existing CSS names are retained. Update this repository and the [Figma color reference](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=20965-146584) together whenever product colors or gradients change. This is a manual synchronization workflow, not a background watcher.
