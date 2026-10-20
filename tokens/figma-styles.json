@@ -29,128 +29,128 @@
     {
       "id": "S:9a72808ae23378a552830a3705c88c8478ca7cdc,",
       "type": "TEXT",
-      "name": "Typography/Heading/32/Regular-48",
-      "previousName": "GPN AI/Text/Heading/L"
+      "name": "Typography/Heading/L",
+      "previousName": "Typography/Heading/32/Regular-48"
     },
     {
       "id": "S:125ad08aef6e9975d5a371abf2c1bb9848e2bd0e,",
       "type": "TEXT",
-      "name": "Typography/Heading/24/Medium-36",
-      "previousName": "GPN AI/Text/Heading/M"
+      "name": "Typography/Heading/M",
+      "previousName": "Typography/Heading/24/Medium-36"
     },
     {
       "id": "S:2cbb88966dfa8322443bcd603e47746e6a6d42d0,",
       "type": "TEXT",
-      "name": "Typography/Heading/16/Medium-24",
-      "previousName": "GPN AI/Text/Heading/S"
+      "name": "Typography/Heading/XS",
+      "previousName": "Typography/Heading/16/Medium-24"
     },
     {
       "id": "S:a027073915eff631ad573cf07b859b5832459dcd,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Regular-21",
-      "previousName": "GPN AI/Text/Body/M/Regular"
+      "name": "Typography/Body/Regular",
+      "previousName": "Typography/Body/14/Regular-21"
     },
     {
       "id": "S:352e68189f8aa9edbd9247b32f6c7dc67a4a51f1,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Medium-21",
-      "previousName": "GPN AI/Text/Body/M/Medium"
+      "name": "Typography/Body/Medium",
+      "previousName": "Typography/Body/14/Medium-21"
     },
     {
       "id": "S:1eb44dc354d725a3d42539c36e17c31475bb3914,",
       "type": "TEXT",
-      "name": "Typography/Control/14/Regular-16.8",
-      "previousName": "GPN AI/Text/Control/M"
+      "name": "Typography/Control/Regular",
+      "previousName": "Typography/Control/14/Regular-16.8"
     },
     {
       "id": "S:99aeaa59961d7e3109f698d1fae1de86d3e774bc,",
       "type": "TEXT",
-      "name": "Typography/Caption/12/Regular-16.8",
-      "previousName": "GPN AI/Text/Caption/S"
+      "name": "Typography/Caption/Regular",
+      "previousName": "Typography/Caption/12/Regular-16.8"
     },
     {
       "id": "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Regular-16.8",
-      "previousName": "GPN AI/Text/Body/M/Regular/Line16.8"
+      "name": "Typography/Body/Compact-Regular",
+      "previousName": "Typography/Body/14/Regular-16.8"
     },
     {
       "id": "S:ad121f8ff9204a415d45ca764441744e33c58648,",
       "type": "TEXT",
-      "name": "Typography/Caption/8/SemiBold-23",
-      "previousName": "GPN AI/Text/Caption/XS/SemiBold/Line23"
+      "name": "Typography/Micro/Label",
+      "previousName": "Typography/Caption/8/SemiBold-23"
     },
     {
       "id": "S:ea4403c9054c5fb20aa36774305ca2b94718558e,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Regular-14",
-      "previousName": "GPN AI/Text/Body/M/Regular/Line14"
+      "name": "Typography/Body/Tight",
+      "previousName": "Typography/Body/14/Regular-14"
     },
     {
       "id": "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,",
       "type": "TEXT",
-      "name": "Typography/Control/14/Regular-32",
-      "previousName": "GPN AI/Text/Control/M/Regular/Line32"
+      "name": "Typography/Control/Tall",
+      "previousName": "Typography/Control/14/Regular-32"
     },
     {
       "id": "S:5d620ffa6f8aae6a2cb22cd6f0e65f96a0f4aae0,",
       "type": "TEXT",
-      "name": "Typography/Caption/12/Regular-20",
-      "previousName": "GPN AI/Text/Caption/S/Regular/Line20"
+      "name": "Typography/Caption/Tall",
+      "previousName": "Typography/Caption/12/Regular-20"
     },
     {
       "id": "S:15e22f66c14f0258dab8927cb21ea1ffdea0ce64,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Medium-16.8",
-      "previousName": "GPN AI/Text/Body/M/Medium/Line16.8"
+      "name": "Typography/Body/Compact-Medium",
+      "previousName": "Typography/Body/14/Medium-16.8"
     },
     {
       "id": "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,",
       "type": "TEXT",
-      "name": "Typography/Caption/12/Regular-18",
-      "previousName": "GPN AI/Text/Caption/S/Regular/Line18"
+      "name": "Typography/Caption/Relaxed",
+      "previousName": "Typography/Caption/12/Regular-18"
     },
     {
       "id": "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,",
       "type": "TEXT",
-      "name": "Typography/Caption/12/Regular-14.4",
-      "previousName": "GPN AI/Text/Caption/S/Regular/Line14.4"
+      "name": "Typography/Caption/Compact",
+      "previousName": "Typography/Caption/12/Regular-14.4"
     },
     {
       "id": "S:571cd1852a93290ea55d58b8235439e8a8812643,",
       "type": "TEXT",
-      "name": "Typography/Caption/12/Regular-16.8-Alternate",
-      "previousName": "GPN AI/Text/Caption/S/Regular/Line16.8"
+      "name": "Typography/Caption/Regular-Relative",
+      "previousName": "Typography/Caption/12/Regular-16.8-Alternate"
     },
     {
       "id": "S:cb7ec1e47e2150664a306530edc252c2f67056f6,",
       "type": "TEXT",
-      "name": "Typography/Caption/12/Regular-16.8-Alternate3",
-      "previousName": "GPN AI/Text/Caption/S/Regular/Line16.8/2"
+      "name": "Typography/Caption/Link",
+      "previousName": "Typography/Caption/12/Regular-16.8-Alternate3"
     },
     {
       "id": "S:84fc65c897992317ce695253c09991824c65a56f,",
       "type": "TEXT",
-      "name": "Typography/Caption/10/Regular-15",
-      "previousName": "GPN AI/Text/Caption/XS/Regular/Line15"
+      "name": "Typography/Micro/Regular",
+      "previousName": "Typography/Caption/10/Regular-15"
     },
     {
       "id": "S:4141d97d5f1f8b820f5c5b15ece2d78de45e3a04,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Regular-19.6",
-      "previousName": "GPN AI/Text/Body/M/Regular/Line19.6"
+      "name": "Typography/Body/Dense",
+      "previousName": "Typography/Body/14/Regular-19.6"
     },
     {
       "id": "S:c4f0f877421b7a410cd75fb913319d6362872f12,",
       "type": "TEXT",
-      "name": "Typography/Heading/20/Bold-30",
-      "previousName": "GPN AI/Text/Heading/20/Bold/Line30"
+      "name": "Typography/Heading/S",
+      "previousName": "Typography/Heading/20/Bold-30"
     },
     {
       "id": "S:e7cd507205d5ddfffdcb94550af9e9cf344ba3d7,",
       "type": "TEXT",
-      "name": "Typography/Body/14/Italic-21",
-      "previousName": "GPN AI/Text/Body/M/Italic/Line21"
+      "name": "Typography/Body/Italic",
+      "previousName": "Typography/Body/14/Italic-21"
     },
     {
       "id": "S:53d6b0bff8af4fa530ccc1297853fbfc6fe05a6b,",
@@ -210,6 +210,11 @@
       "id": "S:7d9cc9d1f24284359c2081fb4412ec3a5f890cc3,",
       "type": "PAINT",
       "name": "Color/Background/Control/Selected"
+    },
+    {
+      "id": "S:1825175c5999acbc0a8e19980920a872531b669f,",
+      "type": "PAINT",
+      "name": "Color/Background/Glow/Catalog"
     }
   ]
 }

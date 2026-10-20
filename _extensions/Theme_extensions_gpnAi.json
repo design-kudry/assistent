@@ -17,7 +17,12 @@
     "--gpn-ai-caption-size": "12px",
     "--gpn-ai-caption-line-height": "16.8px",
     "--gpn-ai-haze": "linear-gradient(180deg, var(--gpn-ai-background-surface) 0%, var(--gpn-ai-background-surface) 45%, var(--gpn-ai-background-haze-dense) 75%, var(--gpn-ai-background-haze-transparent) 100%)",
-    "--gpn-ai-haze-bottom": "linear-gradient(0deg, var(--gpn-ai-background-surface) 0%, var(--gpn-ai-background-surface) 45%, var(--gpn-ai-background-haze-dense) 75%, var(--gpn-ai-background-haze-transparent) 100%)"
+    "--gpn-ai-haze-bottom": "linear-gradient(0deg, var(--gpn-ai-background-surface) 0%, var(--gpn-ai-background-surface) 45%, var(--gpn-ai-background-haze-dense) 75%, var(--gpn-ai-background-haze-transparent) 100%)",
+    "--gpn-ai-catalog-glow": "radial-gradient(ellipse at 50% 44%, var(--gpn-ai-effect-catalog-center) 0%, var(--gpn-ai-effect-catalog-soft) 38%, var(--gpn-ai-effect-catalog-transparent) 78%)",
+    "--gpn-ai-catalog-glow-blur": "32px",
+    "--gpn-ai-catalog-glow-width": "1000px",
+    "--gpn-ai-catalog-glow-height": "540px",
+    "--gpn-ai-catalog-glow-top": "230px"
   },
   "light": {
     "--gpn-ai-border-composer": "rgba(82, 116, 255, 0.1)",
@@ -90,7 +95,10 @@
     "--gpn-ai-background-haze-dense": "rgba(255, 255, 255, 0.95)",
     "--gpn-ai-background-haze-transparent": "rgba(255, 255, 255, 0)",
     "--gpn-ai-background-overlay": "rgba(16, 42, 58, 0.48)",
-    "--gpn-ai-control-background-selected": "rgb(223, 241, 255)"
+    "--gpn-ai-control-background-selected": "rgb(223, 241, 255)",
+    "--gpn-ai-effect-catalog-center": "rgba(112, 132, 255, 0.202)",
+    "--gpn-ai-effect-catalog-soft": "rgba(112, 132, 255, 0.102)",
+    "--gpn-ai-effect-catalog-transparent": "rgba(112, 132, 255, 0)"
   },
   "dark": {
     "--gpn-ai-border-composer": "rgba(149, 140, 255, 0.19)",
@@ -163,6 +171,9 @@
     "--gpn-ai-background-haze-dense": "rgba(25, 35, 46, 0.95)",
     "--gpn-ai-background-haze-transparent": "rgba(25, 35, 46, 0)",
     "--gpn-ai-background-overlay": "rgba(5, 10, 16, 0.64)",
-    "--gpn-ai-control-background-selected": "rgb(23, 61, 89)"
+    "--gpn-ai-control-background-selected": "rgb(23, 61, 89)",
+    "--gpn-ai-effect-catalog-center": "rgba(135, 118, 255, 0.249)",
+    "--gpn-ai-effect-catalog-soft": "rgba(135, 118, 255, 0.119)",
+    "--gpn-ai-effect-catalog-transparent": "rgba(135, 118, 255, 0)"
   }
 }

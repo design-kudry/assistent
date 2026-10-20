@@ -114,7 +114,7 @@ Haze uses four stops (0%, 45%, 75%, 100%) with opacity 100%, 100%, 95%, 0%. Ligh
 Existing styles were renamed in place on 2026-10-20. IDs, values, variable bindings and component links are preserved; no styles were recreated or deleted.
 
 - `Color/Background`: Avatar, Overlay and Haze/Top, Haze/Bottom.
-- `Typography/{Heading,Body,Control,Caption}/{font size}/{weight}-{line height}`: sizes and line heights are in px. Existing alternate styles retain distinct IDs.
+- `Typography/{Heading,Body,Control,Caption,Micro}/{role}`: readable role names. Exact font sizes, weights and line heights are documented in each Figma style description. Existing styles retain distinct IDs.
 - `Effects/Shadow`: Card, Popover; older shadows are under Legacy.
 - `Effects/Glow`: Home, Chat, Project, Composer; older effects are under Legacy.
 
@@ -123,3 +123,22 @@ Existing styles were renamed in place on 2026-10-20. IDs, values, variable bindi
 ## Selected control background
 
 `ChoiceGroup/Module/Item` variants with `View=Secondary 2` use `color/control/background-selected`, exposed as `--gpn-ai-control-background-selected`. Figma style: `Color/Background/Control/Selected`. Light preserves the designer's blue (#DFF1FF); Dark uses #173D59. Examples are documented in both color reference themes. The catalog screen uses `Color/Background/Haze/Top`.
+
+## Catalog production glow
+
+Source: `design-kudry/kudry-server/gpn-ai/dist/style.css`, checked 2026-10-20. Figma style: `Color/Background/Glow/Catalog`. Keep the glow on a separate layer behind content; layer blur is not a blur of the content.
+
+```css
+.Catalog { position: relative; isolation: isolate; overflow: hidden; }
+.Catalog::before {
+  content: ''; position: absolute; z-index: -1; pointer-events: none;
+  left: 50%; top: var(--gpn-ai-catalog-glow-top);
+  width: min(var(--gpn-ai-catalog-glow-width), 110%);
+  height: var(--gpn-ai-catalog-glow-height);
+  transform: translateX(-50%);
+  background: var(--gpn-ai-catalog-glow);
+  filter: blur(var(--gpn-ai-catalog-glow-blur));
+}
+```
+
+Typography now uses semantic names such as `Typography/Heading/L`, `Typography/Body/Regular`, `Typography/Body/Compact-Regular`, `Typography/Caption/Link`. `Regular-Relative` preserves the existing proportional line-height variant. No font metrics or style IDs changed.
