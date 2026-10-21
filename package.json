@@ -1,0 +1,42 @@
+{
+  "name": "@design-kudry/gpn-ai-theme",
+  "version": "1.0.0",
+  "description": "Тема gpn.ai для @consta/uikit: светлый и тёмный пресеты, токены Figma, типографика и настройки компонентов.",
+  "license": "UNLICENSED",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/design-kudry/assistent.git"
+  },
+  "main": "index.ts",
+  "types": "index.ts",
+  "sideEffects": [
+    "*.css",
+    "presets/*.ts"
+  ],
+  "files": [
+    "index.ts",
+    "typography.ts",
+    "Theme.css",
+    "presets",
+    "_color",
+    "_components",
+    "_control",
+    "_extensions",
+    "_font",
+    "_shadow",
+    "_size",
+    "_space",
+    "tokens",
+    "examples",
+    "ConstructorConfigGpnAi.json",
+    "CHANGELOG.md"
+  ],
+  "peerDependencies": {
+    "@consta/uikit": "5.33.3",
+    "react": ">=18"
+  },
+  "scripts": {
+    "validate": "python3 scripts/validate_theme.py"
+  }
+}
