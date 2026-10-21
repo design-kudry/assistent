@@ -214,7 +214,6 @@
   --gpn-ai-caption-badge-font-weight: 600;
   --gpn-ai-caption-badge-font-style: normal;
 }
-
 .Theme_color_gpnAiLight {
   --gpn-ai-border-composer: rgba(82, 116, 255, 0.1);
   --gpn-ai-action-primary-background: rgb(0, 142, 250);
@@ -298,8 +297,12 @@
   --gpn-ai-effect-list-shadow-blur: 28px;
   --gpn-ai-effect-list-shadow-offset-y: 8px;
   --gpn-ai-shadow-list: 0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow);
+  --gpn-ai-action-primary-background-hover: rgb(51, 165, 251);
+  --gpn-ai-action-secondary-border-hover: rgb(51, 165, 251);
+  --gpn-ai-action-secondary-text-hover: rgb(51, 165, 251);
+  --gpn-ai-action-ghost-background-hover: rgba(16, 42, 58, 0.08);
+  --gpn-ai-action-clear-background-hover: rgba(16, 42, 58, 0.06);
 }
-
 .Theme_color_gpnAiDark {
   --gpn-ai-border-composer: rgba(149, 140, 255, 0.19);
   --gpn-ai-action-primary-background: rgb(0, 142, 250);
@@ -383,4 +386,9 @@
   --gpn-ai-effect-list-shadow-blur: 32px;
   --gpn-ai-effect-list-shadow-offset-y: 12px;
   --gpn-ai-shadow-list: 0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow);
+  --gpn-ai-action-primary-background-hover: rgb(51, 165, 251);
+  --gpn-ai-action-secondary-border-hover: rgb(51, 165, 251);
+  --gpn-ai-action-secondary-text-hover: rgb(51, 165, 251);
+  --gpn-ai-action-ghost-background-hover: rgba(229, 237, 245, 0.08);
+  --gpn-ai-action-clear-background-hover: rgba(229, 237, 245, 0.06);
 }

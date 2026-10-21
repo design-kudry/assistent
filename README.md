@@ -250,3 +250,14 @@ npm run build
 | `tokens/` | Снимки Figma |
 | `examples/` | Пример подключения |
 | `tests/`, `scripts/` | Проверки |
+
+## Button hover
+
+Existing `Hover=on` variants in Figma now use semantic colors in both themes. The Light/Dark color reference includes examples.
+
+- Primary: background `#33A5FB`; white label and icons remain unchanged.
+- Secondary: border, label and icons `#33A5FB`; background stays transparent.
+- Ghost: neutral background at 8% opacity.
+- Clear: neutral background at 6% opacity.
+
+Light neutral is `#102A3A`, Dark neutral is `#E5EDF5`. Tokens are under `color/action/{primary,secondary,ghost,clear}` with the `-hover` suffix. Consta hover variables reference these tokens directly. Disabled variants keep their existing appearance.

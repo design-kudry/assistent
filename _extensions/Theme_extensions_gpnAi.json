@@ -296,7 +296,12 @@
     "--gpn-ai-status-success-text": "rgb(7, 136, 93)",
     "--gpn-ai-effect-list-shadow-blur": "28px",
     "--gpn-ai-effect-list-shadow-offset-y": "8px",
-    "--gpn-ai-shadow-list": "0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow)"
+    "--gpn-ai-shadow-list": "0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow)",
+    "--gpn-ai-action-primary-background-hover": "rgb(51, 165, 251)",
+    "--gpn-ai-action-secondary-border-hover": "rgb(51, 165, 251)",
+    "--gpn-ai-action-secondary-text-hover": "rgb(51, 165, 251)",
+    "--gpn-ai-action-ghost-background-hover": "rgba(16, 42, 58, 0.08)",
+    "--gpn-ai-action-clear-background-hover": "rgba(16, 42, 58, 0.06)"
   },
   "dark": {
     "--gpn-ai-border-composer": "rgba(149, 140, 255, 0.19)",
@@ -380,6 +385,11 @@
     "--gpn-ai-status-success-text": "rgb(117, 221, 183)",
     "--gpn-ai-effect-list-shadow-blur": "32px",
     "--gpn-ai-effect-list-shadow-offset-y": "12px",
-    "--gpn-ai-shadow-list": "0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow)"
+    "--gpn-ai-shadow-list": "0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow)",
+    "--gpn-ai-action-primary-background-hover": "rgb(51, 165, 251)",
+    "--gpn-ai-action-secondary-border-hover": "rgb(51, 165, 251)",
+    "--gpn-ai-action-secondary-text-hover": "rgb(51, 165, 251)",
+    "--gpn-ai-action-ghost-background-hover": "rgba(229, 237, 245, 0.08)",
+    "--gpn-ai-action-clear-background-hover": "rgba(229, 237, 245, 0.06)"
   }
 }

@@ -1607,6 +1607,111 @@
       "code": {
         "WEB": "var(--color-status-success-text)"
       }
+    },
+    {
+      "id": "VariableID:21430:20436",
+      "name": "color/action/primary/background-hover",
+      "values": {
+        "Light": {
+          "r": 0.20000000298023224,
+          "g": 0.6470588445663452,
+          "b": 0.9843137264251709,
+          "a": 1
+        },
+        "Dark": {
+          "r": 0.20000000298023224,
+          "g": 0.6470588445663452,
+          "b": 0.9843137264251709,
+          "a": 1
+        }
+      },
+      "code": {
+        "WEB": "var(--gpn-ai-action-primary-background-hover)"
+      }
+    },
+    {
+      "id": "VariableID:21430:20437",
+      "name": "color/action/secondary/border-hover",
+      "values": {
+        "Light": {
+          "r": 0.20000000298023224,
+          "g": 0.6470588445663452,
+          "b": 0.9843137264251709,
+          "a": 1
+        },
+        "Dark": {
+          "r": 0.20000000298023224,
+          "g": 0.6470588445663452,
+          "b": 0.9843137264251709,
+          "a": 1
+        }
+      },
+      "code": {
+        "WEB": "var(--gpn-ai-action-secondary-border-hover)"
+      }
+    },
+    {
+      "id": "VariableID:21430:20438",
+      "name": "color/action/secondary/text-hover",
+      "values": {
+        "Light": {
+          "r": 0.20000000298023224,
+          "g": 0.6470588445663452,
+          "b": 0.9843137264251709,
+          "a": 1
+        },
+        "Dark": {
+          "r": 0.20000000298023224,
+          "g": 0.6470588445663452,
+          "b": 0.9843137264251709,
+          "a": 1
+        }
+      },
+      "code": {
+        "WEB": "var(--gpn-ai-action-secondary-text-hover)"
+      }
+    },
+    {
+      "id": "VariableID:21430:20439",
+      "name": "color/action/ghost/background-hover",
+      "values": {
+        "Light": {
+          "r": 0.062745101749897,
+          "g": 0.16470588743686676,
+          "b": 0.22745098173618317,
+          "a": 0.07999999821186066
+        },
+        "Dark": {
+          "r": 0.8980392217636108,
+          "g": 0.929411768913269,
+          "b": 0.9607843160629272,
+          "a": 0.07999999821186066
+        }
+      },
+      "code": {
+        "WEB": "var(--gpn-ai-action-ghost-background-hover)"
+      }
+    },
+    {
+      "id": "VariableID:21430:20440",
+      "name": "color/action/clear/background-hover",
+      "values": {
+        "Light": {
+          "r": 0.062745101749897,
+          "g": 0.16470588743686676,
+          "b": 0.22745098173618317,
+          "a": 0.05999999865889549
+        },
+        "Dark": {
+          "r": 0.8980392217636108,
+          "g": 0.929411768913269,
+          "b": 0.9607843160629272,
+          "a": 0.05999999865889549
+        }
+      },
+      "code": {
+        "WEB": "var(--gpn-ai-action-clear-background-hover)"
+      }
     }
   ]
 }
