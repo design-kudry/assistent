@@ -1,0 +1,40 @@
+name: Проверка темы
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    name: Токены и CSS
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 scripts/validate_theme.py
+
+  browser:
+    name: Компоненты в браузере
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install
+      - run: npx playwright install --with-deps chromium
+      - run: npm run typecheck
+      - run: npm run build
+      - name: Тест в обеих темах
+        run: |
+          npm run dev > vite.log 2>&1 &
+          npx --yes wait-on@8 -t 60000 http://127.0.0.1:4173/tests/index.html
+          npm test
+      - if: failure()
+        run: cat vite.log
