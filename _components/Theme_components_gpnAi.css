@@ -55,3 +55,14 @@
   line-height: var(--gpn-ai-caption-badge-line-height);
   font-weight: var(--gpn-ai-caption-badge-font-weight);
 }
+
+/* Compact Button/XS: 24px height comes from --control-height-xs. */
+.Theme_control_gpnAi .Button_size_xs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: var(--gpn-ai-caption-regular-line-height);
+}
+.Theme_control_gpnAi .Button_size_xs .Button-Label {
+  line-height: var(--gpn-ai-caption-regular-line-height);
+}

@@ -261,3 +261,11 @@ Existing `Hover=on` variants in Figma now use semantic colors in both themes. Th
 - Clear: neutral background at 6% opacity.
 
 Light neutral is `#102A3A`, Dark neutral is `#E5EDF5`. Tokens are under `color/action/{primary,secondary,ghost,clear}` with the `-hover` suffix. Consta hover variables reference these tokens directly. Disabled variants keep their existing appearance.
+
+## Compact buttons and read-only notice
+
+Figma `Button/XS` includes all 24 variants: Primary, Secondary, Ghost and Clear; text and icon-only; default, disabled and hover. Existing Button components are preserved.
+
+Use `<Button size="xs" />`: height 24px, text 12/16.8px, horizontal padding 10px and icon gap 8px. Icon-only buttons are 24 × 24px. Hover colors are shared with the regular buttons.
+
+The read-only notice on frame `21423:193998` uses existing semantic tokens: Surface for the base, `color/badge/accent/background` for the tint, `color/border/default` for the border, `color/text/primary` for text and `color/action/primary/background` for the icon. Both Light and Dark are supported. Its text, geometry and component link are preserved.
