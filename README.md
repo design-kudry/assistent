@@ -1,6 +1,6 @@
 # Тема gpn.ai для Consta
 
-Два пресета: `presetGpnAiLight` и `presetGpnAiDark`. Цвета синхронизированы со снимком переменных Figma от 20.10.2026. Основной акцент — `#008EFA`; обычный Control — `#426A80` / `#B3C6D5`.
+Два пресета: `presetGpnAiLight` и `presetGpnAiDark`. Цвета синхронизированы со снимком переменных Figma от 21.10.2026. Основной акцент — `#008EFA`; обычный Control — `#426A80` / `#B3C6D5`.
 
 ## Подключение
 
@@ -50,7 +50,7 @@ export function App({ dark = false }) {
   outline: 2px solid var(--color-control-bg-border-focus);
   outline-offset: 3px;
 }
-.Sidebar { background: var(--gpn-ai-bg-sidebar); }
+.Sidebar { background: var(--gpn-ai-background-surface); }
 .NavItemActive {
   color: var(--gpn-ai-nav-active-text);
   background: var(--gpn-ai-nav-active-bg);
@@ -142,3 +142,33 @@ Source: `design-kudry/kudry-server/gpn-ai/dist/style.css`, checked 2026-10-20. F
 ```
 
 Typography now uses semantic names such as `Typography/Heading/L`, `Typography/Body/Regular`, `Typography/Body/Compact-Regular`, `Typography/Caption/Link`. `Regular-Relative` preserves the existing proportional line-height variant. No font metrics or style IDs changed.
+
+
+## Design system sync — 2026-10-21
+
+The current Figma variables and all 26 text styles are recorded in `tokens/figma-variables.json` and `tokens/figma-styles.json`. Color values for both themes are in `tokens/figma-colors.json`.
+
+- Sidebar uses `color/background/surface`. The old CSS names `--gpn-ai-background-sidebar` and `--gpn-ai-bg-sidebar` are compatibility aliases to Surface; Sidebar is no longer a separate semantic token.
+- Active navigation background is `rgba(0, 32, 51, .05)` in Light and `rgba(229, 237, 245, .05)` in Dark.
+- List background, list shadow, context menu border, danger text and success tag colors now follow Figma.
+- `Effects/Shadow/List` is exposed as `--gpn-ai-shadow-list`: blur 28/32px and vertical offset 8/12px in Light/Dark.
+- Every WEB variable name recorded in Figma resolves in the theme. Alternate prefixes are aliases to the canonical `--gpn-ai-*` tokens; existing consumers continue to work.
+- `Heading/S` now means 20px / 30px, weight 700. Use `--gpn-ai-heading-xs-*` for the previous 16px / 24px medium heading. `Heading/M` remains 24px / 36px.
+- Prompt card badges use `Typography/Caption/Badge`: 12px / 24px, weight 600. `Micro/Badge` remains a separate 10px / 20px style.
+- Text style properties use `--gpn-ai-{category}-{role}-{size,line-height,font-weight,font-style}`; for example, `--gpn-ai-body-list-line-height` and `--gpn-ai-caption-badge-size`.
+
+```css
+.PromptBadge {
+  font-size: var(--gpn-ai-caption-badge-size);
+  line-height: var(--gpn-ai-caption-badge-line-height);
+  font-weight: var(--gpn-ai-caption-badge-font-weight);
+}
+.SuccessBadge { color: var(--gpn-ai-status-success-text); }
+.ContextMenu {
+  background: var(--gpn-ai-background-list);
+  border-color: var(--gpn-ai-border-context-menu);
+  box-shadow: var(--gpn-ai-shadow-list);
+}
+```
+
+Current Figma names include `Card/Assistant`, `Card/Prompt`, `PromptCatalog/Toolbar` and `Pagination/Module/Pages`. This repository provides theme values; component layout remains in the application.

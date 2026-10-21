@@ -92,3 +92,47 @@ for name in ["--gpn-ai-haze", "--gpn-ai-haze-bottom"]:
     check(ext["shared"][name].count("var(") == 4, f"Expected four Haze stops: {name}")
 check("180deg" in ext["shared"]["--gpn-ai-haze"] and "0deg" in ext["shared"]["--gpn-ai-haze-bottom"], "Haze directions must be opposite")
 print("PASS: all semantic colors, Haze directions, and mode-specific extension CSS/JSON.")
+
+# Check values behind Figma WEB aliases, including transitive aliases and cycles.
+def resolve_css(scope, name, seen=None):
+    seen = set() if seen is None else set(seen)
+    check(name not in seen, f"Cyclic variable: {name}")
+    check(name in scope, f"Missing variable: {name}")
+    seen.add(name)
+    value = scope[name]
+    alias = re.fullmatch(r"var\((--[\w-]+)\)", value)
+    return resolve_css(scope, alias[1], seen) if alias else value
+
+variables = json.loads((ROOT / "tokens/figma-variables.json").read_text())["variables"]
+style_snapshot = json.loads((ROOT / "tokens/figma-styles.json").read_text())
+shared_block = re.search(r"\.Theme\s*\{([^}]+)\}", ext_source).group(1)
+check(dict((k, v.strip()) for k, v in DECL.findall(shared_block)) == ext["shared"], "Shared extension CSS/JSON mismatch")
+check("color/background/sidebar" not in tokens, "Removed Sidebar semantic token was restored")
+for mode in ("light", "dark"):
+    scope = dict(ext["shared"], **ext[mode])
+    for var in variables:
+        syntax = var.get("code", {}).get("WEB")
+        if not syntax:
+            continue
+        alias = re.fullmatch(r"var\((--[\w-]+)\)", syntax)
+        check(alias is not None, f"Invalid WEB syntax: {var['name']}")
+        actual = resolve_css(scope, alias[1])
+        expected = var["values"].get(mode.title(), var["values"].get("Value"))
+        if isinstance(expected, dict):
+            expected_rgba = tuple(round(expected[k] * 255) for k in ("r", "g", "b")) + (expected.get("a", 1),)
+            check(all(abs(a-b) < .0001 for a, b in zip(rgb(actual), expected_rgba)), f"WEB alias value mismatch: {mode} {var['name']}")
+        else:
+            check(actual.endswith("px") and abs(float(actual[:-2]) - expected) < .0001, f"WEB numeric mismatch: {mode} {var['name']}")
+    check(resolve_css(scope, "--gpn-ai-bg-sidebar") == resolve_css(scope, "--gpn-ai-background-surface"), f"Sidebar compatibility mismatch: {mode}")
+    check(resolve_css(scope, "--gpn-ai-background-sidebar") == resolve_css(scope, "--gpn-ai-background-surface"), f"Sidebar alias mismatch: {mode}")
+    for ref in re.findall(r"var\((--[\w-]+)\)", scope["--gpn-ai-shadow-list"]):
+        resolve_css(scope, ref)
+    for style in style_snapshot["styles"]:
+        if style["type"] != "TEXT":
+            continue
+        prefix = "--gpn-ai-" + style["name"].removeprefix("Typography/").replace("/", "-").lower()
+        for suffix, expected in (("size", f"{style['fontSize']:g}px"), ("line-height", f"{style['lineHeight']:g}px"), ("font-weight", str(style["fontWeight"])), ("font-style", style["fontStyle"])):
+            check(scope[prefix + "-" + suffix] == expected, f"Text style mismatch: {style['name']} {suffix}")
+check(ext["shared"]["--gpn-ai-heading-s-size"] == "20px" and ext["shared"]["--gpn-ai-heading-xs-size"] == "16px", "Heading S/XS mapping mismatch")
+check(ext["shared"]["--gpn-ai-caption-badge-size"] == "12px" and ext["shared"]["--gpn-ai-caption-badge-line-height"] == "24px", "Prompt badge typography mismatch")
+print("PASS: Figma WEB aliases resolve to matching values, Surface compatibility, all text styles, and list shadow.")
