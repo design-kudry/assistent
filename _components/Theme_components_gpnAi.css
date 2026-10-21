@@ -1,0 +1,57 @@
+/* Consta 5.33.3. Loaded by both presets. Keep explicit brick/round forms. */
+.Theme_control_gpnAi .Button {
+  --control-radius: var(--gpn-ai-radius-999);
+}
+.Theme_control_gpnAi .Button_size_s {
+  --button-space: var(--gpn-ai-space-16);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: var(--gpn-ai-body-regular-line-height);
+}
+.Theme_control_gpnAi .Button_size_s .Button-Label {
+  line-height: var(--gpn-ai-body-regular-line-height);
+}
+.Theme_control_gpnAi .ChoiceGroup_form_default {
+  --choice-radius: var(--gpn-ai-radius-999);
+}
+.Theme_control_gpnAi .ChoiceGroup_size_s {
+  --choice-space: var(--gpn-ai-space-20);
+  --choice-space-indent: var(--gpn-ai-space-20);
+}
+.Theme_control_gpnAi .ChoiceGroup_size_s .ChoiceGroup-Label {
+  line-height: var(--gpn-ai-control-tall-line-height);
+}
+/* Secondary 2 is a product variant: add this class to ChoiceGroup. */
+.Theme_control_gpnAi .ChoiceGroup.DsChoiceGroup_secondary2 {
+  --choice-bg-color: var(--gpn-ai-control-background-selected);
+  --choice-text-color: var(--gpn-ai-control-default);
+}
+.Theme_control_gpnAi .DsChoiceGroup_secondary2 .ChoiceGroup-Label_checked {
+  box-shadow: none;
+}
+.Theme_control_gpnAi .TextField_size_s .TextField-Input,
+.Theme_control_gpnAi .Select_size_s .Select-Input {
+  line-height: var(--gpn-ai-body-regular-line-height);
+}
+/* Portals receive Theme modifiers from Consta. Cover wrapper and root placement. */
+.Theme_control_gpnAi .ListBox,
+.Theme_control_gpnAi.ListBox {
+  --control-radius: var(--gpn-ai-radius-20);
+  --shadow-layer: var(--gpn-ai-shadow-list);
+  background: var(--gpn-ai-background-list);
+}
+.Theme_control_gpnAi .ListBox_border,
+.Theme_control_gpnAi.ListBox_border {
+  border-color: var(--gpn-ai-border-context-menu);
+}
+.Theme_control_gpnAi .ListItem.Text_size_s {
+  line-height: var(--gpn-ai-body-list-line-height);
+}
+/* Use only on badges in prompt cards; other badge sizes remain available. */
+.Theme_control_gpnAi .Badge.DsPromptBadge {
+  height: var(--gpn-ai-caption-badge-line-height);
+  font-size: var(--gpn-ai-caption-badge-size);
+  line-height: var(--gpn-ai-caption-badge-line-height);
+  font-weight: var(--gpn-ai-caption-badge-font-weight);
+}

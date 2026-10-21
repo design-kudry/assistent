@@ -29,10 +29,10 @@
   --color-typo-link: rgb(0, 142, 250);
   --color-typo-link-minor: rgb(179, 198, 213);
   --color-typo-link-hover: rgb(51, 165, 251);
-  --color-control-bg-default: rgb(32, 45, 59);
+  --color-control-bg-default: rgb(25, 35, 46);
   --color-control-typo-default: rgb(179, 198, 213);
   --color-control-typo-placeholder: rgba(229, 237, 245, 0.45);
-  --color-control-bg-border-default: rgba(229, 237, 245, 0.2);
+  --color-control-bg-border-default: rgba(229, 237, 245, 0.08);
   --color-control-bg-border-default-hover: rgba(229, 237, 245, 0.32);
   --color-control-bg-border-focus: rgb(0, 142, 250);
   --color-control-bg-focus: rgba(0, 142, 250, 0.25);

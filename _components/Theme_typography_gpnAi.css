@@ -1,0 +1,158 @@
+/* Exact Figma text roles, usable on Consta Text or semantic HTML. */
+.Theme_font_gpnAi .DsText_heading-l {
+  font-size: var(--gpn-ai-heading-l-size);
+  line-height: var(--gpn-ai-heading-l-line-height);
+  font-weight: var(--gpn-ai-heading-l-font-weight);
+  font-style: var(--gpn-ai-heading-l-font-style);
+}
+.Theme_font_gpnAi .DsText_heading-m {
+  font-size: var(--gpn-ai-heading-m-size);
+  line-height: var(--gpn-ai-heading-m-line-height);
+  font-weight: var(--gpn-ai-heading-m-font-weight);
+  font-style: var(--gpn-ai-heading-m-font-style);
+}
+.Theme_font_gpnAi .DsText_heading-xs {
+  font-size: var(--gpn-ai-heading-xs-size);
+  line-height: var(--gpn-ai-heading-xs-line-height);
+  font-weight: var(--gpn-ai-heading-xs-font-weight);
+  font-style: var(--gpn-ai-heading-xs-font-style);
+}
+.Theme_font_gpnAi .DsText_body-regular {
+  font-size: var(--gpn-ai-body-regular-size);
+  line-height: var(--gpn-ai-body-regular-line-height);
+  font-weight: var(--gpn-ai-body-regular-font-weight);
+  font-style: var(--gpn-ai-body-regular-font-style);
+}
+.Theme_font_gpnAi .DsText_body-medium {
+  font-size: var(--gpn-ai-body-medium-size);
+  line-height: var(--gpn-ai-body-medium-line-height);
+  font-weight: var(--gpn-ai-body-medium-font-weight);
+  font-style: var(--gpn-ai-body-medium-font-style);
+}
+.Theme_font_gpnAi .DsText_control-regular {
+  font-size: var(--gpn-ai-control-regular-size);
+  line-height: var(--gpn-ai-control-regular-line-height);
+  font-weight: var(--gpn-ai-control-regular-font-weight);
+  font-style: var(--gpn-ai-control-regular-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-regular {
+  font-size: var(--gpn-ai-caption-regular-size);
+  line-height: var(--gpn-ai-caption-regular-line-height);
+  font-weight: var(--gpn-ai-caption-regular-font-weight);
+  font-style: var(--gpn-ai-caption-regular-font-style);
+}
+.Theme_font_gpnAi .DsText_body-compact-regular {
+  font-size: var(--gpn-ai-body-compact-regular-size);
+  line-height: var(--gpn-ai-body-compact-regular-line-height);
+  font-weight: var(--gpn-ai-body-compact-regular-font-weight);
+  font-style: var(--gpn-ai-body-compact-regular-font-style);
+}
+.Theme_font_gpnAi .DsText_micro-label {
+  font-size: var(--gpn-ai-micro-label-size);
+  line-height: var(--gpn-ai-micro-label-line-height);
+  font-weight: var(--gpn-ai-micro-label-font-weight);
+  font-style: var(--gpn-ai-micro-label-font-style);
+}
+.Theme_font_gpnAi .DsText_body-tight {
+  font-size: var(--gpn-ai-body-tight-size);
+  line-height: var(--gpn-ai-body-tight-line-height);
+  font-weight: var(--gpn-ai-body-tight-font-weight);
+  font-style: var(--gpn-ai-body-tight-font-style);
+}
+.Theme_font_gpnAi .DsText_control-tall {
+  font-size: var(--gpn-ai-control-tall-size);
+  line-height: var(--gpn-ai-control-tall-line-height);
+  font-weight: var(--gpn-ai-control-tall-font-weight);
+  font-style: var(--gpn-ai-control-tall-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-tall {
+  font-size: var(--gpn-ai-caption-tall-size);
+  line-height: var(--gpn-ai-caption-tall-line-height);
+  font-weight: var(--gpn-ai-caption-tall-font-weight);
+  font-style: var(--gpn-ai-caption-tall-font-style);
+}
+.Theme_font_gpnAi .DsText_body-compact-medium {
+  font-size: var(--gpn-ai-body-compact-medium-size);
+  line-height: var(--gpn-ai-body-compact-medium-line-height);
+  font-weight: var(--gpn-ai-body-compact-medium-font-weight);
+  font-style: var(--gpn-ai-body-compact-medium-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-relaxed {
+  font-size: var(--gpn-ai-caption-relaxed-size);
+  line-height: var(--gpn-ai-caption-relaxed-line-height);
+  font-weight: var(--gpn-ai-caption-relaxed-font-weight);
+  font-style: var(--gpn-ai-caption-relaxed-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-compact {
+  font-size: var(--gpn-ai-caption-compact-size);
+  line-height: var(--gpn-ai-caption-compact-line-height);
+  font-weight: var(--gpn-ai-caption-compact-font-weight);
+  font-style: var(--gpn-ai-caption-compact-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-regular-relative {
+  font-size: var(--gpn-ai-caption-regular-relative-size);
+  line-height: var(--gpn-ai-caption-regular-relative-line-height);
+  font-weight: var(--gpn-ai-caption-regular-relative-font-weight);
+  font-style: var(--gpn-ai-caption-regular-relative-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-link {
+  font-size: var(--gpn-ai-caption-link-size);
+  line-height: var(--gpn-ai-caption-link-line-height);
+  font-weight: var(--gpn-ai-caption-link-font-weight);
+  font-style: var(--gpn-ai-caption-link-font-style);
+  text-decoration: underline;
+}
+.Theme_font_gpnAi .DsText_micro-regular {
+  font-size: var(--gpn-ai-micro-regular-size);
+  line-height: var(--gpn-ai-micro-regular-line-height);
+  font-weight: var(--gpn-ai-micro-regular-font-weight);
+  font-style: var(--gpn-ai-micro-regular-font-style);
+}
+.Theme_font_gpnAi .DsText_body-dense {
+  font-size: var(--gpn-ai-body-dense-size);
+  line-height: var(--gpn-ai-body-dense-line-height);
+  font-weight: var(--gpn-ai-body-dense-font-weight);
+  font-style: var(--gpn-ai-body-dense-font-style);
+}
+.Theme_font_gpnAi .DsText_heading-s {
+  font-size: var(--gpn-ai-heading-s-size);
+  line-height: var(--gpn-ai-heading-s-line-height);
+  font-weight: var(--gpn-ai-heading-s-font-weight);
+  font-style: var(--gpn-ai-heading-s-font-style);
+}
+.Theme_font_gpnAi .DsText_body-italic {
+  font-size: var(--gpn-ai-body-italic-size);
+  line-height: var(--gpn-ai-body-italic-line-height);
+  font-weight: var(--gpn-ai-body-italic-font-weight);
+  font-style: var(--gpn-ai-body-italic-font-style);
+}
+.Theme_font_gpnAi .DsText_body-list {
+  font-size: var(--gpn-ai-body-list-size);
+  line-height: var(--gpn-ai-body-list-line-height);
+  font-weight: var(--gpn-ai-body-list-font-weight);
+  font-style: var(--gpn-ai-body-list-font-style);
+}
+.Theme_font_gpnAi .DsText_micro-badge {
+  font-size: var(--gpn-ai-micro-badge-size);
+  line-height: var(--gpn-ai-micro-badge-line-height);
+  font-weight: var(--gpn-ai-micro-badge-font-weight);
+  font-style: var(--gpn-ai-micro-badge-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-italic {
+  font-size: var(--gpn-ai-caption-italic-size);
+  line-height: var(--gpn-ai-caption-italic-line-height);
+  font-weight: var(--gpn-ai-caption-italic-font-weight);
+  font-style: var(--gpn-ai-caption-italic-font-style);
+}
+.Theme_font_gpnAi .DsText_micro-italic {
+  font-size: var(--gpn-ai-micro-italic-size);
+  line-height: var(--gpn-ai-micro-italic-line-height);
+  font-weight: var(--gpn-ai-micro-italic-font-weight);
+  font-style: var(--gpn-ai-micro-italic-font-style);
+}
+.Theme_font_gpnAi .DsText_caption-badge {
+  font-size: var(--gpn-ai-caption-badge-size);
+  line-height: var(--gpn-ai-caption-badge-line-height);
+  font-weight: var(--gpn-ai-caption-badge-font-weight);
+  font-style: var(--gpn-ai-caption-badge-font-style);
+}

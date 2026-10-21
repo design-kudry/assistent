@@ -39,7 +39,7 @@
       "lineHeight": 0
     },
     "space": 2,
-    "radius": 4,
+    "radius": 12,
     "shadow": {
       "colors": {
         "light": {

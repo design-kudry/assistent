@@ -1,9 +1,9 @@
 {
-  "--control-radius": "4px",
+  "--control-radius": "var(--gpn-ai-radius-12)",
   "--control-border-width": "1px",
   "--control-height-l": "var(--space-4xl)",
   "--control-height-m": "var(--space-3xl)",
-  "--control-height-s": "var(--space-2xl)",
+  "--control-height-s": "36px",
   "--control-height-xs": "var(--space-xl)",
   "--control-box-size-s": "var(--space-s)",
   "--control-box-size-m": "var(--space-m)",

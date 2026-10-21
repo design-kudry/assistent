@@ -8,6 +8,9 @@ import '../_space/Theme_space_gpnAi.css';
 import '../_shadow/Theme_shadow_gpnAi.css';
 import '../_extensions/Theme_extensions_gpnAi.css';
 
+import '../_components/Theme_components_gpnAi.css';
+import '../_components/Theme_typography_gpnAi.css';
+
 import type { ThemePreset } from '@consta/uikit/Theme';
 
 export const presetGpnAiDark: ThemePreset = {

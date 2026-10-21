@@ -23,6 +23,8 @@ def rgb(value):
 snapshot = json.loads((ROOT / "tokens/figma-colors.json").read_text())
 tokens = {x["name"]: x for x in snapshot["tokens"]}
 roles = {
+    "--color-control-bg-default": "color/background/surface",
+    "--color-control-bg-border-default": "color/border/default",
     "--color-typo-primary": "color/text/primary",
     "--color-typo-secondary": "color/text/secondary",
     "--color-typo-ghost": "color/text/tertiary",
@@ -32,9 +34,9 @@ roles = {
     "--color-bg-default": "color/background/surface",
     "--color-bg-secondary": "color/background/page",
 }
-for path in ROOT.rglob("*.json"):
+for path in (p for p in ROOT.rglob("*.json") if not {"node_modules", "dist"}.intersection(p.relative_to(ROOT).parts)):
     json.loads(path.read_text())
-for path in ROOT.rglob("*.css"):
+for path in (p for p in ROOT.rglob("*.css") if not {"node_modules", "dist"}.intersection(p.relative_to(ROOT).parts)):
     companion = path.with_suffix(".json")
     if companion.exists() and path.parent.name != "_extensions":
         check(declarations(path) == json.loads(companion.read_text()), f"CSS/JSON mismatch: {path}")
@@ -71,10 +73,11 @@ for mode, suffix in [("light", "Light"), ("dark", "Dark")]:
         check(len(re.findall(r"var\(", glow)) == 3, f"Expected three glow layers: {kind}")
 control = json.loads((ROOT / "_control/Theme_control_gpnAi.json").read_text())
 space = json.loads((ROOT / "_space/Theme_space_gpnAi.json").read_text())
-check(control["--control-radius"] == "4px", "Global control radius changed")
+check(control["--control-radius"] == "var(--gpn-ai-radius-12)", "Input radius must follow Figma")
+check(control["--control-height-s"] == "36px", "Figma control size s must be 36px")
 check(space["--space-m"] == "16px" and space["--space-xl"] == "24px", "Spacing scale changed")
 config = json.loads((ROOT / "ConstructorConfigGpnAi.json").read_text())
-check(config["theme"]["radius"] == 4 and config["theme"]["space"] == 2, "Constructor geometry changed")
+check(config["theme"]["radius"] == 12 and config["theme"]["space"] == 2, "Constructor geometry changed")
 print("PASS: JSON/CSS consistency, imports, font assets, both color scopes, Figma roles, glows, geometry.")
 
 # Verify every exported semantic token and its CSS/JSON counterpart in both modes.
