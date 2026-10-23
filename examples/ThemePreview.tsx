@@ -31,6 +31,9 @@ export function ThemePreview() {
           <Combobox size="s" placeholder="Select an assistant" items={items} value={selected} onChange={setSelected} />
         </div>
         <ChoiceGroup size="s" name="catalog" view="secondary" className="DsChoiceGroup_secondary2" items={items} value={selected} onChange={setSelected} />
+        <ChoiceGroup size="s" name="primary" view="primary" className="AuditChoicePrimary" items={[...items, { id: 3, label: 'Projects' }, { id: 4, label: 'Chats' }]} value={selected} onChange={setSelected} />
+        <ChoiceGroup size="s" name="ghost" view="ghost" className="AuditChoiceGhost" items={items} value={selected} onChange={setSelected} />
+        <ChoiceGroup size="s" name="disabled" view="secondary" disabled className="DsChoiceGroup_secondary2 AuditChoiceDisabled" items={items} value={selected} onChange={setSelected} />
         <div><Badge className="DsPromptBadge" label="Education" status="system" form="round" /></div>
       </main>
     </Theme>

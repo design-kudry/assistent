@@ -12,8 +12,28 @@
 .Theme_control_gpnAi .Button_size_s .Button-Label {
   line-height: var(--gpn-ai-body-regular-line-height);
 }
+.Theme_control_gpnAi .ChoiceGroup {
+  --choice-group-bg-color: var(--gpn-ai-background-subtle);
+  --choice-group-border-color: transparent;
+  box-shadow: none;
+}
 .Theme_control_gpnAi .ChoiceGroup_form_default {
   --choice-radius: var(--gpn-ai-radius-999);
+  --divider-width: 4px;
+  --divider-height: 4px;
+  --divider-scale: 1;
+  --divider-radius: var(--gpn-ai-radius-999);
+  --divider-align-self: center;
+}
+.Theme_control_gpnAi .ChoiceGroup-Divider {
+  --divider-bg-color: var(--gpn-ai-divider-choice-group);
+}
+.Theme_control_gpnAi .ChoiceGroup-Label_checked:not(.ChoiceGroup-Label_disabled) + .ChoiceGroup-Divider,
+.Theme_control_gpnAi .ChoiceGroup-Divider_checked:not(.ChoiceGroup-Divider_disabled) {
+  --divider-bg-color: transparent;
+}
+.Theme_control_gpnAi .ChoiceGroup:not(.ChoiceGroup_onlyIcon) .ChoiceGroup-Icon {
+  margin-right: var(--gpn-ai-space-8);
 }
 .Theme_control_gpnAi .ChoiceGroup_size_s {
   --choice-space: var(--gpn-ai-space-20);
@@ -25,10 +45,19 @@
 /* Secondary 2 is a product variant: add this class to ChoiceGroup. */
 .Theme_control_gpnAi .ChoiceGroup.DsChoiceGroup_secondary2 {
   --choice-bg-color: var(--gpn-ai-control-background-selected);
-  --choice-text-color: var(--gpn-ai-control-default);
+  --choice-text-color: var(--gpn-ai-action-primary-background);
 }
-.Theme_control_gpnAi .DsChoiceGroup_secondary2 .ChoiceGroup-Label_checked {
+.Theme_control_gpnAi .DsChoiceGroup_secondary2 .ChoiceGroup-Label_checked:not(.ChoiceGroup-Label_disabled) {
+  box-shadow: inset 0 0 0 1px var(--gpn-ai-action-primary-background);
+}
+.Theme_control_gpnAi .ChoiceGroup-Label_disabled {
   box-shadow: none;
+}
+.Theme_control_gpnAi .ChoiceGroup_disabled {
+  --choice-group-bg-color: var(--gpn-ai-control-disabled-background);
+}
+.Theme_control_gpnAi .ChoiceGroup_disabled .ChoiceGroup-Divider {
+  --divider-bg-color: transparent;
 }
 .Theme_control_gpnAi .TextField_size_s .TextField-Input,
 .Theme_control_gpnAi .Select_size_s .Select-Input {

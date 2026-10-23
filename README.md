@@ -44,7 +44,7 @@ export function App({ dark = false }) {
 | Button | `<Button size="s" />` | Высота 36px, текст 14/21, круглые углы, отступ по бокам 16px |
 | TextField, Combobox, AutoComplete | `size="s"` | Высота 36px, радиус 12px, текст 14px |
 | ChoiceGroup | `size="s"` | Высота 36px, круглые элементы, отступы 20px, интерлиньяж 32px |
-| ChoiceGroup / View=Secondary 2 | `view="secondary" className="DsChoiceGroup_secondary2"` | Фон выбранного пункта `--gpn-ai-control-background-selected` (#DFF1FF / #173D59) |
+| ChoiceGroup / View=Secondary 2 | `view="secondary" className="DsChoiceGroup_secondary2"` | Фон выбранного пункта `--gpn-ai-control-background-selected` (#DFF1FF / #173D59), синяя рамка 1px, синий текст и иконки |
 | Выпадающий список | обычный, без пропсов | Радиус 20px, фон, граница и тень List |
 | Бейдж карточки запроса | `<Badge className="DsPromptBadge" />` | Высота 24px, текст 12/24, Semi Bold |
 | Текст | `<Text className={typography.bodyRegular} />` | Стиль из Figma, см. «Типографика» |
@@ -297,3 +297,11 @@ Implementation notes:
 - Clear text and caret share `--gpn-ai-text-secondary`; resolve colors through the active theme instead of hardcoding light values.
 - This entry records the two shown Figma variants. Hover, focus, open and disabled appearances are not specified by these two examples.
 - Documentation only: this change does not add a CSS class, change the exported theme or claim that a Consta prop reproduces the custom Clear styling. Apply the documented styling in the application when implementing this variant.
+
+## ChoiceGroup: matching Figma
+
+Use `<ChoiceGroup size="s" view="secondary" className="DsChoiceGroup_secondary2" ... />` for Secondary 2. The class changes the selected item to a light/dark blue tint with a 1px accent border and accent text/icons. Without this class, `view="secondary"` keeps the standard outlined selected variant.
+
+The theme also supplies the subtle group background, removes the outer Consta outline and uses round 4×4px dividers for the default rounded form. Height is 36px, text is 14/32 and horizontal label padding is 20px. Use `width="full"` only when the layout calls for stretched items. Explicit `form="brick"` keeps its square geometry.
+
+Use the presets from this repository: loading only exported color variables does not load component CSS. [Component audit and implementation boundaries](docs/component-audit-2026-10-23.md).
