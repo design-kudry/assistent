@@ -46,7 +46,7 @@ export function App({ dark = false }) {
 | ChoiceGroup | `size="s"` | Высота 36px, круглые элементы, отступы 20px, интерлиньяж 32px |
 | ChoiceGroup / View=Secondary 2 | `view="secondary" className="DsChoiceGroup_secondary2"` | Фон выбранного пункта `--gpn-ai-control-background-selected` (#DFF1FF / #173D59), синяя рамка 1px, синий текст и иконки |
 | ComboboxList | `dropdownClassName="DsComboboxList"` | Surface, радиус 16px, пункты 36px, выбранный текст и иконки accent; [пример с описанием](docs/combobox-list.md) |
-| Выпадающий список | обычный, без пропсов | Радиус 20px, фон, граница и тень List |
+| Выпадающий список | обычный, без пропсов | Радиус 20px, фон, граница и тень List; выбранный пункт отмечен только цветом, без полоски слева |
 | Бейдж карточки запроса | `<Badge className="DsPromptBadge" />` | Высота 24px, текст 12/24, Semi Bold |
 | Текст | `<Text className={typography.bodyRegular} />` | Стиль из Figma, см. «Типографика» |
 

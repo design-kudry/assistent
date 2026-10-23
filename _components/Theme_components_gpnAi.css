@@ -77,6 +77,10 @@
 .Theme_control_gpnAi .ListItem.Text_size_s {
   line-height: var(--gpn-ai-body-list-line-height);
 }
+/* Selected list item is marked by text color only: drop Consta's left bar. */
+.Theme_control_gpnAi .ListItem_checked.Text::before {
+  content: none;
+}
 /* Use only on badges in prompt cards; other badge sizes remain available. */
 .Theme_control_gpnAi .Badge.DsPromptBadge {
   height: var(--gpn-ai-caption-badge-line-height);

@@ -75,6 +75,10 @@ try {
   assert.equal(await css('.SelectDropdown','borderRadius'),'20px');
   assert.equal(await css('.SelectDropdown','backgroundColor'),dark?'rgb(32, 45, 59)':'rgb(255, 255, 255)');
   assert.match(await css('.SelectDropdown','boxShadow'),dark?/12px 32px/:/8px 28px/);
+  const checked = page.locator('.SelectDropdown .ListItem_checked').first();
+  assert.equal(await checked.evaluate(el=>getComputedStyle(el,'::before').content),'none');
+  const plain = page.locator('.SelectDropdown .ListItem:not(.ListItem_checked)').first();
+  assert.notEqual(await checked.evaluate(el=>getComputedStyle(el).color), await plain.evaluate(el=>getComputedStyle(el).color));
   await page.screenshot({fullPage:true,path:`/tmp/assistent-theme-${dark?'dark':'light'}.png`});
   await page.getByRole('option').last().click();
   await page.getByRole('listbox').waitFor({state:'hidden'});
