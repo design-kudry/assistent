@@ -30,7 +30,8 @@
     "tokens",
     "examples",
     "ConstructorConfigGpnAi.json",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "icons.ts"
   ],
   "peerDependencies": {
     "@consta/uikit": "5.33.3",
@@ -38,5 +39,9 @@
   },
   "scripts": {
     "validate": "python3 scripts/validate_theme.py"
+  },
+  "dependencies": {
+    "@consta/icons": "1.7.1",
+    "@gravity-ui/icons": "2.23.0"
   }
 }

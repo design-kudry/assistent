@@ -19,6 +19,12 @@
       ],
       "react-dom/*": [
         "./node_modules/@types/react-dom/*"
+      ],
+      "@gravity-ui/icons/*": [
+        "./node_modules/@gravity-ui/icons/*"
+      ],
+      "@consta/icons/*": [
+        "./node_modules/@consta/icons/*"
       ]
     },
     "types": [

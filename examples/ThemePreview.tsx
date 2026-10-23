@@ -5,8 +5,9 @@ import { Text } from '@consta/uikit/Text';
 import { TextField } from '@consta/uikit/TextField';
 import { Combobox } from '@consta/uikit/Combobox';
 import { ChoiceGroup } from '@consta/uikit/ChoiceGroup';
+import { Checkbox } from '@consta/uikit/Checkbox';
 import { Badge } from '@consta/uikit/Badge';
-import { presetGpnAiLight, presetGpnAiDark, typography } from '../index';
+import { presetGpnAiLight, presetGpnAiDark, typography, IconPlus, IconSearch } from '../index';
 
 const items = [{ id: 1, label: 'Assistants' }, { id: 2, label: 'Prompts' }];
 export function ThemePreview() {
@@ -20,12 +21,13 @@ export function ThemePreview() {
         <Text className={typography.bodyRegular}>Theme settings are applied to Consta components.</Text>
         <div style={{ display: 'flex', gap: 12 }}>
           <Button size="s" label="Switch theme" onClick={() => setDark(!dark)} />
-          <Button size="s" view="secondary" label="Secondary" />
+          <Button size="s" view="secondary" label="Secondary" iconLeft={IconPlus} iconSize="s" />
           <Button size="s" disabled label="Disabled" />
+          <Button size="xs" label="Add" iconLeft={IconPlus} />
           <Button size="s" form="brick" label="Brick" />
         </div>
         <div style={{ width: 375 }}>
-          <TextField size="s" placeholder="Search" value={value} onChange={setValue} />
+          <TextField size="s" placeholder="Search" leftSide={IconSearch} value={value} onChange={setValue} />
         </div>
         <div style={{ width: 375 }}>
           <Combobox size="s" placeholder="Select an assistant" items={items} value={selected} onChange={setSelected} />
@@ -34,6 +36,7 @@ export function ThemePreview() {
         <ChoiceGroup size="s" name="primary" view="primary" className="AuditChoicePrimary" items={[...items, { id: 3, label: 'Projects' }, { id: 4, label: 'Chats' }]} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="ghost" view="ghost" className="AuditChoiceGhost" items={items} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="disabled" view="secondary" disabled className="DsChoiceGroup_secondary2 AuditChoiceDisabled" items={items} value={selected} onChange={setSelected} />
+        <div className="DsChatList"><Checkbox size="s" label="Select chat" checked={!!selected} onChange={() => setSelected(selected ? null : items[0])} /></div>
         <div><Badge className="DsPromptBadge" label="Education" status="system" form="round" /></div>
       </main>
     </Theme>

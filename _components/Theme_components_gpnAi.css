@@ -95,3 +95,23 @@
 .Theme_control_gpnAi .Button_size_xs .Button-Label {
   line-height: var(--gpn-ai-caption-regular-line-height);
 }
+
+/* Combobox: one continuous field, without a line before the dropdown button. */
+.Theme_control_gpnAi .Select_type_combobox .Select-Delimiter {
+  display: none;
+}
+
+/* Chat list selection: neutral outline, no filled blue state. */
+.Theme_control_gpnAi .DsChatList .Checkbox {
+  --checkbox-checked-border: var(--gpn-ai-border-default);
+  --checkbox-checked-background: transparent;
+  --checkbox-checked-check: var(--gpn-ai-control-default);
+  --checkbox-checked-border-hover: var(--gpn-ai-border-default);
+  --checkbox-checked-background-hover: transparent;
+}
+.Theme_control_gpnAi .DsChatList .Checkbox-Input,
+.Theme_control_gpnAi .DsChatList .Checkbox:hover .Checkbox-Input {
+  border-color: var(--gpn-ai-border-default);
+  background-color: transparent;
+  border-radius: var(--gpn-ai-radius-4);
+}

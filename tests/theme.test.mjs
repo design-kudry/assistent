@@ -9,6 +9,13 @@ try {
  await page.getByRole('button', {name:'Switch theme'}).waitFor();
  const css = (selector, prop) => page.locator(selector).first().evaluate((el,p)=>getComputedStyle(el)[p],prop);
  for (const dark of [false,true]) {
+  assert.equal(await css('.Select_type_combobox .Select-Delimiter','display'),'none');
+  await expect(page.locator('.Button_size_s .icons--Icon-Svg').first()).toBeVisible();
+  assert.equal(await css('.Button_size_s .icons--Icon','width'),'16px');
+  assert.equal(await css('.Button_size_xs .icons--Icon','width'),'12px');
+  await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('background-color','rgba(0, 0, 0, 0)');
+  await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('border-radius','4px');
+  await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('border-color',dark?'rgba(229, 237, 245, 0.08)':'rgba(16, 42, 58, 0.08)');
   assert.equal(await css('.Button_size_s','height'),'36px');
   assert.equal(await css('.Button_size_s','borderRadius'),'999px');
   assert.equal(await css('.Button_form_brick','borderRadius'),'0px');

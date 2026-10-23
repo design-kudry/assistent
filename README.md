@@ -305,3 +305,32 @@ Use `<ChoiceGroup size="s" view="secondary" className="DsChoiceGroup_secondary2"
 The theme also supplies the subtle group background, removes the outer Consta outline and uses round 4×4px dividers for the default rounded form. Height is 36px, text is 14/32 and horizontal label padding is 20px. Use `width="full"` only when the layout calls for stretched items. Explicit `form="brick"` keeps its square geometry.
 
 Use the presets from this repository: loading only exported color variables does not load component CSS. [Component audit and implementation boundaries](docs/component-audit-2026-10-23.md).
+
+## Gravity UI Icons
+
+Основной набор новых иконок — [Gravity UI Icons](https://github.com/gravity-ui/icons), пакет `@gravity-ui/icons@2.23.0` (MIT). Зависимости входят в пакет темы. Gravity UI Kit для этого не нужен.
+
+Тема экспортирует адаптированные `IconPlus`, `IconSearch`, `IconChevronDown`, `IconClose` и функцию `createGravityIcon`. Адаптер сохраняет Consta API: `size`, `view`, `className`, `ref`; SVG использует `currentColor` и переключает цвет вместе с темой.
+
+```tsx
+import { Button } from '@consta/uikit/Button';
+import { IconPlus, createGravityIcon } from '@design-kudry/gpn-ai-theme';
+import Folder from '@gravity-ui/icons/Folder';
+
+// Создавайте адаптер один раз, вне рендера компонента.
+const IconFolder = createGravityIcon('Folder', Folder);
+<Button size="s" iconSize="s" iconLeft={IconPlus} label="Добавить" />
+<Button size="xs" iconLeft={IconFolder} label="Проект" />
+```
+
+Размеры иконок Consta: `xs` — 12px, `s` — 16px, `m` — 24px, `l` — 32px. У Button размер иконки задавайте через `iconSize`; у компактной кнопки XS оставляйте 12px. Импорт конкретной иконки по пути уменьшает зависимость от tree shaking.
+
+Этот экспорт позволяет использовать Gravity в доступных иконковых слотах. Встроенные SVG внутри контролов Consta не заменяются автоматически; их замена требует отдельного слота или компонента приложения.
+
+## Combobox без разделителя
+
+Тема скрывает `.Select_type_combobox .Select-Delimiter`: между полем и стрелкой нет вертикальной линии. Очистка, стрелка, поиск и внешний контур поля сохраняются. Оба варианта Combobox в Figma уже не содержат такого разделителя.
+
+## Чекбоксы списка чатов
+
+Поместите чекбоксы списка чатов в контейнер `className="DsChatList"`. Внутри него чекбокс остаётся без заливки, с обводкой `--gpn-ai-border-default`; выбранное состояние показывает нейтральную галочку `--gpn-ai-control-default`. Обычные чекбоксы в других частях приложения сохраняют свои настройки. Новые цветовые токены для этого не создавались.

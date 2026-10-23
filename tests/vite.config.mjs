@@ -9,6 +9,8 @@ export default defineConfig({
   cacheDir: resolve(here, 'node_modules/.vite'),
   resolve: { alias: {
     '@consta/uikit': dirname(require.resolve('@consta/uikit/package.json')),
+    '@gravity-ui/icons': dirname(require.resolve('@gravity-ui/icons/Plus')),
+    '@consta/icons': dirname(require.resolve('@consta/icons/package.json')),
     react: dirname(require.resolve('react/package.json')),
     'react-dom': dirname(require.resolve('react-dom/package.json')),
   } },
