@@ -115,3 +115,38 @@
   background-color: transparent;
   border-radius: var(--gpn-ai-radius-4);
 }
+
+/* Tabs: existing semantic roles, matched to Figma Tabs / Tabs/Modules. */
+.Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab {
+  color: var(--gpn-ai-text-secondary);
+}
+.Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab_checked:not(.TabsTab_disabled),
+.Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab:hover:not(.TabsTab_disabled) {
+  color: var(--gpn-ai-action-primary-background);
+}
+.Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab_disabled {
+  color: var(--color-control-typo-disable);
+}
+.Theme_control_gpnAi .Tabs .TabsLine_type_border {
+  background-color: var(--gpn-ai-border-default);
+}
+.Theme_control_gpnAi .Tabs .TabsLine_type_running {
+  background-color: var(--gpn-ai-action-primary-background);
+}
+.Theme_control_gpnAi .Tabs_size_s .Text.ListItem.TabsTab:not(.TabsTab_renderInDropdown) {
+  height: 36px;
+  padding: 0 var(--gpn-ai-space-12) 0 0;
+  font-size: var(--gpn-ai-body-dense-size);
+  line-height: var(--gpn-ai-body-dense-line-height);
+  font-weight: var(--gpn-ai-body-dense-font-weight);
+}
+.Theme_control_gpnAi .Tabs_size_s .Tabs-Tab_direction_horizontal {
+  margin-right: 0;
+}
+.Theme_control_gpnAi .Tabs_size_s.Tabs_direction_horizontal .TabsLine_type_running {
+  width: max(0px, calc(var(--line-length) - var(--gpn-ai-space-12)));
+}
+.Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab:focus-visible {
+  outline: 2px solid var(--gpn-ai-action-primary-background);
+  outline-offset: 2px;
+}

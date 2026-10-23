@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Theme } from '@consta/uikit/Theme';
 import { Button } from '@consta/uikit/Button';
+import { Tabs } from '@consta/uikit/Tabs';
 import { Text } from '@consta/uikit/Text';
 import { TextField } from '@consta/uikit/TextField';
 import { Combobox } from '@consta/uikit/Combobox';
@@ -14,6 +15,7 @@ export function ThemePreview() {
   const [dark, setDark] = useState(false);
   const [value, setValue] = useState<string | null>('');
   const [selected, setSelected] = useState<(typeof items)[number] | null>(items[0]);
+  const [activeTab, setActiveTab] = useState(items[0]);
   return (
     <Theme preset={dark ? presetGpnAiDark : presetGpnAiLight}>
       <main style={{ background: 'var(--color-bg-default)', color: 'var(--color-typo-primary)', minHeight: '100vh', padding: 32, display: 'grid', gap: 20, alignContent: 'start' }}>
@@ -36,6 +38,7 @@ export function ThemePreview() {
         <ChoiceGroup size="s" name="primary" view="primary" className="AuditChoicePrimary" items={[...items, { id: 3, label: 'Projects' }, { id: 4, label: 'Chats' }]} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="ghost" view="ghost" className="AuditChoiceGhost" items={items} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="disabled" view="secondary" disabled className="DsChoiceGroup_secondary2 AuditChoiceDisabled" items={items} value={selected} onChange={setSelected} />
+        <Tabs size="s" view="bordered" items={items} value={activeTab} onChange={setActiveTab} />
         <div className="DsChatList"><Checkbox size="s" label="Select chat" checked={!!selected} onChange={() => setSelected(selected ? null : items[0])} /></div>
         <div><Badge className="DsPromptBadge" label="Education" status="system" form="round" /></div>
       </main>

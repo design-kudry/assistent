@@ -50,6 +50,16 @@ try {
   await page.locator('.DsChoiceGroup_secondary2:not(.ChoiceGroup_disabled) input').last().focus();
   await page.keyboard.press('ArrowLeft');
   await expect(page.locator('.DsChoiceGroup_secondary2:not(.ChoiceGroup_disabled) .ChoiceGroup-Label').first()).toHaveClass(/_checked/);
+  const tabs = page.locator('.TabsTab');
+  await expect(tabs.first()).toHaveCSS('color','rgb(0, 142, 250)');
+  await expect(tabs.last()).toHaveCSS('color',dark?'rgb(155, 175, 191)':'rgba(16, 42, 58, 0.7)');
+  await expect(tabs.first()).toHaveCSS('height','36px');
+  await expect(tabs.first()).toHaveCSS('font-size','14px');
+  await expect(page.locator('.TabsLine_type_border')).toHaveCSS('background-color',dark?'rgba(229, 237, 245, 0.08)':'rgba(16, 42, 58, 0.08)');
+  await tabs.last().click();
+  await expect(tabs.last()).toHaveCSS('color','rgb(0, 142, 250)');
+  await expect(page.locator('.TabsLine_type_running')).toHaveCSS('height','2px');
+  await tabs.first().click();
   await page.locator('.Select-Control').click();
   await page.getByRole('listbox').waitFor();
   await expect(page.getByRole('listbox')).toHaveCSS('opacity','1');
