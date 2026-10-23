@@ -269,3 +269,31 @@ Figma `Button/XS` includes all 24 variants: Primary, Secondary, Ghost and Clear;
 Use `<Button size="xs" />`: height 24px, text 12/16.8px, horizontal padding 10px and icon gap 8px. Icon-only buttons are 24 × 24px. Hover colors are shared with the regular buttons.
 
 The read-only notice on frame `21423:193998` uses existing semantic tokens: Surface for the base, `color/badge/accent/background` for the tint, `color/border/default` for the border, `color/text/primary` for text and `color/action/primary/background` for the icon. Both Light and Dark are supported. Its text, geometry and component link are preserved.
+
+## Combobox variants
+
+Design note updated on 2026-10-23. Source: [Combobox in Figma](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=21617-100922).
+
+The component set now contains `View=Default` (`21276:144886`) and `View=Clear` (`21617:100923`).
+
+| Property | Default | Clear |
+| --- | --- | --- |
+| Height | 36px | 36px |
+| Example width | 375px | 375px |
+| Input radius | 12px | 12px |
+| Background | `color/background/surface` | None; parent background remains visible |
+| Border | `color/border/default` | None |
+| Text | `color/text/placeholder` | `color/text/secondary` |
+| Caret | `color/icon/disabled` | `color/text/secondary` |
+| Typography | `Typography/Body/Regular`, Inter 14/21 | Same |
+| Input left padding | 8px | 0px |
+| Text wrapper right padding | 8px | 10px |
+| Caret button / icon frame | 36×36px / 16×16px | Same |
+
+Implementation notes:
+
+- Use the existing small Combobox size (`size="s"`, 36px). The 375px width is the Figma example width; adapt width to the container.
+- Clear is a visual variant, not a disabled state and not a clear-value button. Keep Combobox selection, search, keyboard navigation and visible focus treatment.
+- Clear text and caret share `--gpn-ai-text-secondary`; resolve colors through the active theme instead of hardcoding light values.
+- This entry records the two shown Figma variants. Hover, focus, open and disabled appearances are not specified by these two examples.
+- Documentation only: this change does not add a CSS class, change the exported theme or claim that a Consta prop reproduces the custom Clear styling. Apply the documented styling in the application when implementing this variant.
