@@ -16,6 +16,7 @@ export function ThemePreview() {
   const [value, setValue] = useState<string | null>('');
   const [selected, setSelected] = useState<(typeof items)[number] | null>(items[0]);
   const [activeTab, setActiveTab] = useState(items[0]);
+  const [prompt, setPrompt] = useState<string | null>('Answer using the uploaded documents.');
   return (
     <Theme preset={dark ? presetGpnAiDark : presetGpnAiLight}>
       <main style={{ background: 'var(--color-bg-default)', color: 'var(--color-typo-primary)', minHeight: '100vh', padding: 32, display: 'grid', gap: 20, alignContent: 'start' }}>
@@ -39,6 +40,7 @@ export function ThemePreview() {
         <ChoiceGroup size="s" name="ghost" view="ghost" className="AuditChoiceGhost" items={items} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="disabled" view="secondary" disabled className="DsChoiceGroup_secondary2 AuditChoiceDisabled" items={items} value={selected} onChange={setSelected} />
         <Tabs size="s" view="bordered" items={items} value={activeTab} onChange={setActiveTab} />
+        <TextField className="DsTextArea" type="textarea" rows={1} size="s" label="Prompt for answers" value={prompt} onChange={setPrompt} maxLength={5000} caption={`${prompt?.length ?? 0}/5000`} />
         <div className="DsChatList"><Checkbox size="s" label="Select chat" checked={!!selected} onChange={() => setSelected(selected ? null : items[0])} /></div>
         <div><Badge className="DsPromptBadge" label="Education" status="system" form="round" /></div>
       </main>

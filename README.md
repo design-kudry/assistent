@@ -338,3 +338,7 @@ const IconFolder = createGravityIcon('Folder', Folder);
 ## Tabs
 
 Новый компонент Tabs использует существующие цвета темы: неактивный текст — `text/secondary`, активный текст и линия — акцент, общая линия — `border/default`. Для Consta используйте `<Tabs size="s" view="bordered" ... />`. Размер S: высота 36px, текст Inter 14/19.6, отступ справа 12px, активная линия 2px. [Спецификация и пример](docs/tabs.md).
+
+## TextArea
+
+Используйте `<TextField className="DsTextArea" type="textarea" size="s" rows={1} ... />`. Начальная высота поля — 100px, радиус — 12px, текст — 14/21, внутренние отступы — 8px. Подпись использует secondary, ввод — primary, счётчик справа — tertiary и 12/18. Цвета переключаются с темой. Счётчик передавайте через `caption` и обновляйте из значения поля. [Описание и пример](docs/text-area.md).

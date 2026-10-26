@@ -23,7 +23,7 @@ try {
   assert.equal(await css('.Button_size_s','lineHeight'),'21px');
   assert.equal(await css('.TextField-InputContainer','height'),'36px');
   assert.equal(await css('.TextField-InputContainer','borderRadius'),'12px');
-  await expect(page.locator('.TextField-InputContainer')).toHaveCSS('background-color',dark?'rgb(25, 35, 46)':'rgb(255, 255, 255)');
+  await expect(page.locator('.TextField-InputContainer').first()).toHaveCSS('background-color',dark?'rgb(25, 35, 46)':'rgb(255, 255, 255)');
   assert.equal(await css('.Select-Control','height'),'36px');
   assert.equal(await css('.Select-Control','borderRadius'),'12px');
   assert.equal(await css('h1','fontSize'),'24px');
@@ -50,6 +50,15 @@ try {
   await page.locator('.DsChoiceGroup_secondary2:not(.ChoiceGroup_disabled) input').last().focus();
   await page.keyboard.press('ArrowLeft');
   await expect(page.locator('.DsChoiceGroup_secondary2:not(.ChoiceGroup_disabled) .ChoiceGroup-Label').first()).toHaveClass(/_checked/);
+  const area = page.locator('.DsTextArea textarea');
+  await expect(area).toHaveCSS('line-height','21px');
+  await expect(area).toHaveCSS('resize','vertical');
+  await expect(area).toHaveCSS('color',dark?'rgb(229, 237, 245)':'rgb(16, 42, 58)');
+  await expect(page.locator('.DsTextArea .TextField-InputContainer')).toHaveCSS('height','100px');
+  await expect(page.locator('.DsTextArea .TextField-InputContainer')).toHaveCSS('background-color',dark?'rgb(25, 35, 46)':'rgb(255, 255, 255)');
+  await expect(page.locator('.DsTextArea .TextField-Label')).toHaveCSS('color',dark?'rgb(155, 175, 191)':'rgba(16, 42, 58, 0.7)');
+  await area.fill('Updated prompt');
+  await expect(page.locator('.DsTextArea .TextField-Caption')).toHaveText('14/5000');
   const tabs = page.locator('.TabsTab');
   await expect(tabs.first()).toHaveCSS('color','rgb(0, 142, 250)');
   await expect(tabs.last()).toHaveCSS('color',dark?'rgb(155, 175, 191)':'rgba(16, 42, 58, 0.7)');

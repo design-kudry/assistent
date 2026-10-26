@@ -150,3 +150,34 @@
   outline: 2px solid var(--gpn-ai-action-primary-background);
   outline-offset: 2px;
 }
+
+/* TextArea example: existing TextField behavior and semantic colors. */
+.Theme_control_gpnAi .DsTextArea.TextField_size_s {
+  --label-offset: var(--gpn-ai-space-4);
+  --caption-offset: var(--gpn-ai-space-4);
+}
+.Theme_control_gpnAi .DsTextArea .TextField-Label {
+  color: var(--gpn-ai-text-secondary);
+  font-size: var(--gpn-ai-body-regular-size);
+  line-height: var(--gpn-ai-body-regular-line-height);
+}
+.Theme_control_gpnAi .DsTextArea .TextField-InputContainer_type_textarea {
+  min-height: 100px;
+}
+.Theme_control_gpnAi .DsTextArea .TextField-InputContainer:not(.TextField-InputContainer_disabled) .TextField-Input {
+  color: var(--gpn-ai-text-primary);
+}
+.Theme_control_gpnAi .DsTextArea .TextField-InputContainer_type_textarea .TextField-Input {
+  box-sizing: border-box;
+  min-height: 98px;
+  padding-top: var(--gpn-ai-space-8);
+  padding-bottom: var(--gpn-ai-space-8);
+  line-height: var(--gpn-ai-body-regular-line-height);
+  resize: vertical;
+}
+.Theme_control_gpnAi .DsTextArea .TextField-Caption {
+  color: var(--gpn-ai-text-tertiary);
+  font-size: var(--gpn-ai-caption-relaxed-size);
+  line-height: var(--gpn-ai-caption-relaxed-line-height);
+  text-align: right;
+}
