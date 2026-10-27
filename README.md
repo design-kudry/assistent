@@ -342,3 +342,7 @@ const IconFolder = createGravityIcon('Folder', Folder);
 ## TextArea
 
 Используйте `<TextField className="DsTextArea" type="textarea" size="s" rows={1} ... />`. Начальная высота поля — 100px, радиус — 12px, текст — 14/21, внутренние отступы — 8px. Подпись использует secondary, ввод — primary, счётчик справа — tertiary и 12/18. Цвета переключаются с темой. Счётчик передавайте через `caption` и обновляйте из значения поля. [Описание и пример](docs/text-area.md).
+
+## AttachmentCard and file selection
+
+Обновлённые карточки файлов: 248×48px, радиус 12px, отступы 8px, иконка 24×28px, текст Caption/Compact 12/14.4, три кнопки XS по 24px. Для вёрстки приложения добавлены классы `DsAttachmentCard-*` и `DsFileCheckbox`. Чекбокс без синей заливки, с нейтральными рамкой и галочкой. Цвета Doc/Xls/png используют существующие file-токены. [Состав, цвета и интеграция](docs/attachment-card.md).

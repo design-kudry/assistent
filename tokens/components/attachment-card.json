@@ -1,0 +1,56 @@
+{
+  "reviewedAt": "2026-10-27",
+  "sourceFile": "686IP0J8jTGiix3IXVcA45",
+  "componentId": "20159:164867",
+  "checkboxId": "22254:198039",
+  "variants": [
+    {
+      "id": "20156:164811",
+      "name": "Attach=Doc",
+      "background": "color/file/text/background"
+    },
+    {
+      "id": "22254:197844",
+      "name": "Attach=Xls",
+      "background": "color/file/spreadsheet/background"
+    },
+    {
+      "id": "22254:197945",
+      "name": "Attach=png",
+      "background": "color/file/image/background"
+    }
+  ],
+  "geometry": {
+    "width": 248,
+    "height": 48,
+    "radius": 12,
+    "padding": 8,
+    "gap": 8,
+    "fileIconWidth": 24,
+    "fileIconHeight": 28,
+    "checkbox": 16,
+    "checkboxRadius": 6,
+    "actionButton": 24,
+    "actionGap": 8
+  },
+  "typography": {
+    "name": "Typography/Caption/Compact",
+    "metadata": "Typography/Caption/Compact"
+  },
+  "roles": {
+    "border": "color/file/card/border",
+    "name": "color/text/primary",
+    "metadata": "color/text/tertiary",
+    "filePictogram": "color/file/icon/foreground",
+    "fileExtension": "color/text/on-accent",
+    "actionIcon": "color/control/default",
+    "checkboxBorder": "color/border/default",
+    "checkboxMark": "color/control/default"
+  },
+  "checkboxStates": {
+    "Empty": "neutral outline, no fill",
+    "Check": "neutral outline and check, no fill",
+    "Inter...": "neutral outline and dash, no fill"
+  },
+  "newColorVariables": 0
+}

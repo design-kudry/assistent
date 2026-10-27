@@ -181,3 +181,66 @@
   line-height: var(--gpn-ai-caption-relaxed-line-height);
   text-align: right;
 }
+
+/* AttachmentCard: application composition, matched to the 48px Figma variants. */
+.Theme_control_gpnAi .DsAttachmentCard {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: var(--gpn-ai-space-8);
+  width: 248px;
+  max-width: 100%;
+  height: 48px;
+  padding: var(--gpn-ai-space-8);
+  border: 0;
+  border-radius: var(--gpn-ai-radius-12);
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--gpn-ai-file-card-border);
+}
+.Theme_control_gpnAi .DsAttachmentCard-File {
+  flex: 0 0 24px;
+  width: 24px;
+  height: 28px;
+}
+.Theme_control_gpnAi .DsAttachmentCard-Content {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gpn-ai-space-4);
+}
+.Theme_control_gpnAi .DsAttachmentCard-Name,
+.Theme_control_gpnAi .DsAttachmentCard-Metadata {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--gpn-ai-caption-compact-size);
+  line-height: var(--gpn-ai-caption-compact-line-height);
+  font-weight: var(--gpn-ai-caption-compact-font-weight);
+}
+.Theme_control_gpnAi .DsAttachmentCard-Name { color: var(--gpn-ai-text-primary); }
+.Theme_control_gpnAi .DsAttachmentCard-Metadata { color: var(--gpn-ai-text-tertiary); }
+.Theme_control_gpnAi .DsAttachmentCard-Actions {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: var(--gpn-ai-space-8);
+}
+.Theme_control_gpnAi .DsAttachmentCard .Checkbox,
+.Theme_control_gpnAi .Checkbox.DsFileCheckbox {
+  --checkbox-size: 16px;
+  --checkbox-checked-background: transparent;
+  --checkbox-checked-background-hover: transparent;
+  --checkbox-checked-border: var(--gpn-ai-border-default);
+  --checkbox-checked-border-hover: var(--gpn-ai-border-default);
+  --checkbox-checked-check: var(--gpn-ai-control-default);
+  flex-shrink: 0;
+}
+.Theme_control_gpnAi .DsAttachmentCard .Checkbox-Input,
+.Theme_control_gpnAi .DsAttachmentCard .Checkbox:hover .Checkbox-Input,
+.Theme_control_gpnAi .DsFileCheckbox .Checkbox-Input,
+.Theme_control_gpnAi .DsFileCheckbox:hover .Checkbox-Input {
+  background-color: transparent;
+  border-color: var(--gpn-ai-border-default);
+  border-radius: 6px;
+}
