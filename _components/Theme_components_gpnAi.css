@@ -229,11 +229,11 @@
 .Theme_control_gpnAi .DsAttachmentCard .Checkbox,
 .Theme_control_gpnAi .Checkbox.DsFileCheckbox {
   --checkbox-size: 16px;
-  --checkbox-checked-background: transparent;
-  --checkbox-checked-background-hover: transparent;
-  --checkbox-checked-border: var(--gpn-ai-border-default);
-  --checkbox-checked-border-hover: var(--gpn-ai-border-default);
-  --checkbox-checked-check: var(--gpn-ai-control-default);
+  --checkbox-checked-background: var(--gpn-ai-selection-checkbox-background);
+  --checkbox-checked-background-hover: var(--gpn-ai-selection-checkbox-background);
+  --checkbox-checked-border: var(--gpn-ai-selection-checkbox-border);
+  --checkbox-checked-border-hover: var(--gpn-ai-selection-checkbox-border);
+  --checkbox-checked-check: var(--gpn-ai-text-on-accent);
   flex-shrink: 0;
 }
 .Theme_control_gpnAi .DsAttachmentCard .Checkbox-Input,
@@ -243,4 +243,12 @@
   background-color: transparent;
   border-color: var(--gpn-ai-border-default);
   border-radius: 6px;
+}
+
+.Theme_control_gpnAi .DsAttachmentCard .Checkbox-Input:checked:not(:disabled),
+.Theme_control_gpnAi .DsAttachmentCard .Checkbox_intermediate:not(.Checkbox_disabled) .Checkbox-Input,
+.Theme_control_gpnAi .DsFileCheckbox .Checkbox-Input:checked:not(:disabled),
+.Theme_control_gpnAi .DsFileCheckbox.Checkbox_intermediate:not(.Checkbox_disabled) .Checkbox-Input {
+  background-color: var(--gpn-ai-selection-checkbox-background);
+  border-color: var(--gpn-ai-selection-checkbox-border);
 }

@@ -24,7 +24,7 @@ The inner pictogram uses `color/file/icon/foreground` (white at 70%), and the ex
 
 ## Checkbox colors
 
-Empty, Check and Inter... states now use a neutral `color/border/default` outline with no fill. Check/dash uses `color/control/default`. This follows the existing decision to avoid blue filled selection checkboxes. The original variant names and IDs remain; no instances were detached.
+Empty uses a neutral `color/border/default` outline with no fill. Check and Inter... use the existing blue `color/selection/checkbox/background` fill and `color/selection/checkbox/border`; the check/dash is white `color/text/on-accent`. This applies to the file Checkbox; the separately scoped chat-list checkbox is unchanged. The original variant names and IDs remain; no instances were detached.
 
 ## Application integration
 

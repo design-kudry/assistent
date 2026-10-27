@@ -44,13 +44,14 @@
     "filePictogram": "color/file/icon/foreground",
     "fileExtension": "color/text/on-accent",
     "actionIcon": "color/control/default",
-    "checkboxBorder": "color/border/default",
-    "checkboxMark": "color/control/default"
+    "checkboxBorder": "color/border/default (empty), color/selection/checkbox/border (checked/intermediate)",
+    "checkboxMark": "color/text/on-accent",
+    "checkboxSelectedBackground": "color/selection/checkbox/background"
   },
   "checkboxStates": {
     "Empty": "neutral outline, no fill",
-    "Check": "neutral outline and check, no fill",
-    "Inter...": "neutral outline and dash, no fill"
+    "Check": "blue fill and white check",
+    "Inter...": "blue fill and white dash"
   },
   "newColorVariables": 0
 }
