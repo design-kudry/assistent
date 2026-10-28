@@ -45,7 +45,7 @@
     "filePictogram": "color/file/icon/foreground",
     "fileExtension": "color/text/on-accent",
     "actionIcon": "color/control/default",
-    "checkboxBorder": "color/border/default (empty), color/selection/checkbox/border (checked/intermediate)",
+    "checkboxBorder": "color/control/default (empty enabled), color/selection/checkbox/border (checked/intermediate)",
     "checkboxMark": "color/text/on-accent",
     "checkboxSelectedBackground": "color/selection/checkbox/background"
   },
@@ -80,5 +80,10 @@
     "checkboxOnly": 176,
     "actionsOnly": 104,
     "both": 80
+  },
+  "checkboxOutlineContrast": {
+    "background": "color/background/surface",
+    "light": 5.83,
+    "dark": 9.05
   }
 }

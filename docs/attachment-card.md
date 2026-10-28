@@ -26,7 +26,7 @@ The inner pictogram uses `color/file/icon/foreground` (white at 70%), and the ex
 
 ## Checkbox colors
 
-Empty uses a neutral `color/border/default` outline with no fill. Check and Inter... use the existing blue `color/selection/checkbox/background` fill and `color/selection/checkbox/border`; the check/dash is white `color/text/on-accent`. This applies to the file Checkbox; the separately scoped chat-list checkbox is unchanged. The original variant names and IDs remain; no instances were detached.
+Empty uses a neutral `color/control/default` outline with no fill. The enabled outline contrasts with the Surface background at 5.83:1 in Light and 9.05:1 in Dark (previously 1.16:1 and 1.24:1 with the 8% default border). Disabled styles retain their existing subdued appearance. Check and Inter... use the existing blue `color/selection/checkbox/background` fill and `color/selection/checkbox/border`; the check/dash is white `color/text/on-accent`. This applies to the file Checkbox; the separately scoped chat-list checkbox is unchanged. The original variant names and IDs remain; no instances were detached.
 
 ## Application integration
 

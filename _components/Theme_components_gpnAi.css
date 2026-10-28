@@ -255,3 +255,10 @@
   background-color: var(--gpn-ai-selection-checkbox-background);
   border-color: var(--gpn-ai-selection-checkbox-border);
 }
+
+/* Enabled checkbox outlines must remain visible on both theme surfaces. */
+.Theme_control_gpnAi .DsAttachmentCard .Checkbox:not(.Checkbox_intermediate) .Checkbox-Input:not(:checked):not(:disabled),
+.Theme_control_gpnAi .DsFileCheckbox:not(.Checkbox_intermediate) .Checkbox-Input:not(:checked):not(:disabled),
+.Theme_control_gpnAi .DsChatList .Checkbox-Input:not(:disabled) {
+  border-color: var(--gpn-ai-control-default);
+}
