@@ -182,7 +182,7 @@
   text-align: right;
 }
 
-/* AttachmentCard: application composition, matched to the 48px Figma variants. */
+/* AttachmentCard: optional border, checkbox and extracted action controls. */
 .Theme_control_gpnAi .DsAttachmentCard {
   box-sizing: border-box;
   display: flex;
@@ -196,6 +196,9 @@
   border-radius: var(--gpn-ai-radius-12);
   background: transparent;
   box-shadow: inset 0 0 0 1px var(--gpn-ai-file-card-border);
+}
+.Theme_control_gpnAi .DsAttachmentCard_borderless {
+  box-shadow: none;
 }
 .Theme_control_gpnAi .DsAttachmentCard-File {
   flex: 0 0 24px;

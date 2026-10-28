@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-27",
+  "reviewedAt": "2026-10-28",
   "sourceFile": "686IP0J8jTGiix3IXVcA45",
   "componentId": "20159:164867",
   "checkboxId": "22254:198039",
@@ -31,7 +31,8 @@
     "checkbox": 16,
     "checkboxRadius": 6,
     "actionButton": 24,
-    "actionGap": 8
+    "actionGap": 8,
+    "actionIcon": 12
   },
   "typography": {
     "name": "Typography/Caption/Compact",
@@ -53,5 +54,31 @@
     "Check": "blue fill and white check",
     "Inter...": "blue fill and white dash"
   },
-  "newColorVariables": 0
+  "newColorVariables": 0,
+  "actionsId": "22254:194653",
+  "options": {
+    "border": {
+      "property": "Border",
+      "default": true,
+      "borderLayers": [
+        "22349:22715",
+        "22349:22716",
+        "22349:22717"
+      ]
+    },
+    "checkbox": {
+      "property": "Checkbox",
+      "default": false
+    },
+    "actions": {
+      "property": "Show Parts/RightSide",
+      "default": false
+    }
+  },
+  "contentWidths": {
+    "none": 200,
+    "checkboxOnly": 176,
+    "actionsOnly": 104,
+    "both": 80
+  }
 }
