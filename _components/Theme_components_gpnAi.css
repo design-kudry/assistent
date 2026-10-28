@@ -260,5 +260,5 @@
 .Theme_control_gpnAi .DsAttachmentCard .Checkbox:not(.Checkbox_intermediate) .Checkbox-Input:not(:checked):not(:disabled),
 .Theme_control_gpnAi .DsFileCheckbox:not(.Checkbox_intermediate) .Checkbox-Input:not(:checked):not(:disabled),
 .Theme_control_gpnAi .DsChatList .Checkbox-Input:not(:disabled) {
-  border-color: var(--gpn-ai-control-default);
+  border-color: var(--gpn-ai-text-tertiary);
 }
