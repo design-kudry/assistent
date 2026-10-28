@@ -262,3 +262,36 @@
 .Theme_control_gpnAi .DsChatList .Checkbox-Input:not(:disabled) {
   border-color: var(--gpn-ai-text-tertiary);
 }
+
+/* SnackBar: approved filled status colors; controls stay readable in both modes. */
+.Theme_control_gpnAi .SnackBarItem {
+  color: var(--gpn-ai-text-on-accent);
+  --color-typo-primary: var(--gpn-ai-text-on-accent);
+  --color-control-typo-ghost: var(--gpn-ai-text-on-accent);
+  --color-control-typo-ghost-hover: var(--gpn-ai-text-on-accent);
+  --color-control-typo-clear: var(--gpn-ai-text-on-accent);
+  --color-control-typo-clear-hover: var(--gpn-ai-text-on-accent);
+  --color-control-bg-ghost: var(--gpn-ai-snackbar-action-background);
+  --color-control-bg-ghost-hover: var(--gpn-ai-snackbar-action-background);
+}
+.Theme_control_gpnAi .SnackBarItem .SnackBarItem-Message,
+.Theme_control_gpnAi .SnackBarItem .Timer-Counter,
+.Theme_control_gpnAi .SnackBarItem .ProgressSpin {
+  color: var(--gpn-ai-text-on-accent);
+}
+.Theme_control_gpnAi .SnackBarItem .Timer {
+  background-color: color-mix(in srgb, var(--gpn-ai-text-on-accent) 16%, transparent);
+}
+.Theme_control_gpnAi .SnackBarItem .SnackBarActionButton.Button:not(:disabled) {
+  background-color: var(--gpn-ai-snackbar-action-background);
+  color: var(--gpn-ai-text-on-accent);
+  filter: none;
+}
+.Theme_control_gpnAi .SnackBarItem .SnackBarActionButton.Button:not(:disabled):hover {
+  background-color: var(--gpn-ai-snackbar-action-background);
+  color: var(--gpn-ai-text-on-accent);
+}
+.Theme_control_gpnAi .SnackBarItem .SnackBarActionButton.Button:focus-visible {
+  outline: 2px solid var(--gpn-ai-text-on-accent);
+  outline-offset: 2px;
+}

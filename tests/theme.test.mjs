@@ -15,7 +15,7 @@ try {
   assert.equal(await css('.Button_size_xs .icons--Icon','width'),'12px');
   await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('background-color','rgba(0, 0, 0, 0)');
   await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('border-radius','4px');
-  await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('border-color',dark?'rgba(229, 237, 245, 0.08)':'rgba(16, 42, 58, 0.08)');
+  await expect(page.locator('.DsChatList .Checkbox-Input')).toHaveCSS('border-color',dark?'rgba(229, 237, 245, 0.45)':'rgba(16, 42, 58, 0.4)');
   assert.equal(await css('.Button_size_s','height'),'36px');
   assert.equal(await css('.Button_size_s','borderRadius'),'999px');
   assert.equal(await css('.Button_form_brick','borderRadius'),'0px');

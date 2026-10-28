@@ -213,7 +213,24 @@
   --gpn-ai-caption-badge-line-height: 24px;
   --gpn-ai-caption-badge-font-weight: 600;
   --gpn-ai-caption-badge-font-style: normal;
+  --gpnai-palette-source-898039-929412-960784-200000: rgba(229, 237, 245, 0.2);
+  --gpn-ai-palette-status-info-text-light: rgb(0, 111, 190);
+  --gpn-ai-palette-status-info-text-dark: rgb(100, 186, 255);
+  --gpn-ai-palette-status-success-fill: rgb(36, 195, 142);
+  --gpn-ai-palette-status-success-foreground-dark: rgb(167, 222, 196);
+  --gpn-ai-palette-status-warning-fill: rgb(243, 139, 1);
+  --gpn-ai-palette-status-warning-foreground-dark: rgb(242, 202, 146);
+  --gpn-ai-palette-status-error-fill: rgb(254, 67, 67);
+  --gpn-ai-palette-status-error-foreground-dark: rgb(242, 178, 187);
+  --gpn-ai-palette-status-success-fill-dark: rgb(36, 195, 142);
+  --gpn-ai-palette-status-success-foreground-light: rgb(36, 99, 77);
+  --gpn-ai-palette-status-warning-fill-dark: rgb(243, 139, 1);
+  --gpn-ai-palette-status-warning-foreground-light: rgb(134, 82, 27);
+  --gpn-ai-palette-status-error-fill-dark: rgb(254, 67, 67);
+  --gpn-ai-palette-status-error-foreground-light: rgb(164, 55, 71);
+  --gpn-ai-snackbar-action-background: var(--gpnai-palette-source-898039-929412-960784-200000);
 }
+
 .Theme_color_gpnAiLight {
   --gpn-ai-border-composer: rgba(82, 116, 255, 0.1);
   --gpn-ai-action-primary-background: rgb(0, 142, 250);
@@ -292,8 +309,8 @@
   --gpn-ai-effect-list-shadow: rgba(16, 42, 58, 0.070588);
   --gpn-ai-text-danger: rgb(189, 82, 98);
   --gpn-ai-border-context-menu: rgba(82, 116, 255, 0.12549);
-  --gpn-ai-status-success-background: rgb(34, 195, 142);
-  --gpn-ai-status-success-text: rgb(7, 136, 93);
+  --gpn-ai-status-success-background: rgb(36, 195, 142);
+  --gpn-ai-status-success-text: rgb(36, 99, 77);
   --gpn-ai-effect-list-shadow-blur: 28px;
   --gpn-ai-effect-list-shadow-offset-y: 8px;
   --gpn-ai-shadow-list: 0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow);
@@ -302,7 +319,20 @@
   --gpn-ai-action-secondary-text-hover: rgb(51, 165, 251);
   --gpn-ai-action-ghost-background-hover: rgba(16, 42, 58, 0.08);
   --gpn-ai-action-clear-background-hover: rgba(16, 42, 58, 0.06);
+  --gpn-ai-status-neutral-background: rgb(66, 106, 128);
+  --gpn-ai-status-neutral-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-success-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-warning-background: rgb(243, 139, 1);
+  --gpn-ai-status-warning-text: rgb(134, 82, 27);
+  --gpn-ai-status-warning-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-error-background: rgb(254, 67, 67);
+  --gpn-ai-status-error-text: rgb(164, 55, 71);
+  --gpn-ai-status-error-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-info-background: rgb(0, 142, 250);
+  --gpn-ai-status-info-text: rgb(0, 111, 190);
+  --gpn-ai-status-info-on-background: rgb(16, 42, 58);
 }
+
 .Theme_color_gpnAiDark {
   --gpn-ai-border-composer: rgba(149, 140, 255, 0.19);
   --gpn-ai-action-primary-background: rgb(0, 142, 250);
@@ -381,8 +411,8 @@
   --gpn-ai-effect-list-shadow: rgba(0, 0, 0, 0.2);
   --gpn-ai-text-danger: rgb(189, 82, 98);
   --gpn-ai-border-context-menu: rgba(149, 140, 255, 0.188235);
-  --gpn-ai-status-success-background: rgb(34, 195, 142);
-  --gpn-ai-status-success-text: rgb(117, 221, 183);
+  --gpn-ai-status-success-background: rgb(36, 195, 142);
+  --gpn-ai-status-success-text: rgb(167, 222, 196);
   --gpn-ai-effect-list-shadow-blur: 32px;
   --gpn-ai-effect-list-shadow-offset-y: 12px;
   --gpn-ai-shadow-list: 0 var(--gpn-ai-effect-list-shadow-offset-y) var(--gpn-ai-effect-list-shadow-blur) 0 var(--gpn-ai-effect-list-shadow);
@@ -391,4 +421,16 @@
   --gpn-ai-action-secondary-text-hover: rgb(51, 165, 251);
   --gpn-ai-action-ghost-background-hover: rgba(229, 237, 245, 0.08);
   --gpn-ai-action-clear-background-hover: rgba(229, 237, 245, 0.06);
+  --gpn-ai-status-neutral-background: rgb(66, 106, 128);
+  --gpn-ai-status-neutral-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-success-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-warning-background: rgb(243, 139, 1);
+  --gpn-ai-status-warning-text: rgb(242, 202, 146);
+  --gpn-ai-status-warning-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-error-background: rgb(254, 67, 67);
+  --gpn-ai-status-error-text: rgb(242, 178, 187);
+  --gpn-ai-status-error-on-background: rgb(255, 255, 255);
+  --gpn-ai-status-info-background: rgb(0, 142, 250);
+  --gpn-ai-status-info-text: rgb(100, 186, 255);
+  --gpn-ai-status-info-on-background: rgb(16, 42, 58);
 }

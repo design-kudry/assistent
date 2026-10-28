@@ -7,11 +7,13 @@ import { TextField } from '@consta/uikit/TextField';
 import { Combobox } from '@consta/uikit/Combobox';
 import { ChoiceGroup } from '@consta/uikit/ChoiceGroup';
 import { Checkbox } from '@consta/uikit/Checkbox';
+import { SnackBar } from '@consta/uikit/SnackBar';
 import { Badge } from '@consta/uikit/Badge';
 import { presetGpnAiLight, presetGpnAiDark, typography, IconPlus, IconSearch } from '../index';
 
 const items = [{ id: 1, label: 'Assistants' }, { id: 2, label: 'Prompts' }];
 export function ThemePreview() {
+  const [snackAction, setSnackAction] = useState('');
   const [dark, setDark] = useState(false);
   const [value, setValue] = useState<string | null>('');
   const [selected, setSelected] = useState<(typeof items)[number] | null>(items[0]);
@@ -42,6 +44,14 @@ export function ThemePreview() {
         <Tabs size="s" view="bordered" items={items} value={activeTab} onChange={setActiveTab} />
         <TextField className="DsTextArea" type="textarea" rows={1} size="s" label="Prompt for answers" value={prompt} onChange={setPrompt} maxLength={5000} caption={`${prompt?.length ?? 0}/5000`} />
         <div className="DsChatList"><Checkbox size="s" label="Select chat" checked={!!selected} onChange={() => setSelected(selected ? null : items[0])} /></div>
+        <section aria-label="Snackbar colors" style={{ width: 400, maxWidth: '100%' }}>
+          <SnackBar form="round" items={(['system', 'success', 'warning', 'alert'] as const).map(status => ({
+            key: status, status, message: status === 'system' ? 'Deleting chats' : status,
+            autoClose: 5, showProgress: 'timer' as const,
+            actions: [{ label: 'Undo', onClick: () => setSnackAction(status) }],
+          }))} />
+          <output data-testid="snack-action">{snackAction}</output>
+        </section>
         <div><Badge className="DsPromptBadge" label="Education" status="system" form="round" /></div>
       </main>
     </Theme>

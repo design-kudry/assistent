@@ -346,3 +346,7 @@ const IconFolder = createGravityIcon('Folder', Folder);
 ## AttachmentCard and file selection
 
 Обновлённые карточки файлов: 248×48px, радиус 12px, отступы 8px, иконка 24×28px, текст Caption/Compact 12/14.4, три кнопки XS по 24px. Для вёрстки приложения добавлены классы `DsAttachmentCard-*` и `DsFileCheckbox`. Пустой чекбокс — нейтральная обводка; выбранный и промежуточный — голубой фон и белая галочка/черта. Цвета Doc/Xls/png используют существующие file-токены. [Состав, цвета и интеграция](docs/attachment-card.md).
+
+## Snackbar
+
+Approved status colors, dark mode and action buttons are described in [docs/snackbar.md](docs/snackbar.md). Use the existing Consta SnackBar; no replacement component is required.
