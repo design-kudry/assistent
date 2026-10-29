@@ -4,6 +4,7 @@ import { Button } from '@consta/uikit/Button';
 import { Tabs } from '@consta/uikit/Tabs';
 import { Text } from '@consta/uikit/Text';
 import { TextField } from '@consta/uikit/TextField';
+import { ListItem } from '@consta/uikit/ListCanary';
 import { Combobox } from '@consta/uikit/Combobox';
 import { ChoiceGroup } from '@consta/uikit/ChoiceGroup';
 import { Checkbox } from '@consta/uikit/Checkbox';
@@ -11,8 +12,10 @@ import { SnackBar } from '@consta/uikit/SnackBar';
 import { Badge } from '@consta/uikit/Badge';
 import { presetGpnAiLight, presetGpnAiDark, typography, IconPlus, IconSearch } from '../index';
 
+const models = [{ id: 'ruadapt', label: 'Ruadapt14B', description: 'For everyday questions' }, { id: 'research', label: 'Research', description: 'For detailed analysis' }];
 const items = [{ id: 1, label: 'Assistants' }, { id: 2, label: 'Prompts' }];
 export function ThemePreview() {
+  const [model, setModel] = useState<(typeof models)[number] | null>(models[0]);
   const [snackAction, setSnackAction] = useState('');
   const [dark, setDark] = useState(false);
   const [value, setValue] = useState<string | null>('');
@@ -37,6 +40,18 @@ export function ThemePreview() {
         <div style={{ width: 375 }}>
           <Combobox size="s" placeholder="Select an assistant" items={items} value={selected} onChange={setSelected} />
         </div>
+        <div style={{ width: 364 }}>
+          <Combobox size="s" placeholder="Select a model" items={models} value={model} onChange={setModel}
+            dropdownClassName="DsComboboxList"
+            renderItem={({ item, active, hovered, onClick, onMouseEnter, ref }) => (
+              <ListItem ref={ref} size="s" className="SelectItem" role="option"
+                aria-selected={active} active={hovered} checked={active}
+                onClick={onClick} onMouseEnter={onMouseEnter}
+                label={<span className="DsComboboxList-Text"><span>{item.label}</span><span className="DsComboboxList-Description">{item.description}</span></span>}
+              />
+            )}
+          />
+        </div>
         <ChoiceGroup size="s" name="catalog" view="secondary" className="DsChoiceGroup_secondary2" items={items} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="primary" view="primary" className="AuditChoicePrimary" items={[...items, { id: 3, label: 'Projects' }, { id: 4, label: 'Chats' }]} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="ghost" view="ghost" className="AuditChoiceGhost" items={items} value={selected} onChange={setSelected} />
@@ -57,3 +72,4 @@ export function ThemePreview() {
     </Theme>
   );
 }
+

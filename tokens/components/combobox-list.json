@@ -1,0 +1,59 @@
+{
+  "reviewedAt": "2026-10-29",
+  "sourceFile": "686IP0J8jTGiix3IXVcA45",
+  "sectionId": "21272:18933",
+  "componentId": "21266:140775",
+  "itemSetId": "21266:140897",
+  "textModuleId": "3885:32503",
+  "variants": [
+    {
+      "id": "21266:139372",
+      "name": "Hover=Off, activ=Off",
+      "foreground": "color/text/primary",
+      "background": "transparent"
+    },
+    {
+      "id": "22562:196988",
+      "name": "Hover=Off, activ=On",
+      "foreground": "color/text/accent",
+      "icon": "color/action/primary/background",
+      "background": "transparent"
+    },
+    {
+      "id": "21266:140898",
+      "name": "Hover=On, activ=Off",
+      "foreground": "color/text/primary",
+      "background": "color/navigation/item/background-active"
+    }
+  ],
+  "geometry": {
+    "popupRadius": 16,
+    "popupPadding": 8,
+    "exampleWidth": 285,
+    "exampleHeight": 218,
+    "itemMinHeight": 36,
+    "itemRadius": 12,
+    "itemPaddingHorizontal": 8,
+    "textPaddingVertical": 4,
+    "textGap": 4,
+    "descriptionExampleItemHeight": 51
+  },
+  "typography": {
+    "title": "Typography/Body/Compact-Regular",
+    "description": "Typography/Caption/Compact"
+  },
+  "roles": {
+    "popup": "color/background/surface",
+    "border": "color/border/context-menu",
+    "description": "color/text/secondary",
+    "counter": "color/text/tertiary",
+    "emptyCheckboxOutline": "color/text/tertiary"
+  },
+  "integration": {
+    "component": "@consta/uikit/Combobox",
+    "size": "s",
+    "dropdownClassName": "DsComboboxList",
+    "descriptionRenderItem": "examples/ThemePreview.tsx"
+  },
+  "newColorVariables": 0
+}

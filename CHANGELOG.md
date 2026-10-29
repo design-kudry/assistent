@@ -6,6 +6,13 @@
 
 ## Не выпущено
 
+### ComboboxList — 2026-10-29
+
+- Синхронизировано новое состояние `Hover=Off, activ=On`: акцентный текст и иконка, прозрачный фон; hover использует существующий navigation/item/background-active.
+- Добавлен опциональный `dropdownClassName="DsComboboxList"` для Consta: Surface в обеих темах, радиус 16px, внутренние отступы 8px, пункты от 36px, без боковой полосы выбранного пункта.
+- Модуль Text: Body/Compact-Regular 14/16.8 и Caption/Compact 12/14.4, gap 4px, описание остаётся secondary. Добавлены пример, спецификация и снимок Figma. Новые цвета не создавались.
+
+
 ### Snackbar — 2026-10-28
 
 - Перенесены утверждённые Neutral/Success/Warning/Error из Figma. В тёмной теме нейтральный снек остаётся тёмно-синим с белым текстом.
@@ -113,3 +120,4 @@
 ### Устарело
 
 Работают как раньше, но в новом коде используйте `--gpn-ai-background-surface`: `--gpn-ai-background-sidebar`, `--gpn-ai-bg-sidebar`, `--gpn-ai-background-raised`, `--gpn-ai-bg-raised`. Вместо `--gpn-ai-composer-border` — `--gpn-ai-border-composer`.
+

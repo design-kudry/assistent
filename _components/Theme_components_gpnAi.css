@@ -295,3 +295,54 @@
   outline: 2px solid var(--gpn-ai-text-on-accent);
   outline-offset: 2px;
 }
+
+
+/* Opt-in ComboboxList: Figma 21266:140775 and 21266:140897.
+   Pass dropdownClassName="DsComboboxList" so the portal receives these rules. */
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList),
+.Theme_control_gpnAi.DsComboboxList {
+  --control-radius: var(--gpn-ai-radius-16);
+  padding: var(--gpn-ai-space-8);
+  background: var(--gpn-ai-background-surface);
+}
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectItem.Text_size_s {
+  box-sizing: border-box;
+  min-height: 36px;
+  padding: var(--gpn-ai-space-8);
+  border-radius: var(--gpn-ai-radius-12);
+  color: var(--gpn-ai-text-primary);
+  background: transparent;
+  font-size: var(--gpn-ai-body-compact-regular-size);
+  line-height: var(--gpn-ai-body-compact-regular-line-height);
+  font-weight: var(--gpn-ai-body-compact-regular-font-weight);
+}
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectItem::before {
+  display: none;
+}
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectItem[aria-selected="true"]:not([aria-disabled="true"]) {
+  color: var(--gpn-ai-action-primary-background);
+}
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectItem.ListItem_active:not([aria-disabled="true"]),
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectItem:hover:not([aria-disabled="true"]) {
+  background: var(--gpn-ai-nav-active-bg);
+}
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectItem[aria-disabled="true"] {
+  color: var(--color-control-typo-disable);
+}
+.Theme_control_gpnAi .DsComboboxList-Text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gpn-ai-space-4);
+  min-width: 0;
+}
+.Theme_control_gpnAi .DsComboboxList-Description {
+  color: var(--gpn-ai-text-secondary);
+  font-size: var(--gpn-ai-caption-compact-size);
+  line-height: var(--gpn-ai-caption-compact-line-height);
+  font-weight: var(--gpn-ai-caption-compact-font-weight);
+}
+
+:is(.Theme_control_gpnAi .DsComboboxList, .Theme_control_gpnAi.DsComboboxList) .SelectDropdown-ScrollContainer {
+  padding-top: 0;
+  padding-bottom: 0;
+}

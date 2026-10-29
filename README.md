@@ -45,6 +45,7 @@ export function App({ dark = false }) {
 | TextField, Combobox, AutoComplete | `size="s"` | Высота 36px, радиус 12px, текст 14px |
 | ChoiceGroup | `size="s"` | Высота 36px, круглые элементы, отступы 20px, интерлиньяж 32px |
 | ChoiceGroup / View=Secondary 2 | `view="secondary" className="DsChoiceGroup_secondary2"` | Фон выбранного пункта `--gpn-ai-control-background-selected` (#DFF1FF / #173D59), синяя рамка 1px, синий текст и иконки |
+| ComboboxList | `dropdownClassName="DsComboboxList"` | Surface, радиус 16px, пункты 36px, выбранный текст и иконки accent; [пример с описанием](docs/combobox-list.md) |
 | Выпадающий список | обычный, без пропсов | Радиус 20px, фон, граница и тень List |
 | Бейдж карточки запроса | `<Badge className="DsPromptBadge" />` | Высота 24px, текст 12/24, Semi Bold |
 | Текст | `<Text className={typography.bodyRegular} />` | Стиль из Figma, см. «Типографика» |
@@ -350,3 +351,4 @@ const IconFolder = createGravityIcon('Folder', Folder);
 ## Snackbar
 
 Approved status colors, dark mode and action buttons are described in [docs/snackbar.md](docs/snackbar.md). Use the existing Consta SnackBar; no replacement component is required.
+

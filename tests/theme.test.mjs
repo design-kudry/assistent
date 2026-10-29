@@ -69,7 +69,7 @@ try {
   await expect(tabs.last()).toHaveCSS('color','rgb(0, 142, 250)');
   await expect(page.locator('.TabsLine_type_running')).toHaveCSS('height','2px');
   await tabs.first().click();
-  await page.locator('.Select-Control').click();
+  await page.locator('.Select-Control').first().click();
   await page.getByRole('listbox').waitFor();
   await expect(page.getByRole('listbox')).toHaveCSS('opacity','1');
   assert.equal(await css('.SelectDropdown','borderRadius'),'20px');
@@ -78,8 +78,31 @@ try {
   await page.screenshot({fullPage:true,path:`/tmp/assistent-theme-${dark?'dark':'light'}.png`});
   await page.getByRole('option').last().click();
   await page.getByRole('listbox').waitFor({state:'hidden'});
+  await page.locator('.Select-Control').nth(1).click();
+  const modelList = page.locator('.DsComboboxList');
+  await expect(modelList).toBeVisible();
+  await expect(modelList).toHaveCSS('opacity','1');
+  await expect(modelList).toHaveCSS('border-radius','16px');
+  await expect(modelList).toHaveCSS('background-color',dark?'rgb(25, 35, 46)':'rgb(255, 255, 255)');
+  const models = modelList.getByRole('option');
+  await expect(models.first()).toHaveCSS('color','rgb(0, 142, 250)');
+  await expect(models.first()).toHaveCSS('line-height','16.8px');
+  await expect(models.first().locator('.DsComboboxList-Description')).toHaveCSS('color',dark?'rgb(155, 175, 191)':'rgba(16, 42, 58, 0.7)');
+  await expect(models.first().locator('.DsComboboxList-Description')).toHaveCSS('line-height','14.4px');
+  await models.last().hover();
+  await expect(models.last()).toHaveCSS('background-color',dark?'rgba(229, 237, 245, 0.05)':'rgba(0, 32, 51, 0.05)');
+  await models.last().click();
+  await expect(page.locator('.Select-Control').nth(1)).toContainText('Research');
+  await page.locator('.Select-Input').nth(1).focus();
+  await page.keyboard.press('ArrowDown');
+  await expect(modelList).toBeVisible();
+  await expect(modelList).toHaveCSS('opacity','1');
+  await page.keyboard.press('ArrowUp');
+  await page.keyboard.press('Enter');
+  await expect(page.locator('.Select-Control').nth(1)).toContainText('Ruadapt14B');
   await page.getByRole('button',{name:'Switch theme'}).click();
  }
  assert.deepEqual(errors,[]);
  console.log('PASS: real Consta components, both themes, portaled dropdown, explicit forms, typography, badge and selection.');
 } finally { await browser.close(); }
+
