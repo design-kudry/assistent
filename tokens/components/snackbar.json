@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-10-28",
+  "reviewedAt": "2026-10-29",
   "sourceFile": "686IP0J8jTGiix3IXVcA45",
   "componentId": "22475:94248",
   "variants": [
@@ -267,5 +267,10 @@
       }
     }
   ],
-  "conceptFramesExcluded": true
+  "conceptFramesExcluded": true,
+  "typography": {
+    "message": "Typography/Body/Message",
+    "timerCounter": "Typography/Caption/Counter",
+    "action": "Typography/Body/Regular"
+  }
 }

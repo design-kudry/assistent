@@ -26,4 +26,6 @@ export const typography = {
   captionItalic: 'DsText_caption-italic',
   microItalic: 'DsText_micro-italic',
   captionBadge: 'DsText_caption-badge',
+  bodyMessage: 'DsText_body-message',
+  captionCounter: 'DsText_caption-counter',
 } as const;

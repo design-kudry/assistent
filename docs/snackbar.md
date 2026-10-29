@@ -34,3 +34,7 @@ The theme styles the real Consta SnackBar and its nested action Buttons/Timer. N
 ```
 
 The approved vivid fills and white content are copied exactly from Figma. They are not the same as the more contrasting validation text colors. Exploratory concept frames are not part of this export.
+
+## Typography
+
+Message: `Typography/Body/Message`, Inter Regular 16/22.4. Timer counter: `Typography/Caption/Counter`, Inter Bold 12/24. These roles preserve the existing Figma typography. The Consta overrides apply the same metrics; action labels keep Body/Regular 14/21.

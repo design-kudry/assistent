@@ -1,0 +1,2902 @@
+{
+  "sourceFile": "686IP0J8jTGiix3IXVcA45",
+  "pageId": "2536:19469",
+  "reviewedAt": "2026-10-29",
+  "families": [
+    {
+      "id": "17413:24046",
+      "name": "Menu",
+      "type": "COMPONENT_SET",
+      "width": 511,
+      "height": 875,
+      "variants": [
+        {
+          "id": "17413:9876",
+          "name": "Open=True",
+          "width": 280,
+          "height": 787
+        },
+        {
+          "id": "17413:23990",
+          "name": "Open=false",
+          "width": 80,
+          "height": 787
+        }
+      ],
+      "nodes": 168,
+      "variables": [
+        "VariableID:20894:12268",
+        "VariableID:20926:12946",
+        "VariableID:20894:12271",
+        "VariableID:20098:79049",
+        "VariableID:20059:141997",
+        "VariableID:20059:141992",
+        "VariableID:20925:12955",
+        "VariableID:20894:12281",
+        "VariableID:20059:141980"
+      ],
+      "textStyles": [
+        "",
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:ad121f8ff9204a415d45ca764441744e33c58648,",
+        "S:ea4403c9054c5fb20aa36774305ca2b94718558e,"
+      ],
+      "issues": [
+        {
+          "id": "17729:107049",
+          "kind": "text-style",
+          "visible": true
+        },
+        {
+          "id": "I22507:117101;22507:117086",
+          "kind": "text-style",
+          "visible": true
+        }
+      ],
+      "overrides": []
+    },
+    {
+      "id": "17413:9626",
+      "name": "Menu/Module/Nav",
+      "type": "COMPONENT_SET",
+      "width": 288,
+      "height": 300,
+      "variants": [
+        {
+          "id": "17413:9625",
+          "name": "Activ=false",
+          "width": 248,
+          "height": 40
+        },
+        {
+          "id": "17413:9627",
+          "name": "Activ=true",
+          "width": 248,
+          "height": 120
+        }
+      ],
+      "nodes": 27,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20059:141997",
+        "VariableID:20894:12284",
+        "VariableID:20055:141160",
+        "VariableID:20894:12282",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "17726:100298",
+      "name": "Menu/Module/Group",
+      "type": "COMPONENT",
+      "width": 248,
+      "height": 24,
+      "variants": [],
+      "nodes": 22,
+      "variables": [
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "22507:117100",
+      "name": "Logo",
+      "type": "COMPONENT_SET",
+      "width": 76,
+      "height": 124,
+      "variants": [
+        {
+          "id": "22507:117099",
+          "name": "Hover=Off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "22507:117098",
+          "name": "Hover=On",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "nodes": 8,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20098:79049",
+        "VariableID:21430:20440",
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [
+        ""
+      ],
+      "issues": [
+        {
+          "id": "22507:117086",
+          "kind": "text-style",
+          "visible": true
+        }
+      ],
+      "overrides": []
+    },
+    {
+      "id": "20081:142227",
+      "name": "Composer",
+      "type": "COMPONENT_SET",
+      "width": 840,
+      "height": 648,
+      "variants": [
+        {
+          "id": "20081:142226",
+          "name": "Size=M, Text=Off, Edit=off",
+          "width": 770,
+          "height": 104
+        },
+        {
+          "id": "20081:144127",
+          "name": "Size=M, Text=On, Edit=off",
+          "width": 770,
+          "height": 104
+        },
+        {
+          "id": "20085:3069",
+          "name": "Size=M, Text=On, Edit=on",
+          "width": 770,
+          "height": 104
+        },
+        {
+          "id": "20081:142224",
+          "name": "Size=S, Text=Off, Edit=off",
+          "width": 770,
+          "height": 60
+        },
+        {
+          "id": "20081:144136",
+          "name": "Size=S, Text=On, Edit=off",
+          "width": 770,
+          "height": 60
+        }
+      ],
+      "nodes": 176,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12271",
+        "VariableID:20050:105803",
+        "VariableID:20894:12276",
+        "VariableID:20059:141992",
+        "VariableID:20059:141997",
+        "VariableID:20133:82486",
+        "VariableID:20059:141980",
+        "VariableID:20055:141160",
+        "VariableID:20894:12281",
+        "VariableID:20927:270474",
+        "VariableID:20927:270476",
+        "VariableID:20927:270472"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20081:143734",
+      "name": "Composer/Module/Input",
+      "type": "COMPONENT",
+      "width": 436,
+      "height": 32,
+      "variants": [],
+      "nodes": 10,
+      "variables": [
+        "VariableID:20925:12967",
+        "VariableID:20925:12970"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20159:165090",
+      "name": "Composer/Module/File",
+      "type": "COMPONENT",
+      "width": 768,
+      "height": 60,
+      "variants": [],
+      "nodes": 56,
+      "variables": [
+        "VariableID:20927:270474",
+        "VariableID:20927:270476",
+        "VariableID:20894:12281",
+        "VariableID:20059:141980",
+        "VariableID:20894:12276",
+        "VariableID:20927:270472"
+      ],
+      "textStyles": [
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20055:141169",
+      "name": "Button",
+      "type": "COMPONENT_SET",
+      "width": 904,
+      "height": 471,
+      "variants": [
+        {
+          "id": "20055:141168",
+          "name": "Size=S, View=Primary, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "21422:192632",
+          "name": "Size=S, View=Primary, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141410",
+          "name": "Size=S, View=Primary, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "21422:192634",
+          "name": "Size=S, View=Primary, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141164",
+          "name": "Size=S, View=Secondary, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "21422:192636",
+          "name": "Size=S, View=Secondary, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141412",
+          "name": "Size=S, View=Secondary, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "21422:192638",
+          "name": "Size=S, View=Secondary, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141162",
+          "name": "Size=S, View=Ghost, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "21422:192640",
+          "name": "Size=S, View=Ghost, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141414",
+          "name": "Size=S, View=Ghost, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "21422:192642",
+          "name": "Size=S, View=Ghost, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141165",
+          "name": "Size=S, View=Clear, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "21422:192644",
+          "name": "Size=S, View=Clear, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141416",
+          "name": "Size=S, View=Clear, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "21422:192646",
+          "name": "Size=S, View=Clear, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141163",
+          "name": "Size=S, View=Primary, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141418",
+          "name": "Size=S, View=Primary, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141167",
+          "name": "Size=S, View=Secondary, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141420",
+          "name": "Size=S, View=Secondary, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141166",
+          "name": "Size=S, View=Ghost, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141422",
+          "name": "Size=S, View=Ghost, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20055:141161",
+          "name": "Size=S, View=Clear, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 126,
+          "height": 36
+        },
+        {
+          "id": "20055:141424",
+          "name": "Size=S, View=Clear, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "21434:20549",
+          "name": "Size=XS, View=Primary, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20551",
+          "name": "Size=XS, View=Primary, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20553",
+          "name": "Size=XS, View=Primary, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20555",
+          "name": "Size=XS, View=Primary, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20557",
+          "name": "Size=XS, View=Secondary, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20559",
+          "name": "Size=XS, View=Secondary, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20561",
+          "name": "Size=XS, View=Secondary, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20563",
+          "name": "Size=XS, View=Secondary, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20565",
+          "name": "Size=XS, View=Ghost, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20567",
+          "name": "Size=XS, View=Ghost, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20569",
+          "name": "Size=XS, View=Ghost, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20571",
+          "name": "Size=XS, View=Ghost, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20573",
+          "name": "Size=XS, View=Clear, Dissable=off, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20575",
+          "name": "Size=XS, View=Clear, Dissable=off, OnlyIcon=Off, Hover=on",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20577",
+          "name": "Size=XS, View=Clear, Dissable=off, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20579",
+          "name": "Size=XS, View=Clear, Dissable=off, OnlyIcon=On, Hover=on",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20581",
+          "name": "Size=XS, View=Primary, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20583",
+          "name": "Size=XS, View=Primary, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20585",
+          "name": "Size=XS, View=Secondary, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20587",
+          "name": "Size=XS, View=Secondary, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20589",
+          "name": "Size=XS, View=Ghost, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20591",
+          "name": "Size=XS, View=Ghost, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        },
+        {
+          "id": "21434:20593",
+          "name": "Size=XS, View=Clear, Dissable=On, OnlyIcon=Off, Hover=off",
+          "width": 103,
+          "height": 24
+        },
+        {
+          "id": "21434:20595",
+          "name": "Size=XS, View=Clear, Dissable=On, OnlyIcon=On, Hover=off",
+          "width": 24,
+          "height": 24
+        }
+      ],
+      "nodes": 265,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20055:141160",
+        "VariableID:20894:12281",
+        "VariableID:21430:20436",
+        "VariableID:21430:20437",
+        "VariableID:21430:20438",
+        "VariableID:20133:82485",
+        "VariableID:20059:141997",
+        "VariableID:21430:20439",
+        "VariableID:21430:20440",
+        "VariableID:20133:82486",
+        "VariableID:20894:12276"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:99aeaa59961d7e3109f698d1fae1de86d3e774bc,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20133:82484",
+      "name": "ChoiceGroup/Module/Item",
+      "type": "COMPONENT_SET",
+      "width": 446,
+      "height": 193,
+      "variants": [
+        {
+          "id": "20133:82483",
+          "name": "Activ=On, View=Primary, OnlyIcon=Off, Dissable=Off",
+          "width": 82,
+          "height": 36
+        },
+        {
+          "id": "20133:82482",
+          "name": "Activ=On, View=Primary, OnlyIcon=On, Dissable=Off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20133:82480",
+          "name": "Activ=On, View=Secondary, OnlyIcon=Off, Dissable=Off",
+          "width": 82,
+          "height": 36
+        },
+        {
+          "id": "21224:128826",
+          "name": "Activ=On, View=Secondary 2, OnlyIcon=Off, Dissable=Off",
+          "width": 82,
+          "height": 36
+        },
+        {
+          "id": "20133:82481",
+          "name": "Activ=On, View=Secondary, OnlyIcon=On, Dissable=Off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "21224:128828",
+          "name": "Activ=On, View=Secondary 2, OnlyIcon=On, Dissable=Off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20133:82478",
+          "name": "Activ=Off, View=—, OnlyIcon=On, Dissable=On",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20133:82477",
+          "name": "Activ=Off, View=—, OnlyIcon=Off, Dissable=On",
+          "width": 82,
+          "height": 36
+        },
+        {
+          "id": "20133:82476",
+          "name": "Activ=On, View=Ghost, OnlyIcon=On, Dissable=Off",
+          "width": 36,
+          "height": 36
+        },
+        {
+          "id": "20133:82475",
+          "name": "Activ=On, View=Ghost, OnlyIcon=Off, Dissable=Off",
+          "width": 82,
+          "height": 36
+        },
+        {
+          "id": "20133:82479",
+          "name": "Activ=Off, View=—, OnlyIcon=Off, Dissable=Off",
+          "width": 82,
+          "height": 36
+        },
+        {
+          "id": "20133:82474",
+          "name": "Activ=Off, View=—, OnlyIcon=On, Dissable=Off",
+          "width": 36,
+          "height": 36
+        }
+      ],
+      "nodes": 55,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20055:141160",
+        "VariableID:20894:12281",
+        "VariableID:20894:12271",
+        "VariableID:21227:18318",
+        "VariableID:20133:82486",
+        "VariableID:20894:12276",
+        "VariableID:20133:82485",
+        "VariableID:20059:141997",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20133:83399",
+      "name": "ChoiceGroup",
+      "type": "COMPONENT",
+      "width": 684,
+      "height": 36,
+      "variants": [],
+      "nodes": 48,
+      "variables": [
+        "VariableID:20133:82485",
+        "VariableID:20055:141160",
+        "VariableID:20894:12281",
+        "VariableID:20925:12964",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20133:83857",
+      "name": "ChoiceGroup/Module/Part",
+      "type": "COMPONENT",
+      "width": 225,
+      "height": 36,
+      "variants": [],
+      "nodes": 6,
+      "variables": [
+        "VariableID:20894:12271",
+        "VariableID:20055:141160",
+        "VariableID:20133:82485"
+      ],
+      "textStyles": [
+        "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,",
+        "S:5d620ffa6f8aae6a2cb22cd6f0e65f96a0f4aae0,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20159:164867",
+      "name": "AttachmentCard",
+      "type": "COMPONENT_SET",
+      "width": 549,
+      "height": 150,
+      "variants": [
+        {
+          "id": "20156:164811",
+          "name": "Attach=Doc",
+          "width": 248,
+          "height": 48
+        },
+        {
+          "id": "22254:197844",
+          "name": "Attach=Xls",
+          "width": 248,
+          "height": 48
+        },
+        {
+          "id": "22254:197945",
+          "name": "Attach=png",
+          "width": 248,
+          "height": 48
+        }
+      ],
+      "nodes": 40,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20927:270474",
+        "VariableID:20927:270476",
+        "VariableID:20894:12281",
+        "VariableID:20059:141980",
+        "VariableID:20894:12276",
+        "VariableID:20927:270472",
+        "VariableID:20927:270478",
+        "VariableID:20927:270480"
+      ],
+      "textStyles": [
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20154:92413",
+      "name": "AttachmentCard/Module/File",
+      "type": "COMPONENT_SET",
+      "width": 1223,
+      "height": 113,
+      "variants": [
+        {
+          "id": "20154:92384",
+          "name": "File=mp3, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92412",
+          "name": "File=mp3, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92409",
+          "name": "File=mp3, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92394",
+          "name": "File=mp3, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92400",
+          "name": "File=exe, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92385",
+          "name": "File=exe, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92395",
+          "name": "File=json, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92406",
+          "name": "File=json, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92399",
+          "name": "File=avi, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92408",
+          "name": "File=avi, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92411",
+          "name": "File=mp4, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92397",
+          "name": "File=mp4, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92379",
+          "name": "File=mov, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92392",
+          "name": "File=mov, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92398",
+          "name": "File=msg, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92410",
+          "name": "File=msg, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92383",
+          "name": "File=xls, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92391",
+          "name": "File=xls, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92387",
+          "name": "File=ods, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92393",
+          "name": "File=ods, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92380",
+          "name": "File=csv, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92388",
+          "name": "File=csv, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92405",
+          "name": "File=png, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92407",
+          "name": "File=png, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92378",
+          "name": "File=pdf, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92375",
+          "name": "File=pdf, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92374",
+          "name": "File=ppt, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92377",
+          "name": "File=ppt, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92371",
+          "name": "File=rar, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92370",
+          "name": "File=rar, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92368",
+          "name": "File=zip, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92373",
+          "name": "File=zip, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92366",
+          "name": "File=jpg, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92390",
+          "name": "File=jpg, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92372",
+          "name": "File=svg, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92396",
+          "name": "File=svg, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92403",
+          "name": "File=tiff, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92376",
+          "name": "File=tiff, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92365",
+          "name": "File=gif, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92382",
+          "name": "File=gif, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92386",
+          "name": "File=bmp, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92364",
+          "name": "File=bmp, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92402",
+          "name": "File=doc, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92401",
+          "name": "File=doc, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92369",
+          "name": "File=txt, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92363",
+          "name": "File=txt, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92381",
+          "name": "File=rtf, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92404",
+          "name": "File=rtf, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92362",
+          "name": "File=undefined, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92361",
+          "name": "File=undefined, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92360",
+          "name": "File=image, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92389",
+          "name": "File=loading, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92359",
+          "name": "File=vsd, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92358",
+          "name": "File=vsd, Dissabl=On",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92367",
+          "name": "File=vsdx, Dissabl=off",
+          "width": 24,
+          "height": 28
+        },
+        {
+          "id": "20154:92357",
+          "name": "File=vsdx, Dissabl=On",
+          "width": 24,
+          "height": 28
+        }
+      ],
+      "nodes": 273,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20927:270478",
+        "VariableID:20894:12281",
+        "VariableID:20927:270476",
+        "VariableID:20927:270480",
+        "VariableID:20927:270474"
+      ],
+      "textStyles": [],
+      "issues": [
+        {
+          "id": "20135:91431",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91440;7939:51390",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91433",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91483",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91484;7939:51390",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91485",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91456",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91457;7939:51390",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91464",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91487",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91488;7939:51390",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91489",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92077",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92079",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20152:92173;7939:46934",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92202",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92203",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92204;7939:46934",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92033",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92036",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20152:92179;7939:50934",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92206",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92207",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92208;7939:50934",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91545",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91547",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91571;7939:51029",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91586",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91587",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91588;7939:51029",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91541",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91542",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91555;7939:51029",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91590",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91591",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91592;7939:51029",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91537",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91538",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91563;7939:51029",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91594",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91595",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91596;7939:51029",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91913",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91914",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20147:91965;7939:46988",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92210",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92211",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92212;7939:46988",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92214",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92215",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92216;7939:49697",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92050",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92052",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20147:92113;7939:49697",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92218",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92219",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92220;7939:49697",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92054",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20147:92095;7939:49697",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92056",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92222",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92223;7939:49697",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92224",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92226",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92227",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92228;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91521",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91522",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20152:92192;7939:50662",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91513",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91514",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20152:92187;7939:50662",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91921",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91922",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20147:91951;7939:48474",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92230",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92231",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92232;7939:48474",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92058",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92059",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92060",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92234",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92235",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92236",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92062",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92063",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92064",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92238",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92239",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92240",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91679",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91681",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91707;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91841",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91842",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20145:91843;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91927",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91928",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91929",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91930",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91931",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:91932",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92242",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92243",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92244",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92245",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92246",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92247",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91671",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91673",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91700;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91845",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91846",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20145:91847;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91675",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91676",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91693;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91849",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91850",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20145:91851;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91683",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20135:91686;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91685",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91853",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20145:91854;7939:46995",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20145:91855",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92249",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92250;7939:48688",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92251",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92042",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20147:92140;7939:48688",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92044",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92253",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92254;7939:48688",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92255",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92070",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92071",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92072",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92073",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92074",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20147:92148;7939:48688",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92257",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92258",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92259",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92260",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92261",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "I20154:92262;7939:48688",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91476",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91477",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91470",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91471",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91509",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20135:91511",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92046",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92047",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92048",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92264",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92265",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92266",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92081",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92082",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20147:92083",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92268",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92269",
+          "kind": "raw-fills",
+          "visible": true
+        },
+        {
+          "id": "20154:92270",
+          "kind": "raw-fills",
+          "visible": true
+        }
+      ],
+      "overrides": []
+    },
+    {
+      "id": "22254:194653",
+      "name": "Parts/RightSide",
+      "type": "COMPONENT",
+      "width": 88,
+      "height": 24,
+      "variants": [],
+      "nodes": 13,
+      "variables": [
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20399:192155",
+      "name": "ChatHeader",
+      "type": "COMPONENT",
+      "width": 1312,
+      "height": 84,
+      "variants": [],
+      "nodes": 21,
+      "variables": [
+        "VariableID:20059:141997",
+        "VariableID:20059:141992",
+        "VariableID:20055:141160"
+      ],
+      "textStyles": [
+        "S:352e68189f8aa9edbd9247b32f6c7dc67a4a51f1,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20434:194235",
+      "name": "ChatHeader/Module/Breadcrumbs",
+      "type": "COMPONENT",
+      "width": 383,
+      "height": 36,
+      "variants": [],
+      "nodes": 15,
+      "variables": [
+        "VariableID:20059:141997",
+        "VariableID:20059:141992",
+        "VariableID:20055:141160"
+      ],
+      "textStyles": [
+        "S:352e68189f8aa9edbd9247b32f6c7dc67a4a51f1,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21195:106283",
+      "name": "Card/Assistant",
+      "type": "COMPONENT",
+      "width": 378,
+      "height": 86,
+      "variants": [],
+      "nodes": 10,
+      "variables": [
+        "VariableID:20894:12271",
+        "VariableID:20059:141980",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:15e22f66c14f0258dab8927cb21ea1ffdea0ce64,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21200:106921",
+      "name": "Star",
+      "type": "COMPONENT_SET",
+      "width": 92,
+      "height": 56,
+      "variants": [
+        {
+          "id": "21200:106920",
+          "name": "Activ=Off",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "id": "21200:106919",
+          "name": "Activ=On",
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "nodes": 7,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20059:141992",
+        "VariableID:20055:141160"
+      ],
+      "textStyles": [],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21250:134977",
+      "name": "List",
+      "type": "COMPONENT_SET",
+      "width": 810,
+      "height": 320,
+      "variants": [
+        {
+          "id": "21250:134978",
+          "name": "Property 1=Default",
+          "width": 770,
+          "height": 202
+        },
+        {
+          "id": "21250:134983",
+          "name": "Property 1=Variant2",
+          "width": 770,
+          "height": 58
+        }
+      ],
+      "nodes": 33,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:21252:17687",
+        "VariableID:20894:12287",
+        "VariableID:20059:141992",
+        "VariableID:20059:141997",
+        "VariableID:20133:82485",
+        "VariableID:20059:141980"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
+        "S:a385fc629f954fb9a1599a7b023650e146efccd3,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21250:134988",
+      "name": "List/Module/Item",
+      "type": "COMPONENT_SET",
+      "width": 840,
+      "height": 148,
+      "variants": [
+        {
+          "id": "21250:134989",
+          "name": "Property 1=Default",
+          "width": 770,
+          "height": 48
+        },
+        {
+          "id": "21250:134993",
+          "name": "Property 1=Active",
+          "width": 770,
+          "height": 48
+        }
+      ],
+      "nodes": 13,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20133:82485",
+        "VariableID:20059:141997",
+        "VariableID:20059:141980"
+      ],
+      "textStyles": [
+        "S:a385fc629f954fb9a1599a7b023650e146efccd3,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21257:135053",
+      "name": "List/Module/Header",
+      "type": "COMPONENT",
+      "width": 800,
+      "height": 42,
+      "variants": [],
+      "nodes": 4,
+      "variables": [
+        "VariableID:20059:141992",
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20882:136599",
+      "name": "ChatMessage",
+      "type": "COMPONENT_SET",
+      "width": 1704,
+      "height": 710,
+      "variants": [
+        {
+          "id": "20882:136598",
+          "name": "User=Assistent",
+          "width": 816,
+          "height": 670
+        },
+        {
+          "id": "20882:136597",
+          "name": "User=User",
+          "width": 816,
+          "height": 331
+        }
+      ],
+      "nodes": 123,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20059:141992",
+        "VariableID:20927:270474",
+        "VariableID:20927:270476",
+        "VariableID:20894:12281",
+        "VariableID:20059:141980",
+        "VariableID:20894:12276",
+        "VariableID:20927:270472",
+        "VariableID:20927:270478",
+        "VariableID:20927:270480",
+        "VariableID:20059:141997",
+        "VariableID:20133:82485"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,",
+        "S:c4f0f877421b7a410cd75fb913319d6362872f12,",
+        "S:2cbb88966dfa8322443bcd603e47746e6a6d42d0,",
+        "S:e7cd507205d5ddfffdcb94550af9e9cf344ba3d7,",
+        "S:352e68189f8aa9edbd9247b32f6c7dc67a4a51f1,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20882:136767",
+      "name": "ChatMessage/Module/Text",
+      "type": "COMPONENT",
+      "width": 768,
+      "height": 312,
+      "variants": [],
+      "nodes": 5,
+      "variables": [
+        "VariableID:20059:141980",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:c4f0f877421b7a410cd75fb913319d6362872f12,",
+        "S:2cbb88966dfa8322443bcd603e47746e6a6d42d0,",
+        "S:e7cd507205d5ddfffdcb94550af9e9cf344ba3d7,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20882:136255",
+      "name": "ChatMessage/Module/File",
+      "type": "COMPONENT",
+      "width": 248,
+      "height": 222,
+      "variants": [],
+      "nodes": 42,
+      "variables": [
+        "VariableID:20927:270474",
+        "VariableID:20927:270476",
+        "VariableID:20894:12281",
+        "VariableID:20059:141980",
+        "VariableID:20894:12276",
+        "VariableID:20927:270472",
+        "VariableID:20927:270478",
+        "VariableID:20927:270480"
+      ],
+      "textStyles": [
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "20882:136515",
+      "name": "ChatMessage/Module/Actions",
+      "type": "COMPONENT",
+      "width": 80,
+      "height": 24,
+      "variants": [],
+      "nodes": 11,
+      "variables": [
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "9643:91439",
+      "name": "ChatMessage/Module/Reasoning/Module/Header",
+      "type": "COMPONENT_SET",
+      "width": 630,
+      "height": 108,
+      "variants": [
+        {
+          "id": "8965:9052",
+          "name": "Size=s",
+          "width": 603,
+          "height": 24
+        },
+        {
+          "id": "9643:91440",
+          "name": "Size=xs",
+          "width": 603,
+          "height": 18
+        }
+      ],
+      "nodes": 15,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20925:12970",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "9643:91454",
+      "name": "ChatMessage/Module/Reasoning/Module/Step",
+      "type": "COMPONENT_SET",
+      "width": 639,
+      "height": 302,
+      "variants": [
+        {
+          "id": "8965:8859",
+          "name": "Size=S",
+          "width": 599,
+          "height": 121
+        },
+        {
+          "id": "9643:91455",
+          "name": "Size=xs",
+          "width": 599,
+          "height": 101
+        }
+      ],
+      "nodes": 61,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20925:12970",
+        "VariableID:20894:12287",
+        "VariableID:20059:141992",
+        "VariableID:20133:82485"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:84fc65c897992317ce695253c09991824c65a56f,",
+        "S:8647332b224d1be4abe964e3738c50914cac738a,",
+        "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,",
+        "S:85d9eb3381aa9b985d94c3325835fc3b295a5c2f,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "8965:9563",
+      "name": "ChatMessage/Module/Reasoning",
+      "type": "COMPONENT_SET",
+      "width": 1300,
+      "height": 430,
+      "variants": [
+        {
+          "id": "8965:9562",
+          "name": "State=Details, Size=S",
+          "width": 603,
+          "height": 300
+        },
+        {
+          "id": "9643:91853",
+          "name": "State=Details, Size=XS",
+          "width": 603,
+          "height": 243
+        },
+        {
+          "id": "8965:9971",
+          "name": "State=Default, Size=S",
+          "width": 603,
+          "height": 24
+        },
+        {
+          "id": "9643:92032",
+          "name": "State=Default, Size=XS",
+          "width": 603,
+          "height": 18
+        }
+      ],
+      "nodes": 157,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20925:12970",
+        "VariableID:20059:141992",
+        "VariableID:20894:12287",
+        "VariableID:20133:82485"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:84fc65c897992317ce695253c09991824c65a56f,",
+        "S:8647332b224d1be4abe964e3738c50914cac738a,",
+        "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,",
+        "S:85d9eb3381aa9b985d94c3325835fc3b295a5c2f,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "13850:168109",
+      "name": "SourceLink",
+      "type": "COMPONENT_SET",
+      "width": 303,
+      "height": 99,
+      "variants": [
+        {
+          "id": "8965:8796",
+          "name": "size=xs, иконка=иконка",
+          "width": 89,
+          "height": 20
+        },
+        {
+          "id": "13850:183785",
+          "name": "size=s, иконка=иконка",
+          "width": 101,
+          "height": 20
+        },
+        {
+          "id": "13850:168110",
+          "name": "size=s, иконка=Фавикон",
+          "width": 97,
+          "height": 20
+        },
+        {
+          "id": "13850:183781",
+          "name": "size=xs, иконка=Фавикон",
+          "width": 85,
+          "height": 20
+        }
+      ],
+      "nodes": 19,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20133:82485",
+        "VariableID:20925:12970",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:84fc65c897992317ce695253c09991824c65a56f,",
+        "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "13850:178127",
+      "name": "SourceLink/Module/Icon",
+      "type": "COMPONENT_SET",
+      "width": 52,
+      "height": 71,
+      "variants": [
+        {
+          "id": "13850:178124",
+          "name": "module=IconDocFilled",
+          "width": 12,
+          "height": 12
+        },
+        {
+          "id": "13850:178126",
+          "name": "module=Image",
+          "width": 12,
+          "height": 12
+        }
+      ],
+      "nodes": 6,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20925:12970"
+      ],
+      "textStyles": [],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21266:140775",
+      "name": "ComboboxList",
+      "type": "COMPONENT",
+      "width": 285,
+      "height": 218,
+      "variants": [],
+      "nodes": 39,
+      "variables": [
+        "VariableID:21255:17717",
+        "VariableID:20894:12271",
+        "VariableID:20059:141980"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21266:140897",
+      "name": "ComboboxList/Module/Item",
+      "type": "COMPONENT_SET",
+      "width": 400,
+      "height": 180,
+      "variants": [
+        {
+          "id": "21266:139372",
+          "name": "Hover=Off, activ=Off",
+          "width": 360,
+          "height": 36
+        },
+        {
+          "id": "22562:196988",
+          "name": "Hover=Off, activ=On",
+          "width": 360,
+          "height": 36
+        },
+        {
+          "id": "21266:140898",
+          "name": "Hover=On, activ=Off",
+          "width": 360,
+          "height": 36
+        }
+      ],
+      "nodes": 40,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12276",
+        "VariableID:20059:141980",
+        "VariableID:20055:141160",
+        "VariableID:20894:12282",
+        "VariableID:20894:12284"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "3885:32503",
+      "name": "Text",
+      "type": "COMPONENT",
+      "width": 297,
+      "height": 43,
+      "variants": [],
+      "nodes": 3,
+      "variables": [
+        "VariableID:20059:141980",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21257:135648",
+      "name": "ContextPanel",
+      "type": "COMPONENT",
+      "width": 300,
+      "height": 755,
+      "variants": [],
+      "nodes": 79,
+      "variables": [
+        "VariableID:20894:12271",
+        "VariableID:20050:105803",
+        "VariableID:20059:141992",
+        "VariableID:20059:141997",
+        "VariableID:20927:270474",
+        "VariableID:20927:270476",
+        "VariableID:20894:12281",
+        "VariableID:20059:141980",
+        "VariableID:20894:12276",
+        "VariableID:20927:270472",
+        "VariableID:20927:270478"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21282:146431",
+      "name": "Card/Prompt",
+      "type": "COMPONENT_SET",
+      "width": 472,
+      "height": 410,
+      "variants": [
+        {
+          "id": "21282:146432",
+          "name": "Tags=Visible",
+          "width": 432,
+          "height": 170
+        },
+        {
+          "id": "21282:146447",
+          "name": "Tags=Hidden",
+          "width": 432,
+          "height": 130
+        }
+      ],
+      "nodes": 31,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12271",
+        "VariableID:20050:105803",
+        "VariableID:21274:19796",
+        "VariableID:21302:22726",
+        "VariableID:20133:82485",
+        "VariableID:20059:141997",
+        "VariableID:20059:141992",
+        "VariableID:20059:141980"
+      ],
+      "textStyles": [
+        "S:9ced2392a3b593899674c289e2105ce642830f5e,",
+        "S:2cbb88966dfa8322443bcd603e47746e6a6d42d0,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21276:144887",
+      "name": "AutoComplete",
+      "type": "COMPONENT",
+      "width": 375,
+      "height": 36,
+      "variants": [],
+      "nodes": 11,
+      "variables": [
+        "VariableID:20894:12271",
+        "VariableID:20894:12287",
+        "VariableID:20925:12973",
+        "VariableID:20925:12967"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21617:100922",
+      "name": "Combobox",
+      "type": "COMPONENT_SET",
+      "width": 415,
+      "height": 132,
+      "variants": [
+        {
+          "id": "21276:144886",
+          "name": "View=Default",
+          "width": 375,
+          "height": 36
+        },
+        {
+          "id": "21617:100923",
+          "name": "View=Clear",
+          "width": 375,
+          "height": 36
+        }
+      ],
+      "nodes": 19,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12271",
+        "VariableID:20894:12287",
+        "VariableID:20925:12967",
+        "VariableID:20925:12973",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21290:148089",
+      "name": "Pagination",
+      "type": "COMPONENT",
+      "width": 775,
+      "height": 36,
+      "variants": [],
+      "nodes": 57,
+      "variables": [
+        "VariableID:20059:141992",
+        "VariableID:20894:12271",
+        "VariableID:20894:12287",
+        "VariableID:20059:141980",
+        "VariableID:20925:12973",
+        "VariableID:20059:141997",
+        "VariableID:20133:82485"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:1eb44dc354d725a3d42539c36e17c31475bb3914,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21290:147766",
+      "name": "Pagination/Module/Pages",
+      "type": "COMPONENT",
+      "width": 340,
+      "height": 36,
+      "variants": [],
+      "nodes": 28,
+      "variables": [
+        "VariableID:20133:82485",
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [
+        "S:1eb44dc354d725a3d42539c36e17c31475bb3914,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21282:146468",
+      "name": "PromptCatalog/Toolbar",
+      "type": "COMPONENT",
+      "width": 1344,
+      "height": 92,
+      "variants": [],
+      "nodes": 61,
+      "variables": [
+        "VariableID:20894:12271",
+        "VariableID:20894:12287",
+        "VariableID:20925:12973",
+        "VariableID:20925:12967",
+        "VariableID:20133:82485",
+        "VariableID:20059:141997",
+        "VariableID:21227:18318",
+        "VariableID:20055:141160",
+        "VariableID:20925:12964",
+        "VariableID:20059:141992",
+        "VariableID:20894:12281"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,",
+        "S:5d620ffa6f8aae6a2cb22cd6f0e65f96a0f4aae0,",
+        "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21443:262757",
+      "name": "Chat list",
+      "type": "COMPONENT",
+      "width": 770,
+      "height": 793,
+      "variants": [],
+      "nodes": 92,
+      "variables": [
+        "VariableID:20059:141980",
+        "VariableID:20059:141992",
+        "VariableID:20894:12287"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
+        "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21448:262998",
+      "name": "Chat list",
+      "type": "COMPONENT_SET",
+      "width": 880,
+      "height": 180,
+      "variants": [
+        {
+          "id": "17521:97712",
+          "name": "Property 1=item",
+          "width": 794,
+          "height": 60
+        },
+        {
+          "id": "21448:262999",
+          "name": "Property 1=Variant2",
+          "width": 794,
+          "height": 60
+        }
+      ],
+      "nodes": 22,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12276",
+        "VariableID:20059:141980",
+        "VariableID:20059:141992",
+        "VariableID:20059:141997"
+      ],
+      "textStyles": [
+        "S:7466c7bd3271ea77ec8a86f713fd0b522e95c9e4,",
+        "S:02e19d42fd529292928d3a09b0f21d3364b73b9b,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21632:60004",
+      "name": "Tabs",
+      "type": "COMPONENT",
+      "width": 432,
+      "height": 36,
+      "variants": [],
+      "nodes": 43,
+      "variables": [
+        "VariableID:20894:12287",
+        "VariableID:20059:141992"
+      ],
+      "textStyles": [
+        "S:4141d97d5f1f8b820f5c5b15ece2d78de45e3a04,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "21632:59899",
+      "name": "Tabs/Modules",
+      "type": "COMPONENT_SET",
+      "width": 94,
+      "height": 132,
+      "variants": [
+        {
+          "id": "21632:59898",
+          "name": "Activ=Off",
+          "width": 54,
+          "height": 36
+        },
+        {
+          "id": "21632:59900",
+          "name": "Activ=On",
+          "width": 54,
+          "height": 36
+        }
+      ],
+      "nodes": 12,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20059:141992",
+        "VariableID:20055:141160"
+      ],
+      "textStyles": [
+        "S:4141d97d5f1f8b820f5c5b15ece2d78de45e3a04,"
+      ],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "22254:198039",
+      "name": "Checkbox",
+      "type": "COMPONENT_SET",
+      "width": 105,
+      "height": 56,
+      "variants": [
+        {
+          "id": "22254:198038",
+          "name": "State=Empty",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "id": "22254:198037",
+          "name": "State=Check",
+          "width": 16,
+          "height": 16
+        },
+        {
+          "id": "22254:198036",
+          "name": "State=Inter...",
+          "width": 16,
+          "height": 16
+        }
+      ],
+      "nodes": 14,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12276",
+        "VariableID:20927:270468",
+        "VariableID:20927:270470",
+        "VariableID:20894:12281"
+      ],
+      "textStyles": [],
+      "issues": [],
+      "overrides": []
+    },
+    {
+      "id": "22475:94248",
+      "name": "Snackbar",
+      "type": "COMPONENT_SET",
+      "width": 440,
+      "height": 524,
+      "variants": [
+        {
+          "id": "22475:94247",
+          "name": "Status=Neutral",
+          "width": 400,
+          "height": 103
+        },
+        {
+          "id": "22475:94246",
+          "name": "Status=Success",
+          "width": 400,
+          "height": 103
+        },
+        {
+          "id": "22475:94245",
+          "name": "Status=Warning",
+          "width": 400,
+          "height": 103
+        },
+        {
+          "id": "22475:94244",
+          "name": "Status=Error",
+          "width": 400,
+          "height": 103
+        }
+      ],
+      "nodes": 69,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:22477:20498",
+        "VariableID:22477:20499",
+        "VariableID:20927:270452",
+        "VariableID:20894:12281",
+        "VariableID:21274:19796",
+        "VariableID:22477:20500",
+        "VariableID:22477:20501",
+        "VariableID:22477:20503",
+        "VariableID:22477:20504",
+        "VariableID:22477:20506"
+      ],
+      "textStyles": [
+        "S:6893dfaec3b9f7f6f020384cfbdb403d1f197835,",
+        "S:5f26daefcbf1ac0c14dd9c9e005a03f1d48a1223,",
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
+    }
+  ]
+}

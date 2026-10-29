@@ -15,6 +15,11 @@ try {
       await expect(card).toHaveCSS('background-color', colors[i]);
       await expect(card.locator('.SnackBarItem-Message')).toHaveCSS('color', 'rgb(255, 255, 255)');
       await expect(card.locator('.Timer-Counter')).toHaveCSS('color', 'rgb(255, 255, 255)');
+      await expect(card.locator('.SnackBarItem-Message')).toHaveCSS('font-size', '16px');
+      await expect(card.locator('.SnackBarItem-Message')).toHaveCSS('line-height', '22.4px');
+      await expect(card.locator('.Timer-Counter')).toHaveCSS('font-size', '12px');
+      await expect(card.locator('.Timer-Counter')).toHaveCSS('line-height', '24px');
+      await expect(card.locator('.Timer-Counter')).toHaveCSS('font-weight', '700');
       const action = card.getByRole('button', { name: 'Undo' });
       await expect(action).toHaveCSS('color', 'rgb(255, 255, 255)');
       await expect(action).toHaveCSS('background-color', 'rgba(229, 237, 245, 0.2)');

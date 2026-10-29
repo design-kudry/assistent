@@ -156,3 +156,17 @@
   font-weight: var(--gpn-ai-caption-badge-font-weight);
   font-style: var(--gpn-ai-caption-badge-font-style);
 }
+
+.Theme_font_gpnAi .DsText_body-message {
+  font-size: var(--gpn-ai-body-message-size);
+  line-height: var(--gpn-ai-body-message-line-height);
+  font-weight: var(--gpn-ai-body-message-font-weight);
+  font-style: var(--gpn-ai-body-message-font-style);
+}
+
+.Theme_font_gpnAi .DsText_caption-counter {
+  font-size: var(--gpn-ai-caption-counter-size);
+  line-height: var(--gpn-ai-caption-counter-line-height);
+  font-weight: var(--gpn-ai-caption-counter-font-weight);
+  font-style: var(--gpn-ai-caption-counter-font-style);
+}

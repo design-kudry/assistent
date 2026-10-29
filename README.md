@@ -70,7 +70,7 @@ import { typography } from '@design-kudry/gpn-ai-theme';
 <Text className={typography.bodyRegular}>Описание</Text>
 ```
 
-`typography` содержит все 26 текстовых стилей Figma. Имя в коде повторяет имя стиля: `Typography/Heading/M` → `typography.headingM`, `Typography/Body/Compact-Regular` → `typography.bodyCompactRegular`. Выбирайте стиль по роли текста, а не по размеру: стили одного размера отличаются весом и интерлиньяжем.
+`typography` содержит все 28 текстовых стилей Figma. Имя в коде повторяет имя стиля: `Typography/Heading/M` → `typography.headingM`, `Typography/Body/Compact-Regular` → `typography.bodyCompactRegular`. Выбирайте стиль по роли текста, а не по размеру: стили одного размера отличаются весом и интерлиньяжем.
 
 | Стиль | Размер / интерлиньяж, вес |
 | --- | --- |
@@ -107,7 +107,7 @@ import { typography } from '@design-kudry/gpn-ai-theme';
 | Control | `--gpn-ai-control-default`, `-background-selected`, `-disabled-background` |
 | Статусы | `--gpn-ai-status-success-text`, `-success-background` |
 | Файлы | `--gpn-ai-file-doc-background`, `-pdf-`, `-image-`, `-spreadsheet-`, `-text-background`, `--gpn-ai-file-card-border` |
-| Тени | `--gpn-ai-shadow-card`, `-popover`, `-list` |
+| Тени | `--gpn-ai-shadow-card`, `-popover`, `-list`, `-search` |
 | Свечения | `--gpn-ai-glow-home`, `-chat`, `-project`, `--gpn-ai-catalog-glow` |
 | Градиенты | `--gpn-ai-haze` (сверху), `--gpn-ai-haze-bottom` (снизу) |
 | Радиусы | `--gpn-ai-radius-4` … `-32`, `-999` |
@@ -196,7 +196,7 @@ import { typography } from '@design-kudry/gpn-ai-theme';
 | `Effects/Glow/Home`, `/Chat`, `/Project` | `--gpn-ai-glow-home`, `-chat`, `-project` |
 | `Typography/{Heading,Body,Control,Caption,Micro}/{роль}` | `typography.{категорияРоль}` |
 
-Каждое имя WEB-переменной из Figma доступно в теме. Снимки Figma лежат в `tokens/`: `figma-variables.json` (переменные), `figma-styles.json` (26 текстовых стилей с ID), `figma-colors.json` (цвета обеих тем). Это снимки, а не живая синхронизация.
+Каждое имя WEB-переменной из Figma доступно в теме. Снимки Figma лежат в `tokens/`: `figma-variables.json` (переменные), `figma-styles.json` (28 текстовых стилей с ID), `figma-colors.json` (цвета обеих тем). Это снимки, а не живая синхронизация.
 
 Источники: [UI-kit и переменные Figma](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=2536-19469), [справочник цветов](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=20965-146584), [Theme — Consta](https://uikit.consta.design/libs/uikit/components-theme-stable/dev).
 
@@ -354,3 +354,11 @@ const IconFolder = createGravityIcon('Folder', Folder);
 
 Approved status colors, dark mode and action buttons are described in [docs/snackbar.md](docs/snackbar.md). Use the existing Consta SnackBar; no replacement component is required.
 
+
+### DS review — 2026-10-29
+
+[Current component review](docs/component-audit-2026-10-29.md) covers 46 families and their variants, including optional hidden parts. The machine-readable snapshot is [component-inventory.json](tokens/components/component-inventory.json).
+
+`typography.bodyMessage` maps to Inter Regular 16/22.4; `typography.captionCounter` maps to Inter Bold 12/24. Existing heading styles and dimensions are preserved.
+
+The existing Figma search shadow is exported as `--gpn-ai-shadow-search`: use `box-shadow: var(--gpn-ai-shadow-search)` on the search panel. Its two color roles switch with Light/Dark. Importing the theme does not build the application panel.

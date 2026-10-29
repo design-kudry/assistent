@@ -229,6 +229,15 @@
   --gpn-ai-palette-status-error-fill-dark: rgb(254, 67, 67);
   --gpn-ai-palette-status-error-foreground-light: rgb(164, 55, 71);
   --gpn-ai-snackbar-action-background: var(--gpnai-palette-source-898039-929412-960784-200000);
+  --gpn-ai-body-message-size: 16px;
+  --gpn-ai-body-message-line-height: 22.4px;
+  --gpn-ai-body-message-font-weight: 400;
+  --gpn-ai-body-message-font-style: normal;
+  --gpn-ai-caption-counter-size: 12px;
+  --gpn-ai-caption-counter-line-height: 24px;
+  --gpn-ai-caption-counter-font-weight: 700;
+  --gpn-ai-caption-counter-font-style: normal;
+  --gpn-ai-shadow-search: 0 24px 90px var(--gpn-ai-effect-search-shadow-wide), 0 8px 36px var(--gpn-ai-effect-search-shadow-near);
 }
 
 .Theme_color_gpnAiLight {
@@ -331,6 +340,8 @@
   --gpn-ai-status-info-background: rgb(0, 142, 250);
   --gpn-ai-status-info-text: rgb(0, 111, 190);
   --gpn-ai-status-info-on-background: rgb(16, 42, 58);
+  --gpn-ai-effect-search-shadow-wide: rgba(82, 116, 255, 0.160784);
+  --gpn-ai-effect-search-shadow-near: rgba(139, 164, 255, 0.141176);
 }
 
 .Theme_color_gpnAiDark {
@@ -433,5 +444,7 @@
   --gpn-ai-status-info-background: rgb(0, 142, 250);
   --gpn-ai-status-info-text: rgb(100, 186, 255);
   --gpn-ai-status-info-on-background: rgb(16, 42, 58);
+  --gpn-ai-effect-search-shadow-wide: rgba(118, 103, 255, 0.333333);
+  --gpn-ai-effect-search-shadow-near: rgba(159, 141, 255, 0.219608);
 }
 

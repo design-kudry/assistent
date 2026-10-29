@@ -110,7 +110,7 @@
       "fontWeight": 400,
       "fontStyle": "normal",
       "fontSize": 14,
-      "lineHeight": 14.0
+      "lineHeight": 14
     },
     {
       "id": "S:d85b7a3723780c66f3e0a7940a993f9ea1ddad19,",
@@ -154,7 +154,7 @@
       "fontWeight": 400,
       "fontStyle": "normal",
       "fontSize": 12,
-      "lineHeight": 18.0
+      "lineHeight": 18
     },
     {
       "id": "S:25bf55291c632a5808bd37ab60f7f2a66c1053e9,",
@@ -198,7 +198,7 @@
       "fontWeight": 400,
       "fontStyle": "normal",
       "fontSize": 10,
-      "lineHeight": 15.0
+      "lineHeight": 15
     },
     {
       "id": "S:4141d97d5f1f8b820f5c5b15ece2d78de45e3a04,",
@@ -220,7 +220,7 @@
       "fontWeight": 700,
       "fontStyle": "normal",
       "fontSize": 20,
-      "lineHeight": 30.0
+      "lineHeight": 30
     },
     {
       "id": "S:e7cd507205d5ddfffdcb94550af9e9cf344ba3d7,",
@@ -231,7 +231,7 @@
       "fontWeight": 400,
       "fontStyle": "italic",
       "fontSize": 14,
-      "lineHeight": 21.0
+      "lineHeight": 21
     },
     {
       "id": "S:a385fc629f954fb9a1599a7b023650e146efccd3,",
@@ -261,7 +261,7 @@
       "fontWeight": 400,
       "fontStyle": "italic",
       "fontSize": 12,
-      "lineHeight": 18.0
+      "lineHeight": 18
     },
     {
       "id": "S:85d9eb3381aa9b985d94c3325835fc3b295a5c2f,",
@@ -271,7 +271,7 @@
       "fontWeight": 400,
       "fontStyle": "italic",
       "fontSize": 10,
-      "lineHeight": 15.0
+      "lineHeight": 15
     },
     {
       "id": "S:9ced2392a3b593899674c289e2105ce642830f5e,",
@@ -375,6 +375,82 @@
       "id": "S:74590dd11e944e8afefd30b33b22619dbe2f68b6,",
       "type": "EFFECT",
       "name": "Effects/Shadow/List"
+    },
+    {
+      "id": "S:5f26daefcbf1ac0c14dd9c9e005a03f1d48a1223,",
+      "type": "TEXT",
+      "name": "Typography/Body/Message",
+      "fontFamily": "Inter",
+      "fontWeight": 400,
+      "fontStyle": "normal",
+      "fontSize": 16,
+      "lineHeight": 22.4
+    },
+    {
+      "id": "S:6893dfaec3b9f7f6f020384cfbdb403d1f197835,",
+      "type": "TEXT",
+      "name": "Typography/Caption/Counter",
+      "fontFamily": "Inter",
+      "fontWeight": 700,
+      "fontStyle": "normal",
+      "fontSize": 12,
+      "lineHeight": 24
+    },
+    {
+      "id": "S:535f5972d9c8bae3ec21e9ef6de10d7a97145c4b,",
+      "type": "EFFECT",
+      "name": "Effects/Shadow/Search",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 90,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:22501:21200"
+            }
+          },
+          "color": {
+            "r": 0.32156863808631897,
+            "g": 0.45490196347236633,
+            "b": 1,
+            "a": 0.16078431904315948
+          },
+          "offset": {
+            "x": 0,
+            "y": 24
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 36,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:22501:21203"
+            }
+          },
+          "color": {
+            "r": 0.545098066329956,
+            "g": 0.6431372761726379,
+            "b": 1,
+            "a": 0.1411764770746231
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": true
+        }
+      ]
     }
-  ]
+  ],
+  "reviewedAt": "2026-10-29"
 }

@@ -346,3 +346,15 @@
   padding-top: 0;
   padding-bottom: 0;
 }
+
+/* Exact existing Snackbar typography, now linked to local Figma roles. */
+.Theme_control_gpnAi .SnackBarItem .SnackBarItem-Message {
+  font-size: var(--gpn-ai-body-message-size);
+  line-height: var(--gpn-ai-body-message-line-height);
+  font-weight: var(--gpn-ai-body-message-font-weight);
+}
+.Theme_control_gpnAi .SnackBarItem .Timer-Counter {
+  font-size: var(--gpn-ai-caption-counter-size);
+  line-height: var(--gpn-ai-caption-counter-line-height);
+  font-weight: var(--gpn-ai-caption-counter-font-weight);
+}
