@@ -1,6 +1,6 @@
 {
   "name": "@design-kudry/gpn-ai-theme",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Тема gpn.ai для @consta/uikit: светлый и тёмный пресеты, токены Figma, типографика и настройки компонентов.",
   "license": "UNLICENSED",
   "private": true,
@@ -31,7 +31,8 @@
     "examples",
     "ConstructorConfigGpnAi.json",
     "CHANGELOG.md",
-    "icons.ts"
+    "icons.ts",
+    "docs"
   ],
   "peerDependencies": {
     "@consta/uikit": "5.33.3",

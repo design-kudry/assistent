@@ -77,6 +77,10 @@
 .Theme_control_gpnAi .ListItem.Text_size_s {
   line-height: var(--gpn-ai-body-list-line-height);
 }
+/* Selected list item is marked by text color only: drop Consta's left bar. */
+.Theme_control_gpnAi .ListItem_checked.Text::before {
+  content: none;
+}
 /* Use only on badges in prompt cards; other badge sizes remain available. */
 .Theme_control_gpnAi .Badge.DsPromptBadge {
   height: var(--gpn-ai-caption-badge-line-height);
@@ -265,6 +269,10 @@
 
 /* SnackBar: approved filled status colors; controls stay readable in both modes. */
 .Theme_control_gpnAi .SnackBarItem {
+  /* Consta resolves the item fill from --color-bg-{status} on the item itself.
+     Keep the dark neutral here so Badge status="system" keeps its light fill. */
+  --color-bg-system: var(--gpn-ai-status-neutral-background);
+  --color-bg-normal: var(--gpn-ai-status-neutral-background);
   color: var(--gpn-ai-text-on-accent);
   --color-typo-primary: var(--gpn-ai-text-on-accent);
   --color-control-typo-ghost: var(--gpn-ai-text-on-accent);
@@ -362,4 +370,9 @@
 /* Select uses the shared field geometry; value text follows the DS primary role. */
 .Theme_control_gpnAi .Select_type_select .Select-SelectContainer:not(.Select-SelectContainer_disabled) .Select-ControlValue {
   color: var(--gpn-ai-text-primary);
+}
+
+/* Tabs render <button> elements, which do not inherit the font family. */
+.Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab {
+  font-family: var(--font-primary);
 }
