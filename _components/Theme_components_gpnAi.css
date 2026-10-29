@@ -358,3 +358,8 @@
   line-height: var(--gpn-ai-caption-counter-line-height);
   font-weight: var(--gpn-ai-caption-counter-font-weight);
 }
+
+/* Select uses the shared field geometry; value text follows the DS primary role. */
+.Theme_control_gpnAi .Select_type_select .Select-SelectContainer:not(.Select-SelectContainer_disabled) .Select-ControlValue {
+  color: var(--gpn-ai-text-primary);
+}

@@ -1,0 +1,81 @@
+{
+  "sourceFile": "686IP0J8jTGiix3IXVcA45",
+  "reviewedAt": "2026-10-29",
+  "sectionId": "22593:12234",
+  "componentId": "22593:12286",
+  "variants": [
+    {
+      "id": "22593:12254",
+      "name": "View=Default, Content=Value",
+      "width": 375,
+      "height": 36
+    },
+    {
+      "id": "22593:12262",
+      "name": "View=Default, Content=Placeholder",
+      "width": 375,
+      "height": 36
+    },
+    {
+      "id": "22593:12270",
+      "name": "View=Clear, Content=Value",
+      "width": 375,
+      "height": 36
+    },
+    {
+      "id": "22593:12278",
+      "name": "View=Clear, Content=Placeholder",
+      "width": 375,
+      "height": 36
+    }
+  ],
+  "properties": {
+    "Label#22593:2": {
+      "type": "TEXT",
+      "defaultValue": "Последняя активность"
+    },
+    "Placeholder#22593:3": {
+      "type": "TEXT",
+      "defaultValue": "Выберите значение"
+    },
+    "View": {
+      "type": "VARIANT",
+      "defaultValue": "Default",
+      "variantOptions": [
+        "Default",
+        "Clear"
+      ]
+    },
+    "Content": {
+      "type": "VARIANT",
+      "defaultValue": "Value",
+      "variantOptions": [
+        "Value",
+        "Placeholder"
+      ]
+    }
+  },
+  "geometry": {
+    "height": 36,
+    "radius": 12,
+    "paddingLeft": 8,
+    "indicator": 36,
+    "indicatorGlyph": 16
+  },
+  "typography": "Typography/Body/Regular",
+  "roles": {
+    "background": "color/background/surface",
+    "border": "color/border/default",
+    "value": "color/text/primary",
+    "placeholder": "color/text/placeholder",
+    "indicator": "color/control/placeholder"
+  },
+  "sharedList": "21266:140775",
+  "integration": {
+    "component": "@consta/uikit/Select",
+    "size": "s",
+    "dropdownClassName": "DsComboboxList",
+    "clearView": "clear"
+  },
+  "newColorVariables": 0
+}

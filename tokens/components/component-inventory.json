@@ -2897,6 +2897,54 @@
       ],
       "issues": [],
       "overrides": []
+    },
+    {
+      "id": "22593:12286",
+      "name": "Select",
+      "type": "COMPONENT_SET",
+      "width": 814,
+      "height": 132,
+      "variants": [
+        {
+          "id": "22593:12254",
+          "name": "View=Default, Content=Value",
+          "width": 375,
+          "height": 36
+        },
+        {
+          "id": "22593:12262",
+          "name": "View=Default, Content=Placeholder",
+          "width": 375,
+          "height": 36
+        },
+        {
+          "id": "22593:12270",
+          "name": "View=Clear, Content=Value",
+          "width": 375,
+          "height": 36
+        },
+        {
+          "id": "22593:12278",
+          "name": "View=Clear, Content=Placeholder",
+          "width": 375,
+          "height": 36
+        }
+      ],
+      "nodes": 25,
+      "variables": [
+        "VariableID:20926:12946",
+        "VariableID:20894:12271",
+        "VariableID:20894:12287",
+        "VariableID:20059:141980",
+        "VariableID:20925:12950",
+        "VariableID:20925:12973",
+        "VariableID:20925:12967"
+      ],
+      "textStyles": [
+        "S:a027073915eff631ad573cf07b859b5832459dcd,"
+      ],
+      "issues": [],
+      "overrides": []
     }
   ]
 }

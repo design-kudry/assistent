@@ -5,6 +5,7 @@ import { Tabs } from '@consta/uikit/Tabs';
 import { Text } from '@consta/uikit/Text';
 import { TextField } from '@consta/uikit/TextField';
 import { ListItem } from '@consta/uikit/ListCanary';
+import { Select } from '@consta/uikit/Select';
 import { Combobox } from '@consta/uikit/Combobox';
 import { ChoiceGroup } from '@consta/uikit/ChoiceGroup';
 import { Checkbox } from '@consta/uikit/Checkbox';
@@ -12,9 +13,12 @@ import { SnackBar } from '@consta/uikit/SnackBar';
 import { Badge } from '@consta/uikit/Badge';
 import { presetGpnAiLight, presetGpnAiDark, typography, IconPlus, IconSearch } from '../index';
 
+const sortOptions = [{ id: 'recent', label: 'Last activity ↓' }, { id: 'oldest', label: 'Last activity ↑' }];
 const models = [{ id: 'ruadapt', label: 'Ruadapt14B', description: 'For everyday questions' }, { id: 'research', label: 'Research', description: 'For detailed analysis' }];
 const items = [{ id: 1, label: 'Assistants' }, { id: 2, label: 'Prompts' }];
 export function ThemePreview() {
+  const [sort, setSort] = useState<(typeof sortOptions)[number] | null>(sortOptions[0]);
+  const [optionalSort, setOptionalSort] = useState<(typeof sortOptions)[number] | null>(null);
   const [model, setModel] = useState<(typeof models)[number] | null>(models[0]);
   const [snackAction, setSnackAction] = useState('');
   const [dark, setDark] = useState(false);
@@ -52,6 +56,12 @@ export function ThemePreview() {
             )}
           />
         </div>
+        <section aria-label="Select examples" style={{ width: 375, display: 'grid', gap: 12 }}>
+          <Select className="AuditSelectDefault" size="s" label="Sort chats" items={sortOptions} value={sort} onChange={setSort} dropdownClassName="DsComboboxList" />
+          <Select className="AuditSelectEmpty" size="s" placeholder="Choose an option" items={sortOptions} value={optionalSort} onChange={setOptionalSort} dropdownClassName="DsComboboxList" />
+          <Select className="AuditSelectClear" size="s" view="clear" items={sortOptions} value={sort} onChange={setSort} dropdownClassName="DsComboboxList" />
+          <Select className="AuditSelectDisabled" size="s" disabled items={sortOptions} value={sort} onChange={setSort} />
+        </section>
         <ChoiceGroup size="s" name="catalog" view="secondary" className="DsChoiceGroup_secondary2" items={items} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="primary" view="primary" className="AuditChoicePrimary" items={[...items, { id: 3, label: 'Projects' }, { id: 4, label: 'Chats' }]} value={selected} onChange={setSelected} />
         <ChoiceGroup size="s" name="ghost" view="ghost" className="AuditChoiceGhost" items={items} value={selected} onChange={setSelected} />

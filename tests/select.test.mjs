@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import { chromium, expect } from '@playwright/test';
+const browser = await chromium.launch({ executablePath: process.env.CHROMIUM_PATH || undefined, args: process.env.CHROMIUM_PATH ? ['--no-sandbox'] : [] });
+try {
+  const page = await browser.newPage({ viewport: { width: 1100, height: 1100 } });
+  const errors = [];
+  page.on('pageerror', error => errors.push(error.message));
+  for (const dark of [false, true]) {
+    await page.goto('http://127.0.0.1:4173/tests/index.html');
+    await page.getByRole('button', { name: 'Switch theme' }).waitFor();
+    if (dark) await page.getByRole('button', { name: 'Switch theme' }).click();
+    const standard = page.locator('.AuditSelectDefault');
+    const control = standard.locator('.Select-Control');
+    const field = standard.locator('.Select-FakeField');
+    await page.mouse.move(1090, 0);
+    await expect(control).toHaveCSS('height', '36px');
+    await expect(control).toHaveCSS('border-radius', '12px');
+    await expect(control).toHaveCSS('background-color', dark ? 'rgb(25, 35, 46)' : 'rgb(255, 255, 255)');
+    await expect(control).toHaveCSS('border-color', dark ? 'rgba(229, 237, 245, 0.16)' : 'rgba(16, 42, 58, 0.16)');
+    await expect(standard.locator('.Select-ControlValue')).toHaveCSS('color', dark ? 'rgb(229, 237, 245)' : 'rgb(16, 42, 58)');
+    await expect(standard.locator('.Select-ControlValue')).toHaveCSS('font-size', '14px');
+    await control.hover();
+    await expect(control).toHaveCSS('border-color', dark ? 'rgba(229, 237, 245, 0.32)' : 'rgba(16, 42, 58, 0.32)');
+    await field.focus();
+    await expect(control).toHaveCSS('border-color', 'rgb(0, 142, 250)');
+    await expect(page.locator('.AuditSelectEmpty .Select-Placeholder')).toHaveText('Choose an option');
+    await expect(page.locator('.AuditSelectClear .Select-Control')).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
+    await expect(page.locator('.AuditSelectDisabled .Select-SelectContainer')).toHaveClass(/Select-SelectContainer_disabled/);
+    await page.locator('.AuditSelectDisabled .Select-FakeField').focus();
+    await page.keyboard.press('ArrowDown');
+    await expect(page.getByRole('listbox')).toHaveCount(0);
+    await control.click();
+    const list = page.locator('.DsComboboxList');
+    await expect(list).toHaveCSS('opacity', '1');
+    await expect(list).toHaveCSS('border-radius', '16px');
+    await expect(list).toHaveCSS('background-color', dark ? 'rgb(25, 35, 46)' : 'rgb(255, 255, 255)');
+    await expect(list.getByRole('option').first()).toHaveCSS('color', 'rgb(0, 142, 250)');
+    await list.getByRole('option').last().click();
+    await expect(standard.locator('.Select-ControlValue')).toHaveText('Last activity ↑');
+    await expect(list).toBeHidden();
+    await field.focus();
+    await page.keyboard.press('ArrowUp');
+    await expect(list).toHaveCSS('opacity', '1');
+    await page.keyboard.press('ArrowUp');
+    await page.keyboard.press('Enter');
+    await expect(standard.locator('.Select-ControlValue')).toHaveText('Last activity ↓');
+    await expect(list).toHaveCount(0);
+    await page.locator('.AuditSelectEmpty .Select-Control').click();
+    await expect(list).toHaveCSS('opacity', '1');
+    await list.getByRole('option').first().click();
+    await expect(page.locator('.AuditSelectEmpty .Select-ControlValue')).toHaveText('Last activity ↓');
+    await expect(list).toHaveCount(0);
+    await page.screenshot({ fullPage: true, path: '/tmp/select-theme-' + (dark ? 'dark' : 'light') + '.png' });
+  }
+  assert.deepEqual(errors, []);
+  console.log('PASS: Select Default/Clear, placeholder, disabled, hover/focus, portaled list, mouse and keyboard in both themes.');
+} finally { await browser.close(); }

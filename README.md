@@ -42,7 +42,7 @@ export function App({ dark = false }) {
 | Элемент Figma | Как писать в коде | Что применяет тема |
 | --- | --- | --- |
 | Button | `<Button size="s" />` | Высота 36px, текст 14/21, круглые углы, отступ по бокам 16px |
-| TextField, Combobox, AutoComplete | `size="s"` | Высота 36px, радиус 12px, текст 14px |
+| TextField, Combobox, Select, AutoComplete | `size="s"` | Высота 36px, радиус 12px, текст 14px |
 | ChoiceGroup | `size="s"` | Высота 36px, круглые элементы, отступы 20px, интерлиньяж 32px |
 | ChoiceGroup / View=Secondary 2 | `view="secondary" className="DsChoiceGroup_secondary2"` | Фон выбранного пункта `--gpn-ai-control-background-selected` (#DFF1FF / #173D59), синяя рамка 1px, синий текст и иконки |
 | ComboboxList | `dropdownClassName="DsComboboxList"` | Surface, радиус 16px, пункты 36px, выбранный текст и иконки accent; [пример с описанием](docs/combobox-list.md) |
@@ -362,3 +362,9 @@ Approved status colors, dark mode and action buttons are described in [docs/snac
 `typography.bodyMessage` maps to Inter Regular 16/22.4; `typography.captionCounter` maps to Inter Bold 12/24. Existing heading styles and dimensions are preserved.
 
 The existing Figma search shadow is exported as `--gpn-ai-shadow-search`: use `box-shadow: var(--gpn-ai-shadow-search)` on the search panel. Its two color roles switch with Light/Dark. Importing the theme does not build the application panel.
+
+### Select
+
+Use Consta `<Select size="s" dropdownClassName="DsComboboxList" />`. It shares the Combobox field height (36px), radius (12px), Surface, default border (16%) and existing hover/focus/disabled tokens. `view="clear"` removes the field surface and border. [Select guide and Figma variants](docs/select.md).
+
+Select chooses a value from a list; Combobox also lets the user type to filter. The shared dropdown class gives the list the existing DS appearance. CSS applies only to matching elements inside the installed Theme, including Consta themed portals. It neither edits Figma nor automatically recreates product layouts or replaces components. Figma instances update through their source components and variables.
