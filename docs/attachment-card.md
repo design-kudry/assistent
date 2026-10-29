@@ -26,7 +26,7 @@ The inner pictogram uses `color/file/icon/foreground` (white at 70%), and the ex
 
 ## Checkbox colors
 
-Empty uses the softer existing `color/text/tertiary` neutral outline with no fill. This is stronger than the 8% default border and softer than the full-opacity control color. Disabled styles retain their existing subdued appearance. Check and Inter... use the existing blue `color/selection/checkbox/background` fill and `color/selection/checkbox/border`; the check/dash is white `color/text/on-accent`. This applies to the file Checkbox; the separately scoped chat-list checkbox is unchanged. The original variant names and IDs remain; no instances were detached.
+Empty uses the softer existing `color/text/tertiary` neutral outline with no fill. The empty checkbox outline remains tertiary (40% in Light, 45% in Dark), stronger than the global default border (16% in both themes) and softer than the full-opacity control color. The global border update does not change this checkbox-specific override. Disabled styles retain their existing subdued appearance. Check and Inter... use the existing blue `color/selection/checkbox/background` fill and `color/selection/checkbox/border`; the check/dash is white `color/text/on-accent`. This applies to the file Checkbox; the separately scoped chat-list checkbox is unchanged. The original variant names and IDs remain; no instances were detached.
 
 ## Application integration
 

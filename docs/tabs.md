@@ -11,7 +11,7 @@ Checked on 2026-10-23. Existing component IDs and instance links are preserved. 
 | Shared baseline | `color/border/default` | `--gpn-ai-border-default` |
 | Label style | `Typography/Body/Dense` | `--gpn-ai-body-dense-*` |
 
-Inactive text: Light #102A3A at 70%, Dark #9BAFBF. Accent: #008EFA in both themes. Baseline: Light #102A3A at 8%, Dark #E5EDF5 at 8%. Do not multiply token opacity again.
+Inactive text: Light #102A3A at 70%, Dark #9BAFBF. Accent: #008EFA in both themes. Baseline: existing `color/border/default`, Light #102A3A at 16%, Dark #E5EDF5 at 16%. Do not multiply token opacity again.
 
 The horizontal size S tab is 36px high with Inter Regular 14/19.6, no background, 12px right padding and no extra inter-item margin. The active underline is 2px high and follows the text width, excluding the right padding. The common baseline is 1px. The Figma 432px width is an example container width.
 

@@ -113,6 +113,8 @@ import { typography } from '@design-kudry/gpn-ai-theme';
 | Радиусы | `--gpn-ai-radius-4` … `-32`, `-999` |
 | Отступы | `--gpn-ai-space-4` … `-40` |
 
+Глобальная обводка `color/border/default` / `--gpn-ai-border-default`: Light `#102A3A` 16%, Dark `#E5EDF5` 16%. Её используют обычные границы полей, разделители и линия Tabs. Consta `--color-bg-border` и `--color-control-bg-border-default` синхронизированы с ней. Hover полей остаётся 32%, focus — `#008EFA`; отдельные роли обводок файлов, чекбоксов и context menu сохраняются.
+
 Полный список — в `_extensions/Theme_extensions_gpnAi.css`. Тени темы не заменяют глобальные `--shadow-layer` и `--shadow-modal` Consta.
 
 ### Примеры
