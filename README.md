@@ -365,6 +365,8 @@ The existing Figma search shadow is exported as `--gpn-ai-shadow-search`: use `b
 
 ### Select
 
+Figma uses the existing [Consta Select instance](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45?node-id=22589-109289), with its library connection preserved. The unnecessary custom Figma family has been removed. It is in Form controls and its field is 36px, matching the website theme and Combobox.
+
 Use Consta `<Select size="s" dropdownClassName="DsComboboxList" />`. It shares the Combobox field height (36px), radius (12px), Surface, default border (16%) and existing hover/focus/disabled tokens. `view="clear"` removes the field surface and border. [Select guide and Figma variants](docs/select.md).
 
 Select chooses a value from a list; Combobox also lets the user type to filter. The shared dropdown class gives the list the existing DS appearance. CSS applies only to matching elements inside the installed Theme, including Consta themed portals. It neither edits Figma nor automatically recreates product layouts or replaces components. Figma instances update through their source components and variables.

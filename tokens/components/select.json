@@ -1,66 +1,29 @@
 {
   "sourceFile": "686IP0J8jTGiix3IXVcA45",
   "reviewedAt": "2026-10-29",
-  "sectionId": "22593:12234",
-  "componentId": "22593:12286",
-  "variants": [
-    {
-      "id": "22593:12254",
-      "name": "View=Default, Content=Value",
-      "width": 375,
-      "height": 36
-    },
-    {
-      "id": "22593:12262",
-      "name": "View=Default, Content=Placeholder",
-      "width": 375,
-      "height": 36
-    },
-    {
-      "id": "22593:12270",
-      "name": "View=Clear, Content=Value",
-      "width": 375,
-      "height": 36
-    },
-    {
-      "id": "22593:12278",
-      "name": "View=Clear, Content=Placeholder",
-      "width": 375,
-      "height": 36
-    }
-  ],
+  "componentId": "22589:109265",
   "properties": {
-    "Label#22593:2": {
-      "type": "TEXT",
-      "defaultValue": "Последняя активность"
+    "Caption#2130:2": {
+      "type": "BOOLEAN",
+      "value": false
     },
-    "Placeholder#22593:3": {
-      "type": "TEXT",
-      "defaultValue": "Выберите значение"
-    },
-    "View": {
+    "Size": {
+      "value": "S",
       "type": "VARIANT",
-      "defaultValue": "Default",
-      "variantOptions": [
-        "Default",
-        "Clear"
-      ]
+      "boundVariables": {}
     },
-    "Content": {
+    "Label": {
+      "value": "Top",
       "type": "VARIANT",
-      "defaultValue": "Value",
-      "variantOptions": [
-        "Value",
-        "Placeholder"
-      ]
+      "boundVariables": {}
     }
   },
   "geometry": {
     "height": 36,
+    "figmaFieldHeight": 36,
+    "cssFieldHeight": 36,
     "radius": 12,
-    "paddingLeft": 8,
-    "indicator": 36,
-    "indicatorGlyph": 16
+    "width": 375
   },
   "typography": "Typography/Body/Regular",
   "roles": {
@@ -68,7 +31,9 @@
     "border": "color/border/default",
     "value": "color/text/primary",
     "placeholder": "color/text/placeholder",
-    "indicator": "color/control/placeholder"
+    "indicator": "color/text/placeholder",
+    "label": "color/text/secondary",
+    "caption": "color/text/tertiary"
   },
   "sharedList": "21266:140775",
   "integration": {
@@ -77,5 +42,18 @@
     "dropdownClassName": "DsComboboxList",
     "clearView": "clear"
   },
-  "newColorVariables": 0
+  "newColorVariables": 0,
+  "instanceId": "22589:109289",
+  "componentSetId": "22589:109240",
+  "source": "Consta UI-Kit",
+  "sourceComponentRemote": true,
+  "customComponent": false,
+  "removedCustomComponentId": "22593:12286",
+  "showcaseRemoved": true,
+  "sectionId": "21295:22654",
+  "parentSectionId": "21295:22654",
+  "position": {
+    "x": 64,
+    "y": 384
+  }
 }

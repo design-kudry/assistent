@@ -1,8 +1,8 @@
-# Select
+# Select — Consta
 
-[Figma component](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45/Assistant?node-id=22593-12286).
+Use the existing [Consta Select instance](https://www.figma.com/design/686IP0J8jTGiix3IXVcA45/Assistant?node-id=22589-109289). It remains linked to the Consta UI-Kit component set `22589:109240`; its current source variant is `22589:109265` (`Size=S, Label=Top`). There is no new local Select component or custom React implementation. The earlier custom family and its unnecessary showcase were removed. The supplied native instance is in the user's Form controls section (`21295:22654`); its ID and library connection are preserved.
 
-Select chooses one option from a list. Use Combobox when the user also needs to type and filter options. Both share the same field appearance in this theme.
+Select chooses an option from a list. Combobox also accepts typed input for filtering. The website already uses the standard `@consta/uikit/Select`.
 
 ```tsx
 import { Select } from '@consta/uikit/Select';
@@ -17,20 +17,20 @@ import { Select } from '@consta/uikit/Select';
 />
 ```
 
-The popup reuses the existing ComboboxList style; do not build a second palette or duplicate its item component. Consta owns opening, closing, selection, keyboard navigation and disabled behavior. See [ThemePreview](../examples/ThemePreview.tsx) for working examples.
+The popup reuses the existing ComboboxList style. Consta owns opening, closing, selection, keyboard navigation and disabled behavior. See [ThemePreview](../examples/ThemePreview.tsx) for working examples.
 
-| Figma | Consta |
-| --- | --- |
-| View=Default | Default view |
-| View=Clear | `view="clear"` |
-| Content=Value | Non-null `value` |
-| Content=Placeholder | `value={null}` and `placeholder` |
-| Label / Placeholder | `getItemLabel` / `placeholder` |
+## Figma settings
 
-Field: height 36px, radius 12px, left inset 8px, 36px dropdown-indicator area with 16px icon. Typography: Inter Regular 14/21, vertically centered. Default uses Surface and the approved 16% global border; Clear has no fill or border. Values use primary text, placeholder and arrow retain their existing placeholder roles. Hover, focus and disabled inherit the existing Consta theme tokens. Figma documents four base combinations; runtime hover/focus/disabled behavior is checked in the browser rather than represented as new Figma variants.
+The original instance keeps its native properties: Size (XS/S/M/L), Label (None/Top/Left), and Caption. There are no invented Content, Label-text, or Placeholder-text properties on a replacement component. Edit the existing text layers. Default/Clear is a nested Modules/Input option in the Consta model. The original instance keeps the user's label/caption visibility configuration.
+
+Existing DS variables are bound to Surface, border/default (16%), primary/placeholder text, secondary label, tertiary caption, and the placeholder indicator. Radius is 12px. Body and label use Body/Regular 14/21; caption uses Caption/Relaxed 12/18. No palette was added.
+
+## Geometry
+
+The current instance has a 36px field, matching the website theme and Combobox. Its radius is 12px. It remains a native Consta instance; no local replacement Select component is created. The original Consta Size/Label/Caption API is preserved.
 
 ## How updates work
 
-CSS styles matching DOM classes inside the Theme wrapper and themed Consta portals. It does not edit Figma, switch one React component into another, or rebuild all application components. A border token change affects every element using that token; a Select-specific rule affects only Select. Figma source components and variables update their linked instances separately. To update another Figma file, publish the private library update and accept it in the consuming file; publishing is not performed by this code change and does not change file-sharing permissions.
+CSS applies to matching DOM elements inside Theme and themed Consta portals. A shared token affects all its consumers; a Select-specific rule affects Select. CSS does not modify Figma or replace components. Figma instances update through their linked source components and variables. Changing overrides on this native instance does not edit the upstream Consta library or automatically theme every other Consta instance.
 
-No existing components were detached or replaced, and no new colors were added.
+No library publication or sharing changes are performed by this update.

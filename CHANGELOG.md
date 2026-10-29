@@ -6,9 +6,16 @@
 
 ## Не выпущено
 
+### Home display settings colors — 2026-10-29
+
+- Проверены экраны `22589:111153`, `22589:110806` и Form controls. 34 старых/сырых заливки и обводки заменены существующими семантическими переменными: Surface, primary-текст, control/default для drag-иконок, primary background/on-accent для включённых Switch, border/default для выключённых, on-accent для Tooltip.
+- В Form controls стрелки Select/Combobox привязаны к placeholder-роли вместо disabled, без изменения оттенка. Заголовки, шрифты и пользовательское расположение сохранены. Новых цветов нет.
+
+
 ### Select — 2026-10-29
 
-- В Figma добавлен Select в стиле Combobox: S 36px, радиус 12px, View Default/Clear и Content Value/Placeholder. Label и Placeholder доступны как текстовые свойства. Использованы существующие цвета, типографика, кнопка раскрытия и ComboboxList.
+- В Figma оформлен существующий Select Consta (`22589:109289`): цвета и типографика нашей ДС, радиус 12px, сохранены исходный ID и связь с Consta UI-Kit. Ошибочно созданный отдельный Select и лишняя витрина удалены; исходный экземпляр сохранён в Form controls. Исходные свойства Size/Label/Caption сохранены.
+- Текущий Select в Form controls имеет поле 36px и радиус 12px, как Combobox и CSS темы; связь с Consta сохранена.
 - В тему добавлен primary-текст выбранного значения Select с сохранением disabled. Общая геометрия и состояния уже наследуются от Consta Theme; список использует DsComboboxList.
 - Добавлены рабочие примеры, спецификация и проверки выбора мышью/клавиатурой, Default/Clear/placeholder/disabled и обеих тем. Новые цветовые токены не создавались.
 
