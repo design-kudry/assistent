@@ -3,7 +3,7 @@
   --color-bg-secondary: rgb(18, 26, 34);
   --color-bg-brand: rgb(0, 142, 250);
   --color-bg-link: rgb(0, 142, 250);
-  --color-bg-border: rgba(229, 237, 245, 0.08);
+  --color-bg-border: rgba(229, 237, 245, 0.24);
   --color-bg-stripe: rgba(229, 237, 245, 0.03);
   --color-bg-ghost: rgba(229, 237, 245, 0.06);
   --color-bg-tone: rgba(0, 0, 0, 0.65);
@@ -32,7 +32,7 @@
   --color-control-bg-default: rgb(25, 35, 46);
   --color-control-typo-default: rgb(179, 198, 213);
   --color-control-typo-placeholder: rgba(229, 237, 245, 0.45);
-  --color-control-bg-border-default: rgba(229, 237, 245, 0.08);
+  --color-control-bg-border-default: rgba(229, 237, 245, 0.24);
   --color-control-bg-border-default-hover: rgba(229, 237, 245, 0.32);
   --color-control-bg-border-focus: rgb(0, 142, 250);
   --color-control-bg-focus: rgba(0, 142, 250, 0.25);
@@ -67,3 +67,4 @@
   --color-scroll-thumb: rgba(229, 237, 245, 0.16);
   --color-scroll-thumb-hover: rgba(229, 237, 245, 0.24);
 }
+

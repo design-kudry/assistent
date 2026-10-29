@@ -6,6 +6,12 @@
 
 ## Не выпущено
 
+### Global border — 2026-10-29
+
+- Изменён только существующий глобальный `color/border/default`: Light `#102A3A` 24%, Dark `#E5EDF5` 24%. Все элементы с этим токеном получают новую обводку.
+- Обновлены Figma, CSS/JSON и снимки токенов. Hover, focus, disabled, статусные цвета и остальные стили сохранены. Новые переменные не добавлены.
+
+
 ### ComboboxList — 2026-10-29
 
 - Синхронизировано новое состояние `Hover=Off, activ=On`: акцентный текст и иконка, прозрачный фон; hover использует существующий navigation/item/background-active.
@@ -120,4 +126,5 @@
 ### Устарело
 
 Работают как раньше, но в новом коде используйте `--gpn-ai-background-surface`: `--gpn-ai-background-sidebar`, `--gpn-ai-bg-sidebar`, `--gpn-ai-background-raised`, `--gpn-ai-bg-raised`. Вместо `--gpn-ai-composer-border` — `--gpn-ai-border-composer`.
+
 

@@ -64,7 +64,7 @@ try {
   await expect(tabs.last()).toHaveCSS('color',dark?'rgb(155, 175, 191)':'rgba(16, 42, 58, 0.7)');
   await expect(tabs.first()).toHaveCSS('height','36px');
   await expect(tabs.first()).toHaveCSS('font-size','14px');
-  await expect(page.locator('.TabsLine_type_border')).toHaveCSS('background-color',dark?'rgba(229, 237, 245, 0.08)':'rgba(16, 42, 58, 0.08)');
+  await expect(page.locator('.TabsLine_type_border')).toHaveCSS('background-color',dark?'rgba(229, 237, 245, 0.24)':'rgba(16, 42, 58, 0.24)');
   await tabs.last().click();
   await expect(tabs.last()).toHaveCSS('color','rgb(0, 142, 250)');
   await expect(page.locator('.TabsLine_type_running')).toHaveCSS('height','2px');
@@ -105,4 +105,5 @@ try {
  assert.deepEqual(errors,[]);
  console.log('PASS: real Consta components, both themes, portaled dropdown, explicit forms, typography, badge and selection.');
 } finally { await browser.close(); }
+
 
