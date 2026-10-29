@@ -31,6 +31,10 @@ try {
   assert.equal(await css('h1','fontWeight'),'500');
   assert.equal(await css('.DsPromptBadge','height'),'24px');
   assert.equal(await css('.DsPromptBadge','fontSize'),'12px');
+  // Badge status="system" keeps a readable fill; the dark neutral belongs to SnackBar only.
+  assert.equal(await css('.DsPromptBadge','backgroundColor'),dark?'rgb(77, 82, 91)':'rgb(222, 228, 232)');
+  // Tabs are <button>s: they must still use the theme font.
+  assert.match(await css('.TabsTab','fontFamily'),/^"?Inter/);
   const selectedChoice = page.locator('.DsChoiceGroup_secondary2:not(.ChoiceGroup_disabled) .ChoiceGroup-Label_checked');
   await expect(selectedChoice).toHaveCSS('background-color',dark?'rgb(23, 61, 89)':'rgb(223, 241, 255)');
   await expect(selectedChoice).toHaveCSS('color','rgb(0, 142, 250)');

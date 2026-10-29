@@ -8,8 +8,8 @@
   --color-bg-ghost: rgba(16, 42, 58, 0.06);
   --color-bg-tone: rgba(0, 0, 0, 0.65);
   --color-bg-soft: rgba(255, 255, 255, 0.9);
-  --color-bg-system: rgb(66, 106, 128);
-  --color-bg-normal: rgb(66, 106, 128);
+  --color-bg-system: #DEE4E8;
+  --color-bg-normal: #56B9F2;
   --color-bg-success: rgb(36, 195, 142);
   --color-bg-caution: #F2C94C;
   --color-bg-warning: rgb(243, 139, 1);
