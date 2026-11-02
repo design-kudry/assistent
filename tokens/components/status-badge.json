@@ -18,7 +18,7 @@
       "form": "Default",
       "width": 128,
       "height": 20,
-      "bg": "bg/system",
+      "bg": "color/background/subtle",
       "foreground": "color/text/secondary"
     },
     {
@@ -30,7 +30,7 @@
       "form": "Round",
       "width": 136,
       "height": 20,
-      "bg": "bg/system",
+      "bg": "color/background/subtle",
       "foreground": "color/text/secondary"
     },
     {
@@ -42,7 +42,7 @@
       "form": "Default",
       "width": 128,
       "height": 20,
-      "bg": "bg/system",
+      "bg": "color/background/subtle",
       "foreground": "color/text/secondary"
     },
     {
@@ -54,7 +54,7 @@
       "form": "Round",
       "width": 136,
       "height": 20,
-      "bg": "bg/system",
+      "bg": "color/background/subtle",
       "foreground": "color/text/secondary"
     },
     {
@@ -66,7 +66,7 @@
       "form": "Round",
       "width": 136,
       "height": 20,
-      "bg": "bg/system",
+      "bg": "color/background/subtle",
       "foreground": "color/text/secondary"
     },
     {
@@ -78,7 +78,7 @@
       "form": "Default",
       "width": 128,
       "height": 20,
-      "bg": "bg/system",
+      "bg": "color/background/subtle",
       "foreground": "color/text/secondary"
     },
     {
@@ -452,18 +452,19 @@
     "figmaStyle": "Typography/Micro/Badge-Medium"
   },
   "colors": {
-    "system": "Native Consta bg/system; text uses existing secondary role",
+    "system": "AI color/background/subtle with color/text/secondary",
     "normal": "Existing bright status/info/background",
     "error": "Existing bright status/error/background; native prop alert",
     "success": "Existing bright status/success/background",
     "warning": "Existing bright status/warning/background",
-    "disabled": "Existing control disabled background and foreground"
+    "disabled": "AI color/control/disabled-background with color/text/tertiary"
   },
   "tintedMix": {
-    "system": 0.3,
+    "system": "AI subtle directly",
     "colored": 0.1,
     "disabled": 1
   },
   "textContentPreserved": true,
-  "strokedBorder": "Same bright status fill role as label and icons"
+  "strokedBorder": "Same bright status fill role as label and icons",
+  "externalColorBindings": 0
 }

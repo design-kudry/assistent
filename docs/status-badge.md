@@ -34,7 +34,7 @@ The family has 36 unique combinations: three views (Filled, Stroked, Tinted), tw
 
 Text content, uppercase presentation, Inter Medium 10px and 20px line height are preserved. The local style is `Typography/Micro/Badge-Medium`. Height is 20px; Default radius is 8px and Round uses the existing pill radius.
 
-System keeps the Consta background (`--color-bg-system`; Light #DEE4E8, Dark #4D525B). Colored backgrounds and foregrounds use the existing bright status background roles; muted validation text colors are not used for these badges. Filled colored badges use white text and icons. Stroked uses the exact same bright status background role for the border, label and icons, including System and disabled. Tinted uses Surface plus 10% of the status fill (System: 30%). Disabled uses existing disabled roles. No new colors were added.
+System uses the existing AI `color/background/subtle` role for Filled and Tinted, with AI secondary text and icons. Colored backgrounds and foregrounds use the existing bright status background roles; muted validation text colors are not used for these badges. Filled colored badges use white text and icons. Stroked uses the exact same bright status background role for the border, label and icons, including System and disabled. Tinted uses Surface plus 10% of the status fill (System uses the AI subtle role directly). Disabled uses existing disabled roles. No new colors were added.
 
 All variants retain their nested Consta instances. Library publication is separate from saving these edits. The existing v2.0.0 release tag is unchanged; these additions are in main.
 

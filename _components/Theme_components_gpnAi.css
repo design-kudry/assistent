@@ -380,8 +380,8 @@
 /* New status badges only. Native Consta 5.33.3 has no status class:
    pass data-status matching status (use alert for the Error status). */
 .Theme_control_gpnAi .Badge.DsStatusBadge {
-  --badge-bg-color-prop: var(--color-bg-system);
-  --badge-border-color-prop: var(--color-bg-system);
+  --badge-bg-color-prop: var(--gpn-ai-background-subtle);
+  --badge-border-color-prop: var(--gpn-ai-background-subtle);
   --badge-text-color-prop: var(--gpn-ai-text-secondary);
   height: 20px;
   font-family: var(--font-primary);
@@ -424,10 +424,15 @@
 .Theme_control_gpnAi .Badge.DsStatusBadge[data-status="disabled"] {
   --badge-bg-color-prop: var(--gpn-ai-control-disabled-background);
   --badge-border-color-prop: var(--gpn-ai-control-disabled-background);
-  --badge-text-color-prop: var(--color-control-typo-disable);
+  --badge-text-color-prop: var(--gpn-ai-text-tertiary);
 }
 
 /* Stroked border always matches the foreground, including disabled/system. */
 .Theme_control_gpnAi .Badge.DsStatusBadge.Badge_view_stroked {
   --badge-border-color-prop: var(--badge-text-color-prop);
+}
+
+/* System tint uses the existing AI subtle role directly, without extra dilution. */
+.Theme_control_gpnAi .Badge.DsStatusBadge.Badge_view_tinted[data-status="system"] {
+  background: var(--gpn-ai-background-subtle);
 }
