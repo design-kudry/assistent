@@ -436,3 +436,51 @@
 .Theme_control_gpnAi .Badge.DsStatusBadge.Badge_view_tinted[data-status="system"] {
   background: var(--gpn-ai-background-subtle);
 }
+
+/* Native Consta Table 5.33.3. Opt in with DsTable plus a row-density class. */
+.Theme_control_gpnAi .Table.DsTable {
+  --table-border: 1px solid var(--gpn-ai-border-default);
+  --cell-padding-vertical: var(--gpn-ai-space-8);
+  --cell-padding-horizontal: var(--gpn-ai-space-12);
+  --ds-table-row-height: 40px;
+  border: var(--table-border);
+  border-radius: var(--gpn-ai-radius-20);
+  background: var(--gpn-ai-background-surface);
+  color: var(--gpn-ai-text-primary);
+  font-family: var(--font-primary);
+}
+.Theme_control_gpnAi .Table.DsTable_assistants { --ds-table-row-height: 62px; }
+.Theme_control_gpnAi .Table.DsTable_prompts { --ds-table-row-height: 112px; }
+.Theme_control_gpnAi .Table.DsTable .TableCell {
+  background-color: var(--gpn-ai-background-surface);
+  color: var(--gpn-ai-text-primary);
+  font-family: var(--font-primary);
+}
+.Theme_control_gpnAi .Table.DsTable .TableCell:not(.TableCell_isHeader) {
+  min-height: var(--ds-table-row-height);
+  font-size: var(--gpn-ai-body-regular-size);
+  line-height: var(--gpn-ai-body-regular-line-height);
+  font-weight: var(--gpn-ai-body-regular-font-weight);
+}
+.Theme_control_gpnAi .Table.DsTable .TableCell.TableCell_isHeader {
+  min-height: 40px;
+  color: var(--gpn-ai-control-default);
+  font-size: var(--gpn-ai-body-dense-size);
+  line-height: var(--gpn-ai-body-dense-line-height);
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  border-bottom-color: var(--gpn-ai-border-default);
+}
+.Theme_control_gpnAi .Table.DsTable .TableCell_isHeader .TableCell-Wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  align-items: center;
+}
+.Theme_control_gpnAi .Table.DsTable .TableHeader-Cell:not(.TableHeader-Cell_isFirstColumn)::after {
+  background: var(--gpn-ai-border-default);
+}
+.Theme_control_gpnAi .Table.DsTable .Table-CellsRow:hover .Table-ContentCell,
+.Theme_control_gpnAi .Table.DsTable .Table-ContentCell_isActive {
+  background-color: var(--gpn-ai-nav-active-bg);
+}

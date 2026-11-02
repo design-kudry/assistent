@@ -264,3 +264,7 @@ npm run build
 - [Карточка файла и чекбокс файлов](docs/attachment-card.md)
 - [Snackbar и статусные цвета](docs/snackbar.md)
 - [Аудит компонентов от 29.10.2026](docs/component-audit-2026-10-29.md)
+
+### Tables
+
+Use the native Consta Table with `className="DsTable"`; add `DsTable_assistants` or `DsTable_prompts` for the corresponding row height. See [table styles and integration](docs/tables.md).

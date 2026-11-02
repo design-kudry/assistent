@@ -1,0 +1,68 @@
+{
+  "reviewedAt": "2026-11-02",
+  "fileKey": "686IP0J8jTGiix3IXVcA45",
+  "reference": "22739:170088",
+  "scenario": "22739:167182",
+  "tableComponents": "6156:103451",
+  "native": "@consta/uikit/Table",
+  "nativeVersion": "5.33.3",
+  "optInClass": "DsTable",
+  "geometry": {
+    "radius": 20,
+    "headerMinHeight": 40,
+    "cellPadding": {
+      "vertical": 8,
+      "horizontal": 12
+    }
+  },
+  "variants": [
+    {
+      "name": "Dislike",
+      "header": "5575:13633",
+      "row": "5575:13632",
+      "rowMinHeight": 40,
+      "className": "DsTable"
+    },
+    {
+      "name": "Assistant",
+      "header": "4945:45712",
+      "row": "4945:45711",
+      "rowMinHeight": 62,
+      "className": "DsTable DsTable_assistants"
+    },
+    {
+      "name": "Prompt",
+      "header": "5516:6163",
+      "row": "5516:6162",
+      "rowMinHeight": 112,
+      "className": "DsTable DsTable_prompts"
+    }
+  ],
+  "colors": {
+    "background": "color/background/surface",
+    "border": "color/border/default",
+    "body": "color/text/primary",
+    "header": "color/control/default",
+    "hover": "color/navigation/item/background-active"
+  },
+  "typography": {
+    "header": {
+      "family": "Inter",
+      "weight": 600,
+      "size": 14,
+      "lineHeight": 19.6,
+      "textTransform": "none"
+    },
+    "body": {
+      "family": "Inter",
+      "weight": 400,
+      "size": 14,
+      "lineHeight": 21
+    }
+  },
+  "reviewBar": {
+    "id": "22757:174981",
+    "colors": "AI roles; no visible raw or remote paints",
+    "textAndLayoutPreserved": true
+  }
+}
