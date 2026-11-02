@@ -376,3 +376,58 @@
 .Theme_control_gpnAi .Tabs .Text.ListItem.TabsTab {
   font-family: var(--font-primary);
 }
+
+/* New status badges only. Native Consta 5.33.3 has no status class:
+   pass data-status matching status (use alert for the Error status). */
+.Theme_control_gpnAi .Badge.DsStatusBadge {
+  --badge-bg-color-prop: var(--color-bg-system);
+  --badge-border-color-prop: var(--color-bg-system);
+  --badge-text-color-prop: var(--gpn-ai-text-secondary);
+  height: 20px;
+  font-family: var(--font-primary);
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: normal;
+  text-transform: uppercase;
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge.Badge_form_default {
+  border-radius: var(--gpn-ai-radius-8);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge.Badge_form_round {
+  border-radius: var(--gpn-ai-radius-999);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge[data-status="normal"] {
+  --badge-bg-color-prop: var(--gpn-ai-status-info-background);
+  --badge-border-color-prop: var(--gpn-ai-status-info-background);
+  --badge-text-color-prop: var(--gpn-ai-status-info-background);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge[data-status="success"] {
+  --badge-bg-color-prop: var(--gpn-ai-status-success-background);
+  --badge-border-color-prop: var(--gpn-ai-status-success-background);
+  --badge-text-color-prop: var(--gpn-ai-status-success-background);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge[data-status="warning"] {
+  --badge-bg-color-prop: var(--gpn-ai-status-warning-background);
+  --badge-border-color-prop: var(--gpn-ai-status-warning-background);
+  --badge-text-color-prop: var(--gpn-ai-status-warning-background);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge[data-status="alert"],
+.Theme_control_gpnAi .Badge.DsStatusBadge[data-status="error"] {
+  --badge-bg-color-prop: var(--gpn-ai-status-error-background);
+  --badge-border-color-prop: var(--gpn-ai-status-error-background);
+  --badge-text-color-prop: var(--gpn-ai-status-error-background);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge.Badge_view_filled:not([data-status="system"]):not([data-status="disabled"]) {
+  --badge-text-color-prop: var(--gpn-ai-text-on-accent);
+}
+.Theme_control_gpnAi .Badge.DsStatusBadge[data-status="disabled"] {
+  --badge-bg-color-prop: var(--gpn-ai-control-disabled-background);
+  --badge-border-color-prop: var(--gpn-ai-control-disabled-background);
+  --badge-text-color-prop: var(--color-control-typo-disable);
+}
+
+/* Stroked border always matches the foreground, including disabled/system. */
+.Theme_control_gpnAi .Badge.DsStatusBadge.Badge_view_stroked {
+  --badge-border-color-prop: var(--badge-text-color-prop);
+}
