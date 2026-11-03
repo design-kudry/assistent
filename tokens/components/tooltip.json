@@ -1,0 +1,58 @@
+{
+  "reviewedAt": "2026-11-03",
+  "sourceFile": "686IP0J8jTGiix3IXVcA45",
+  "componentId": "22791:254720",
+  "bodyComponentId": "22791:254796",
+  "sectionId": "22796:13388",
+  "variantCount": 20,
+  "directions": [
+    "Down",
+    "Up",
+    "Right",
+    "Left"
+  ],
+  "statusRoles": {
+    "default": "color/status/neutral/background",
+    "normal": "color/status/neutral/background",
+    "alert": "color/status/error/background",
+    "success": "color/status/success/background",
+    "warning": "color/status/warning/background"
+  },
+  "foreground": "color/text/on-accent",
+  "body": {
+    "fontFamily": "Inter",
+    "fontWeight": 400,
+    "fontSize": 12,
+    "lineHeight": 18,
+    "textStyle": "Typography/Caption/Relaxed",
+    "padding": 8,
+    "radius": 12,
+    "maxWidth": {
+      "s": 150,
+      "m": 260,
+      "l": 400
+    },
+    "shadow": "Effects/Shadow/Popover"
+  },
+  "title": {
+    "fontWeight": 700,
+    "fontSize": 12,
+    "lineHeight": 18,
+    "textStyle": "Typography/Caption/Strong",
+    "styleId": "S:b8721e4986f426ad54ff9ce76dcdb63fe934e546,"
+  },
+  "action": {
+    "nativeComponent": "Button",
+    "view": "ghost",
+    "size": "s",
+    "form": "round",
+    "height": 36,
+    "fontSize": 14,
+    "lineHeight": 21,
+    "background": "--gpn-ai-snackbar-action-background",
+    "foreground": "--gpn-ai-text-on-accent",
+    "hover": "same background",
+    "gap": 8
+  },
+  "newColors": false
+}

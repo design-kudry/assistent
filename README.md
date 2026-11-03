@@ -268,3 +268,7 @@ npm run build
 ### Tables
 
 Use the native Consta Table with `className="DsTable"`; add `DsTable_assistants` or `DsTable_prompts` for the corresponding row height. See [table styles and integration](docs/tables.md).
+
+### Tooltip
+
+Native Consta Tooltip now shares Snackbar colors and action buttons in both themes. See [Tooltip styles and integration](docs/tooltip.md).

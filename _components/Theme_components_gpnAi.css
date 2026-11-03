@@ -484,3 +484,88 @@
 .Theme_control_gpnAi .Table.DsTable .Table-ContentCell_isActive {
   background-color: var(--gpn-ai-nav-active-bg);
 }
+
+/* Native Consta Tooltip, including its theme-bearing portal root. */
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) {
+  --tooltip-bg-color: var(--gpn-ai-status-neutral-background);
+  --popover-arrow-bg-color: var(--tooltip-bg-color);
+  --color-typo-primary: var(--gpn-ai-text-on-accent);
+  --color-typo-secondary: var(--gpn-ai-text-on-accent);
+  --color-control-typo-ghost: var(--gpn-ai-text-on-accent);
+  --color-control-typo-ghost-hover: var(--gpn-ai-text-on-accent);
+  --color-control-bg-ghost: var(--gpn-ai-snackbar-action-background);
+  --color-control-bg-ghost-hover: var(--gpn-ai-snackbar-action-background);
+  color: var(--gpn-ai-text-on-accent);
+  font-family: var(--font-primary);
+  font-size: 12px;
+  line-height: 18px;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip).Tooltip_status_alert {
+  --tooltip-bg-color: var(--gpn-ai-status-error-background);
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip).Tooltip_status_success {
+  --tooltip-bg-color: var(--gpn-ai-status-success-background);
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip).Tooltip_status_warning {
+  --tooltip-bg-color: var(--gpn-ai-status-warning-background);
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Tooltip-Background {
+  border-radius: var(--gpn-ai-radius-12);
+  box-shadow: var(--gpn-ai-shadow-popover);
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Tooltip-Content {
+  padding: var(--gpn-ai-space-8);
+  color: var(--gpn-ai-text-on-accent);
+  text-shadow: none;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Tooltip-Content > .Text,
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .DsTooltipBody {
+  margin: 0;
+  color: var(--gpn-ai-text-on-accent);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .DsTooltipTitle {
+  margin: 0 0 var(--gpn-ai-space-4);
+  color: var(--gpn-ai-text-on-accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 18px;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .DsTooltipActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gpn-ai-space-8);
+  margin-top: var(--gpn-ai-space-8);
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Tooltip-Content_size_s .DsTooltipActions {
+  flex-direction: column;
+  align-items: center;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Button:not(:disabled) {
+  height: 36px;
+  min-height: 36px;
+  padding-inline: var(--gpn-ai-space-16);
+  border: 0;
+  border-radius: var(--gpn-ai-radius-999);
+  background: var(--gpn-ai-snackbar-action-background);
+  color: var(--gpn-ai-text-on-accent);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  filter: none;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Button:not(:disabled):hover {
+  background: var(--gpn-ai-snackbar-action-background);
+  color: var(--gpn-ai-text-on-accent);
+  filter: none;
+}
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Button:focus-visible {
+  outline: 2px solid var(--gpn-ai-text-on-accent);
+  outline-offset: 2px;
+}
+
+:is(.Theme_control_gpnAi.Tooltip, .Theme_control_gpnAi .Tooltip) .Tooltip-Content_size_s {
+  text-align: center;
+}
